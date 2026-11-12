@@ -1,0 +1,4 @@
+Product count: 2
+Clicking product...
+Product Page URL: https://www.snapdeal.com/product/vdlooks-cotton-blend-regular-fit/8070451210415092815#bcrumbSearch:mens%20shirts
+Product URL: https://www.snapdeal.com/product/vdlooks-cotton-blend-regular-fit/8070451210415092815#bcrumbSearch:mens%20shirts

@@ -1,0 +1,6 @@
+[2026-11-02 10:54:37] info: Check product Add to cart flow
+Product count: 2
+Clicking product...
+Product Page URL: https://www.snapdeal.com/product/vdlooks-cotton-blend-regular-fit/8070451210415092815#bcrumbSearch:mens%20shirt
+Product added to cart
+Shopping Flow Completed Successfully

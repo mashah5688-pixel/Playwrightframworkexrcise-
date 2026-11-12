@@ -1,0 +1,901 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: Shoppingflow.spec.ts >> Snapdeal Shopping Flow: 2
+- Location: tests\Shoppingflow.spec.ts:9:9
+
+# Error details
+
+```
+Test timeout of 30000ms exceeded.
+```
+
+```
+Error: expect(locator).toBeVisible() failed
+
+Locator: locator('a.dp-widget-link').filter({ hasText: 'VDLooks Cotton Blend Regular Fit' }).first()
+Expected: visible
+Error: element(s) not found
+
+Call log:
+  - Expect "toBeVisible" locator('a.dp-widget-link').filter({ hasText: 'VDLooks Cotton Blend Regular Fit' }).first() with timeout 15000ms
+  - waiting for locator('a.dp-widget-link').filter({ hasText: 'VDLooks Cotton Blend Regular Fit' }).first()
+  - Test timeout of 30000ms exceeded.
+
+```
+
+```yaml
+- iframe
+- text: India's leading online shopping destination
+- link "Our Blog":
+  - /url: http://blog.snapdeal.com/
+- link "Help Center":
+  - /url: /help#bcrumbSearch:mobile%20cover
+- link "Sell On Snapdeal":
+  - /url: https://sellers.snapdeal.com/
+- img
+- link "Download App":
+  - /url: http://www.snapdeal.com/offers/getsnapdealapp#bcrumbSearch:mobile%20cover
+- link "Snapdeal":
+  - /url: https://www.snapdeal.com
+  - img "Snapdeal"
+- text: 
+- textbox "Search products & brands": mobile cover
+- button " Search"
+- text: Cart  Sign In  
+- heading [level=3]
+- text: "Related searches:"
+- link "oppo mobile cover":
+  - /url: https://www.snapdeal.com/search?keyword=oppo mobile cover&catId=&categoryId=0&suggested=false&vertical=&noOfResults=20&clickSrc=go_similar_search_keyword&SRPID=relatedsearch#bcrumbSearch:mobile%20cover
+- link "samsung galaxy a13 back cover":
+  - /url: https://www.snapdeal.com/search?keyword=samsung galaxy a13 back cover&catId=&categoryId=0&suggested=false&vertical=&noOfResults=20&clickSrc=go_similar_search_keyword&SRPID=relatedsearch#bcrumbSearch:mobile%20cover
+- link "vivo y21 cover":
+  - /url: https://www.snapdeal.com/search?keyword=vivo y21 cover&catId=&categoryId=0&suggested=false&vertical=&noOfResults=20&clickSrc=go_similar_search_keyword&SRPID=relatedsearch#bcrumbSearch:mobile%20cover
+- link "oneplus nord 2t back cover":
+  - /url: https://www.snapdeal.com/search?keyword=oneplus nord 2t back cover&catId=&categoryId=0&suggested=false&vertical=&noOfResults=20&clickSrc=go_similar_search_keyword&SRPID=relatedsearch#bcrumbSearch:mobile%20cover
+- link "oneplus nord ce5g back cover":
+  - /url: https://www.snapdeal.com/search?keyword=oneplus nord ce5g back cover&catId=&categoryId=0&suggested=false&vertical=&noOfResults=20&clickSrc=go_similar_search_keyword&SRPID=relatedsearch#bcrumbSearch:mobile%20cover
+- list:
+  - listitem:
+    - text: 
+    - link "Mobiles & Tablets":
+      - /url: https://www.snapdeal.com/search?keyword=mobile%20cover&santizedKeyword=mobile%20cover&catId=0&categoryId=12&suggested=false&vertical=p&noOfResults=20&searchState=k3%3Dtrue%7Ck5%3D0%7Ck6%3D0%7Ck7%3DMwuEKQMAIEAAAgBECAAAEA%3D%3D%7Ck8%3D0&clickSrc=searchOnSubCat&lastKeyword=&prodCatId=&changeBackToAll=true&foundInAll=false&categoryIdSearched=&cityPageUrl=&categoryUrl=&url=&utmContent=&dealDetail=#bcrumbSearch:mobile%20cover
+    - list:
+      - listitem:
+        - text: 
+        - link "Mobiles Accessories 886":
+          - /url: https://www.snapdeal.com/search?keyword=mobile%20cover&santizedKeyword=mobile%20cover&catId=0&categoryId=673&suggested=false&vertical=p&noOfResults=20&searchState=k3%3Dtrue%7Ck5%3D0%7Ck6%3D0%7Ck7%3DMwuEKQMAIEAAAgBECAAAEA%3D%3D%7Ck8%3D0&clickSrc=searchOnSubCat&lastKeyword=&prodCatId=&changeBackToAll=true&foundInAll=false&categoryIdSearched=&cityPageUrl=&categoryUrl=&url=&utmContent=&dealDetail=#bcrumbSearch:mobile%20cover
+        - list:
+          - listitem:
+            - text: 
+            - link "Mobile Cases & Covers 881":
+              - /url: https://www.snapdeal.com/search?keyword=mobile%20cover&santizedKeyword=mobile%20cover&catId=0&categoryId=676&suggested=false&vertical=p&noOfResults=20&searchState=k3%3Dtrue%7Ck5%3D0%7Ck6%3D0%7Ck7%3DMwuEKQMAIEAAAgBECAAAEA%3D%3D%7Ck8%3D0&clickSrc=searchOnSubCat&lastKeyword=&prodCatId=&changeBackToAll=true&foundInAll=false&categoryIdSearched=&cityPageUrl=&categoryUrl=&url=&utmContent=&dealDetail=#bcrumbSearch:mobile%20cover
+            - list:
+              - listitem:
+                - link "Plain Back Covers 229":
+                  - /url: https://www.snapdeal.com/search?keyword=mobile%20cover&santizedKeyword=mobile%20cover&catId=0&categoryId=4165&suggested=false&vertical=p&noOfResults=20&searchState=k3%3Dtrue%7Ck5%3D0%7Ck6%3D0%7Ck7%3DMwuEKQMAIEAAAgBECAAAEA%3D%3D%7Ck8%3D0&clickSrc=searchOnSubCat&lastKeyword=&prodCatId=&changeBackToAll=true&foundInAll=false&categoryIdSearched=&cityPageUrl=&categoryUrl=&url=&utmContent=&dealDetail=#bcrumbSearch:mobile%20cover
+              - listitem:
+                - link "Printed Back Covers 644":
+                  - /url: https://www.snapdeal.com/search?keyword=mobile%20cover&santizedKeyword=mobile%20cover&catId=0&categoryId=4159&suggested=false&vertical=p&noOfResults=20&searchState=k3%3Dtrue%7Ck5%3D0%7Ck6%3D0%7Ck7%3DMwuEKQMAIEAAAgBECAAAEA%3D%3D%7Ck8%3D0&clickSrc=searchOnSubCat&lastKeyword=&prodCatId=&changeBackToAll=true&foundInAll=false&categoryIdSearched=&cityPageUrl=&categoryUrl=&url=&utmContent=&dealDetail=#bcrumbSearch:mobile%20cover
+              - listitem:
+                - link "Flip Covers 6":
+                  - /url: https://www.snapdeal.com/search?keyword=mobile%20cover&santizedKeyword=mobile%20cover&catId=0&categoryId=4161&suggested=false&vertical=p&noOfResults=20&searchState=k3%3Dtrue%7Ck5%3D0%7Ck6%3D0%7Ck7%3DMwuEKQMAIEAAAgBECAAAEA%3D%3D%7Ck8%3D0&clickSrc=searchOnSubCat&lastKeyword=&prodCatId=&changeBackToAll=true&foundInAll=false&categoryIdSearched=&cityPageUrl=&categoryUrl=&url=&utmContent=&dealDetail=#bcrumbSearch:mobile%20cover
+              - listitem:
+                - link "Powerbank Pouch & Case 2":
+                  - /url: https://www.snapdeal.com/search?keyword=mobile%20cover&santizedKeyword=mobile%20cover&catId=0&categoryId=46139009&suggested=false&vertical=p&noOfResults=20&searchState=k3%3Dtrue%7Ck5%3D0%7Ck6%3D0%7Ck7%3DMwuEKQMAIEAAAgBECAAAEA%3D%3D%7Ck8%3D0&clickSrc=searchOnSubCat&lastKeyword=&prodCatId=&changeBackToAll=true&foundInAll=false&categoryIdSearched=&cityPageUrl=&categoryUrl=&url=&utmContent=&dealDetail=#bcrumbSearch:mobile%20cover
+          - listitem:
+            - link "Mobile Enhancements 3":
+              - /url: https://www.snapdeal.com/search?keyword=mobile%20cover&santizedKeyword=mobile%20cover&catId=0&categoryId=46105045&suggested=false&vertical=p&noOfResults=20&searchState=k3%3Dtrue%7Ck5%3D0%7Ck6%3D0%7Ck7%3DMwuEKQMAIEAAAgBECAAAEA%3D%3D%7Ck8%3D0&clickSrc=searchOnSubCat&lastKeyword=&prodCatId=&changeBackToAll=true&foundInAll=false&categoryIdSearched=&cityPageUrl=&categoryUrl=&url=&utmContent=&dealDetail=#bcrumbSearch:mobile%20cover
+          - listitem:
+            - link "Pop Holders 1":
+              - /url: https://www.snapdeal.com/search?keyword=mobile%20cover&santizedKeyword=mobile%20cover&catId=0&categoryId=46138946&suggested=false&vertical=p&noOfResults=20&searchState=k3%3Dtrue%7Ck5%3D0%7Ck6%3D0%7Ck7%3DMwuEKQMAIEAAAgBECAAAEA%3D%3D%7Ck8%3D0&clickSrc=searchOnSubCat&lastKeyword=&prodCatId=&changeBackToAll=true&foundInAll=false&categoryIdSearched=&cityPageUrl=&categoryUrl=&url=&utmContent=&dealDetail=#bcrumbSearch:mobile%20cover
+          - listitem:
+            - link "Mobile Holders 1":
+              - /url: https://www.snapdeal.com/search?keyword=mobile%20cover&santizedKeyword=mobile%20cover&catId=0&categoryId=46138939&suggested=false&vertical=p&noOfResults=20&searchState=k3%3Dtrue%7Ck5%3D0%7Ck6%3D0%7Ck7%3DMwuEKQMAIEAAAgBECAAAEA%3D%3D%7Ck8%3D0&clickSrc=searchOnSubCat&lastKeyword=&prodCatId=&changeBackToAll=true&foundInAll=false&categoryIdSearched=&cityPageUrl=&categoryUrl=&url=&utmContent=&dealDetail=#bcrumbSearch:mobile%20cover
+- separator
+- text: Price 
+- link:
+  - /url: "#bcrumbLabelId:175"
+- link:
+  - /url: "#bcrumbLabelId:175"
+- text: Rs. 91 Rs. 816
+- textbox: "91"
+- text: Rs. -
+- textbox: "816"
+- text: Rs. GO Customer Rating 
+- link "★★★★★ ★★★★★ & Up":
+  - /url: https://www.snapdeal.com/products//filters/avgRating~4~$~0#bcrumbSearch:mobile%20cover
+- text: "120"
+- link "★★★★★ ★★★★★ & Up":
+  - /url: https://www.snapdeal.com/products//filters/avgRating~3~$~0#bcrumbSearch:mobile%20cover
+- text: "154"
+- link "★★★★★ ★★★★★ & Up":
+  - /url: https://www.snapdeal.com/products//filters/avgRating~2~$~0#bcrumbSearch:mobile%20cover
+- text: "177"
+- link "★★★★★ ★★★★★ & Up":
+  - /url: https://www.snapdeal.com/products//filters/avgRating~1~$~0#bcrumbSearch:mobile%20cover
+- text: 208 Discount % 
+- link "30 - 40":
+  - /url: https://www.snapdeal.com/products//filters/discount~30%20-%2040#bcrumbSearch:mobile%20cover
+- text: "19"
+- link "40 - 50":
+  - /url: https://www.snapdeal.com/products//filters/discount~40%20-%2050#bcrumbSearch:mobile%20cover
+- text: "2"
+- link "50 - 60":
+  - /url: https://www.snapdeal.com/products//filters/discount~50%20-%2060#bcrumbSearch:mobile%20cover
+- text: "20"
+- link "60 - 70":
+  - /url: https://www.snapdeal.com/products//filters/discount~60%20-%2070#bcrumbSearch:mobile%20cover
+- text: "80"
+- link "70 - 80":
+  - /url: https://www.snapdeal.com/products//filters/discount~70%20-%2080#bcrumbSearch:mobile%20cover
+- text: "709"
+- link "80 - 90":
+  - /url: https://www.snapdeal.com/products//filters/discount~80%20-%2090#bcrumbSearch:mobile%20cover
+- text: "248"
+- link "90 - 100":
+  - /url: https://www.snapdeal.com/products//filters/discount~90%20-%20100#bcrumbSearch:mobile%20cover
+- text: "1"
+- button "View More"
+- text: Brand  
+- textbox "Search by Brand"
+- link "AG Enterprises":
+  - /url: https://www.snapdeal.com/products//filters/Brand~AG%20Enterprises#bcrumbSearch:mobile%20cover
+- text: "1"
+- link "BIG WINGS":
+  - /url: https://www.snapdeal.com/products//filters/Brand~BIG%20WINGS#bcrumbSearch:mobile%20cover
+- text: "259"
+- link "Bluedio":
+  - /url: https://www.snapdeal.com/products//filters/Brand~Bluedio#bcrumbSearch:mobile%20cover
+- text: "22"
+- link "BuyFeb":
+  - /url: https://www.snapdeal.com/products//filters/Brand~BuyFeb#bcrumbSearch:mobile%20cover
+- text: "1"
+- link "Case Need":
+  - /url: https://www.snapdeal.com/products//filters/Brand~Case%20Need#bcrumbSearch:mobile%20cover
+- text: "1"
+- button "View More"
+- text: Type 
+- link "3D Back Covers":
+  - /url: https://www.snapdeal.com/products//filters/Type_s~3D%20Back%20Covers#bcrumbSearch:mobile%20cover
+- text: "12"
+- link "Bumper Cases":
+  - /url: https://www.snapdeal.com/products//filters/Type_s~Bumper%20Cases#bcrumbSearch:mobile%20cover
+- text: "3"
+- link "Cases with Stands":
+  - /url: https://www.snapdeal.com/products//filters/Type_s~Cases%20with%20Stands#bcrumbSearch:mobile%20cover
+- text: "2"
+- link "Closet Organisers":
+  - /url: https://www.snapdeal.com/products//filters/Type_s~Closet%20Organisers#bcrumbSearch:mobile%20cover
+- text: "1"
+- link "Gadget Tool":
+  - /url: https://www.snapdeal.com/products//filters/Type_s~Gadget%20Tool#bcrumbSearch:mobile%20cover
+- text: "2"
+- link "Hybrid Covers":
+  - /url: https://www.snapdeal.com/products//filters/Type_s~Hybrid%20Covers#bcrumbSearch:mobile%20cover
+- text: "2"
+- link "Jewellery Organizers":
+  - /url: https://www.snapdeal.com/products//filters/Type_s~Jewellery%20Organizers#bcrumbSearch:mobile%20cover
+- text: "5"
+- link "Mobile Spare Parts":
+  - /url: https://www.snapdeal.com/products//filters/Type_s~Mobile%20Spare%20Parts#bcrumbSearch:mobile%20cover
+- text: "1"
+- link "On Ear":
+  - /url: https://www.snapdeal.com/products//filters/Type_s~On%20Ear#bcrumbSearch:mobile%20cover
+- text: "7"
+- link "Plain Cases":
+  - /url: https://www.snapdeal.com/products//filters/Type_s~Plain%20Cases#bcrumbSearch:mobile%20cover
+- text: "39"
+- link "Printed Back Covers":
+  - /url: https://www.snapdeal.com/products//filters/Type_s~Printed%20Back%20Covers#bcrumbSearch:mobile%20cover
+- text: "422"
+- link "Remote Covers & Holders":
+  - /url: https://www.snapdeal.com/products//filters/Type_s~Remote%20Covers%20&%20Holders#bcrumbSearch:mobile%20cover
+- text: "11"
+- link "Shock Proof Case":
+  - /url: https://www.snapdeal.com/products//filters/Type_s~Shock%20Proof%20Case#bcrumbSearch:mobile%20cover
+- text: "179"
+- button "View More"
+- text: Material 
+- link "Artificial Leather":
+  - /url: https://www.snapdeal.com/products//filters/Material_s~Artificial%20Leather#bcrumbSearch:mobile%20cover
+- text: "23"
+- link "Hard Shell Cases":
+  - /url: https://www.snapdeal.com/products//filters/Material_s~Hard%20Shell%20Cases#bcrumbSearch:mobile%20cover
+- text: "424"
+- link "Leather":
+  - /url: https://www.snapdeal.com/products//filters/Material_s~Leather#bcrumbSearch:mobile%20cover
+- text: "4"
+- link "Others":
+  - /url: https://www.snapdeal.com/products//filters/Material_s~Others#bcrumbSearch:mobile%20cover
+- text: "3"
+- link "Plastic":
+  - /url: https://www.snapdeal.com/products//filters/Material_s~Plastic#bcrumbSearch:mobile%20cover
+- text: "13"
+- link "Polycarbonate":
+  - /url: https://www.snapdeal.com/products//filters/Material_s~Polycarbonate#bcrumbSearch:mobile%20cover
+- text: "202"
+- link "PVC":
+  - /url: https://www.snapdeal.com/products//filters/Material_s~PVC#bcrumbSearch:mobile%20cover
+- text: "1"
+- link "Rubber":
+  - /url: https://www.snapdeal.com/products//filters/Material_s~Rubber#bcrumbSearch:mobile%20cover
+- text: "2"
+- link "Silicon":
+  - /url: https://www.snapdeal.com/products//filters/Material_s~Silicon#bcrumbSearch:mobile%20cover
+- text: "5"
+- link "Silicon Soft Cases":
+  - /url: https://www.snapdeal.com/products//filters/Material_s~Silicon%20Soft%20Cases#bcrumbSearch:mobile%20cover
+- text: "58"
+- link "TPU Glossy Cases":
+  - /url: https://www.snapdeal.com/products//filters/Material_s~TPU%20Glossy%20Cases#bcrumbSearch:mobile%20cover
+- text: "165"
+- button "View More"
+- text: Compatible Brand  
+- textbox "Search by Compatible Brand"
+- link "Apple":
+  - /url: https://www.snapdeal.com/products//filters/CompatibleBrand_s~Apple#bcrumbSearch:mobile%20cover
+- text: "138"
+- link "Acer":
+  - /url: https://www.snapdeal.com/products//filters/CompatibleBrand_s~Acer#bcrumbSearch:mobile%20cover
+- text: "1"
+- link "Colors":
+  - /url: https://www.snapdeal.com/products//filters/CompatibleBrand_s~Colors#bcrumbSearch:mobile%20cover
+- text: "1"
+- link "Coolpad":
+  - /url: https://www.snapdeal.com/products//filters/CompatibleBrand_s~Coolpad#bcrumbSearch:mobile%20cover
+- text: "3"
+- link "Google":
+  - /url: https://www.snapdeal.com/products//filters/CompatibleBrand_s~Google#bcrumbSearch:mobile%20cover
+- text: "11"
+- link "Honor":
+  - /url: https://www.snapdeal.com/products//filters/CompatibleBrand_s~Honor#bcrumbSearch:mobile%20cover
+- text: "6"
+- link "HTC":
+  - /url: https://www.snapdeal.com/products//filters/CompatibleBrand_s~HTC#bcrumbSearch:mobile%20cover
+- text: "1"
+- link "Lenovo":
+  - /url: https://www.snapdeal.com/products//filters/CompatibleBrand_s~Lenovo#bcrumbSearch:mobile%20cover
+- text: "3"
+- link "Letv":
+  - /url: https://www.snapdeal.com/products//filters/CompatibleBrand_s~Letv#bcrumbSearch:mobile%20cover
+- text: "2"
+- link "Moto":
+  - /url: https://www.snapdeal.com/products//filters/CompatibleBrand_s~Moto#bcrumbSearch:mobile%20cover
+- text: "1"
+- link "Motorola":
+  - /url: https://www.snapdeal.com/products//filters/CompatibleBrand_s~Motorola#bcrumbSearch:mobile%20cover
+- text: "14"
+- link "OnePlus":
+  - /url: https://www.snapdeal.com/products//filters/CompatibleBrand_s~OnePlus#bcrumbSearch:mobile%20cover
+- text: "24"
+- link "Oppo":
+  - /url: https://www.snapdeal.com/products//filters/CompatibleBrand_s~Oppo#bcrumbSearch:mobile%20cover
+- text: "178"
+- link "Redmi":
+  - /url: https://www.snapdeal.com/products//filters/CompatibleBrand_s~Redmi#bcrumbSearch:mobile%20cover
+- text: "165"
+- link "Samsung":
+  - /url: https://www.snapdeal.com/products//filters/CompatibleBrand_s~Samsung#bcrumbSearch:mobile%20cover
+- text: "259"
+- link "Vivo":
+  - /url: https://www.snapdeal.com/products//filters/CompatibleBrand_s~Vivo#bcrumbSearch:mobile%20cover
+- text: "5"
+- link "Xiaomi":
+  - /url: https://www.snapdeal.com/products//filters/CompatibleBrand_s~Xiaomi#bcrumbSearch:mobile%20cover
+- text: "40"
+- button "View More"
+- text: Compatible Phone Model  
+- textbox "Search by Compatible Phone Model"
+- link "Alcatel One Touch Flash Mini 4031d":
+  - /url: https://www.snapdeal.com/products//filters/CompatiblePhoneModel_s~Alcatel%20One%20Touch%20Flash%20Mini%204031d#bcrumbSearch:mobile%20cover
+- text: "1"
+- link "Alcatel Onetouch Flash":
+  - /url: https://www.snapdeal.com/products//filters/CompatiblePhoneModel_s~Alcatel%20Onetouch%20Flash#bcrumbSearch:mobile%20cover
+- text: "1"
+- link "Apple iPhone 11 Pro":
+  - /url: https://www.snapdeal.com/products//filters/CompatiblePhoneModel_s~Apple%20iPhone%2011%20Pro#bcrumbSearch:mobile%20cover
+- text: "7"
+- link "Apple iPhone 12":
+  - /url: https://www.snapdeal.com/products//filters/CompatiblePhoneModel_s~Apple%20iPhone%2012#bcrumbSearch:mobile%20cover
+- text: "6"
+- link "Apple iPhone 12 Mini":
+  - /url: https://www.snapdeal.com/products//filters/CompatiblePhoneModel_s~Apple%20iPhone%2012%20Mini#bcrumbSearch:mobile%20cover
+- text: "2"
+- link "Apple iPhone 12 Pro":
+  - /url: https://www.snapdeal.com/products//filters/CompatiblePhoneModel_s~Apple%20iPhone%2012%20Pro#bcrumbSearch:mobile%20cover
+- text: "8"
+- link "Apple iPhone 12 Pro Max":
+  - /url: https://www.snapdeal.com/products//filters/CompatiblePhoneModel_s~Apple%20iPhone%2012%20Pro%20Max#bcrumbSearch:mobile%20cover
+- text: "5"
+- link "Apple iPhone 6":
+  - /url: https://www.snapdeal.com/products//filters/CompatiblePhoneModel_s~Apple%20iPhone%206#bcrumbSearch:mobile%20cover
+- text: "6"
+- link "Coolpad Note 3":
+  - /url: https://www.snapdeal.com/products//filters/CompatiblePhoneModel_s~Coolpad%20Note%203#bcrumbSearch:mobile%20cover
+- text: "3"
+- link "Honor 9A":
+  - /url: https://www.snapdeal.com/products//filters/CompatiblePhoneModel_s~Honor%209A#bcrumbSearch:mobile%20cover
+- text: "1"
+- link "Honor holly 2 plus":
+  - /url: https://www.snapdeal.com/products//filters/CompatiblePhoneModel_s~Honor%20holly%202%20plus#bcrumbSearch:mobile%20cover
+- text: "5"
+- link "HTC Desire 826":
+  - /url: https://www.snapdeal.com/products//filters/CompatiblePhoneModel_s~HTC%20Desire%20826#bcrumbSearch:mobile%20cover
+- text: "1"
+- link "Iphone 14 plus":
+  - /url: https://www.snapdeal.com/products//filters/CompatiblePhoneModel_s~Iphone%2014%20plus#bcrumbSearch:mobile%20cover
+- text: "1"
+- link "Iphone 14 pro Max":
+  - /url: https://www.snapdeal.com/products//filters/CompatiblePhoneModel_s~Iphone%2014%20pro%20Max#bcrumbSearch:mobile%20cover
+- text: "1"
+- link "LeEco Le2":
+  - /url: https://www.snapdeal.com/products//filters/CompatiblePhoneModel_s~LeEco%20Le2#bcrumbSearch:mobile%20cover
+- text: "1"
+- link "Lenovo K5 Note":
+  - /url: https://www.snapdeal.com/products//filters/CompatiblePhoneModel_s~Lenovo%20K5%20Note#bcrumbSearch:mobile%20cover
+- text: "1"
+- link "Lenovo Vibe X3":
+  - /url: https://www.snapdeal.com/products//filters/CompatiblePhoneModel_s~Lenovo%20Vibe%20X3#bcrumbSearch:mobile%20cover
+- text: "2"
+- link "Letv Le 1S":
+  - /url: https://www.snapdeal.com/products//filters/CompatiblePhoneModel_s~Letv%20Le%201S#bcrumbSearch:mobile%20cover
+- text: "1"
+- link "Moto G4 Plus":
+  - /url: https://www.snapdeal.com/products//filters/CompatiblePhoneModel_s~Moto%20G4%20Plus#bcrumbSearch:mobile%20cover
+- text: "2"
+- link "Nothing Phone 1":
+  - /url: https://www.snapdeal.com/products//filters/CompatiblePhoneModel_s~Nothing%20Phone%201#bcrumbSearch:mobile%20cover
+- text: "1"
+- link "OnePlus 1":
+  - /url: https://www.snapdeal.com/products//filters/CompatiblePhoneModel_s~OnePlus%201#bcrumbSearch:mobile%20cover
+- text: "1"
+- link "Oneplus 10T 5G":
+  - /url: https://www.snapdeal.com/products//filters/CompatiblePhoneModel_s~Oneplus%2010T%205G#bcrumbSearch:mobile%20cover
+- text: "1"
+- link "OnePlus 7 Pro":
+  - /url: https://www.snapdeal.com/products//filters/CompatiblePhoneModel_s~OnePlus%207%20Pro#bcrumbSearch:mobile%20cover
+- text: "1"
+- link "OnePlus 7T":
+  - /url: https://www.snapdeal.com/products//filters/CompatiblePhoneModel_s~OnePlus%207T#bcrumbSearch:mobile%20cover
+- text: "2"
+- link "OnePlus 8":
+  - /url: https://www.snapdeal.com/products//filters/CompatiblePhoneModel_s~OnePlus%208#bcrumbSearch:mobile%20cover
+- text: "1"
+- link "Oneplus Nord Ce 2 5G":
+  - /url: https://www.snapdeal.com/products//filters/CompatiblePhoneModel_s~Oneplus%20Nord%20Ce%202%205G#bcrumbSearch:mobile%20cover
+- text: "3"
+- link "Oneplus Nord Ce 2 Lite 5G":
+  - /url: https://www.snapdeal.com/products//filters/CompatiblePhoneModel_s~Oneplus%20Nord%20Ce%202%20Lite%205G#bcrumbSearch:mobile%20cover
+- text: "1"
+- link "Oppo A31":
+  - /url: https://www.snapdeal.com/products//filters/CompatiblePhoneModel_s~Oppo%20A31#bcrumbSearch:mobile%20cover
+- text: "172"
+- link "Oppo F1 Plus":
+  - /url: https://www.snapdeal.com/products//filters/CompatiblePhoneModel_s~Oppo%20F1%20Plus#bcrumbSearch:mobile%20cover
+- text: "2"
+- link "Oppo F19 Pro":
+  - /url: https://www.snapdeal.com/products//filters/CompatiblePhoneModel_s~Oppo%20F19%20Pro#bcrumbSearch:mobile%20cover
+- text: "3"
+- link "Oppo F9 Pro":
+  - /url: https://www.snapdeal.com/products//filters/CompatiblePhoneModel_s~Oppo%20F9%20Pro#bcrumbSearch:mobile%20cover
+- text: "1"
+- link "Poco C31":
+  - /url: https://www.snapdeal.com/products//filters/CompatiblePhoneModel_s~Poco%20C31#bcrumbSearch:mobile%20cover
+- text: "1"
+- link "RealMe 1":
+  - /url: https://www.snapdeal.com/products//filters/CompatiblePhoneModel_s~RealMe%201#bcrumbSearch:mobile%20cover
+- text: "2"
+- link "Realme 7i":
+  - /url: https://www.snapdeal.com/products//filters/CompatiblePhoneModel_s~Realme%207i#bcrumbSearch:mobile%20cover
+- text: "10"
+- link "Realme 8 Pro":
+  - /url: https://www.snapdeal.com/products//filters/CompatiblePhoneModel_s~Realme%208%20Pro#bcrumbSearch:mobile%20cover
+- text: "3"
+- link "Realme C21Y":
+  - /url: https://www.snapdeal.com/products//filters/CompatiblePhoneModel_s~Realme%20C21Y#bcrumbSearch:mobile%20cover
+- text: "1"
+- link "Realme C25Y":
+  - /url: https://www.snapdeal.com/products//filters/CompatiblePhoneModel_s~Realme%20C25Y#bcrumbSearch:mobile%20cover
+- text: "2"
+- link "Realme X7 Pro":
+  - /url: https://www.snapdeal.com/products//filters/CompatiblePhoneModel_s~Realme%20X7%20Pro#bcrumbSearch:mobile%20cover
+- text: "2"
+- link "Samsung A12":
+  - /url: https://www.snapdeal.com/products//filters/CompatiblePhoneModel_s~Samsung%20A12#bcrumbSearch:mobile%20cover
+- text: "1"
+- link "Samsung A5 2016 4G":
+  - /url: https://www.snapdeal.com/products//filters/CompatiblePhoneModel_s~Samsung%20A5%202016%204G#bcrumbSearch:mobile%20cover
+- text: "1"
+- link "Samsung Galaxy A12":
+  - /url: https://www.snapdeal.com/products//filters/CompatiblePhoneModel_s~Samsung%20Galaxy%20A12#bcrumbSearch:mobile%20cover
+- text: "1"
+- link "Samsung Galaxy A21S":
+  - /url: https://www.snapdeal.com/products//filters/CompatiblePhoneModel_s~Samsung%20Galaxy%20A21S#bcrumbSearch:mobile%20cover
+- text: "1"
+- link "Samsung Galaxy A31":
+  - /url: https://www.snapdeal.com/products//filters/CompatiblePhoneModel_s~Samsung%20Galaxy%20A31#bcrumbSearch:mobile%20cover
+- text: "165"
+- link "Samsung Galaxy A32":
+  - /url: https://www.snapdeal.com/products//filters/CompatiblePhoneModel_s~Samsung%20Galaxy%20A32#bcrumbSearch:mobile%20cover
+- text: "1"
+- link "Samsung Galaxy A52":
+  - /url: https://www.snapdeal.com/products//filters/CompatiblePhoneModel_s~Samsung%20Galaxy%20A52#bcrumbSearch:mobile%20cover
+- text: "1"
+- link "Samsung Galaxy A8 Star":
+  - /url: https://www.snapdeal.com/products//filters/CompatiblePhoneModel_s~Samsung%20Galaxy%20A8%20Star#bcrumbSearch:mobile%20cover
+- text: "2"
+- link "Samsung Galaxy C5 Pro":
+  - /url: https://www.snapdeal.com/products//filters/CompatiblePhoneModel_s~Samsung%20Galaxy%20C5%20Pro#bcrumbSearch:mobile%20cover
+- text: "1"
+- link "Samsung Galaxy F62":
+  - /url: https://www.snapdeal.com/products//filters/CompatiblePhoneModel_s~Samsung%20Galaxy%20F62#bcrumbSearch:mobile%20cover
+- text: "1"
+- link "Samsung Galaxy Grand Max":
+  - /url: https://www.snapdeal.com/products//filters/CompatiblePhoneModel_s~Samsung%20Galaxy%20Grand%20Max#bcrumbSearch:mobile%20cover
+- text: "1"
+- link "Samsung Galaxy J2 (2016)":
+  - /url: https://www.snapdeal.com/products//filters/CompatiblePhoneModel_s~Samsung%20Galaxy%20J2%20(2016)#bcrumbSearch:mobile%20cover
+- text: "1"
+- link "Samsung Galaxy Note 2":
+  - /url: https://www.snapdeal.com/products//filters/CompatiblePhoneModel_s~Samsung%20Galaxy%20Note%202#bcrumbSearch:mobile%20cover
+- text: "1"
+- link "Samsung Galaxy S21":
+  - /url: https://www.snapdeal.com/products//filters/CompatiblePhoneModel_s~Samsung%20Galaxy%20S21#bcrumbSearch:mobile%20cover
+- text: "1"
+- link "Samsung Galaxy S21 Ultra":
+  - /url: https://www.snapdeal.com/products//filters/CompatiblePhoneModel_s~Samsung%20Galaxy%20S21%20Ultra#bcrumbSearch:mobile%20cover
+- text: "1"
+- link "Samsung Galaxy S22 Plus":
+  - /url: https://www.snapdeal.com/products//filters/CompatiblePhoneModel_s~Samsung%20Galaxy%20S22%20Plus#bcrumbSearch:mobile%20cover
+- text: "2"
+- link "Samsung Galaxy S22 Ultra":
+  - /url: https://www.snapdeal.com/products//filters/CompatiblePhoneModel_s~Samsung%20Galaxy%20S22%20Ultra#bcrumbSearch:mobile%20cover
+- text: "7"
+- link "Samsung Galaxy S8":
+  - /url: https://www.snapdeal.com/products//filters/CompatiblePhoneModel_s~Samsung%20Galaxy%20S8#bcrumbSearch:mobile%20cover
+- text: "4"
+- link "Samsung Galaxy S8 Plus":
+  - /url: https://www.snapdeal.com/products//filters/CompatiblePhoneModel_s~Samsung%20Galaxy%20S8%20Plus#bcrumbSearch:mobile%20cover
+- text: "2"
+- link "Vivo Y21":
+  - /url: https://www.snapdeal.com/products//filters/CompatiblePhoneModel_s~Vivo%20Y21#bcrumbSearch:mobile%20cover
+- text: "2"
+- link "Vivo Y90":
+  - /url: https://www.snapdeal.com/products//filters/CompatiblePhoneModel_s~Vivo%20Y90#bcrumbSearch:mobile%20cover
+- text: "1"
+- link "Xiaomi Mi Max":
+  - /url: https://www.snapdeal.com/products//filters/CompatiblePhoneModel_s~Xiaomi%20Mi%20Max#bcrumbSearch:mobile%20cover
+- text: "1"
+- link "Xiaomi Mi5":
+  - /url: https://www.snapdeal.com/products//filters/CompatiblePhoneModel_s~Xiaomi%20Mi5#bcrumbSearch:mobile%20cover
+- text: "1"
+- link "Xiaomi Redmi":
+  - /url: https://www.snapdeal.com/products//filters/CompatiblePhoneModel_s~Xiaomi%20Redmi#bcrumbSearch:mobile%20cover
+- text: "3"
+- link "Xiaomi Redmi 3s Prime":
+  - /url: https://www.snapdeal.com/products//filters/CompatiblePhoneModel_s~Xiaomi%20Redmi%203s%20Prime#bcrumbSearch:mobile%20cover
+- text: "1"
+- link "Xiaomi Redmi 5":
+  - /url: https://www.snapdeal.com/products//filters/CompatiblePhoneModel_s~Xiaomi%20Redmi%205#bcrumbSearch:mobile%20cover
+- text: "2"
+- link "Xiaomi Redmi 9 Power":
+  - /url: https://www.snapdeal.com/products//filters/CompatiblePhoneModel_s~Xiaomi%20Redmi%209%20Power#bcrumbSearch:mobile%20cover
+- text: "5"
+- link "Xiaomi Redmi 9 Prime":
+  - /url: https://www.snapdeal.com/products//filters/CompatiblePhoneModel_s~Xiaomi%20Redmi%209%20Prime#bcrumbSearch:mobile%20cover
+- text: "6"
+- link "Xiaomi Redmi Mi4i":
+  - /url: https://www.snapdeal.com/products//filters/CompatiblePhoneModel_s~Xiaomi%20Redmi%20Mi4i#bcrumbSearch:mobile%20cover
+- text: "1"
+- link "Xiaomi Redmi Note 11 Pro":
+  - /url: https://www.snapdeal.com/products//filters/CompatiblePhoneModel_s~Xiaomi%20Redmi%20Note%2011%20Pro#bcrumbSearch:mobile%20cover
+- text: "2"
+- link "Xiaomi Redmi Note 3":
+  - /url: https://www.snapdeal.com/products//filters/CompatiblePhoneModel_s~Xiaomi%20Redmi%20Note%203#bcrumbSearch:mobile%20cover
+- text: "16"
+- link "Xiaomi Redmi Note 4":
+  - /url: https://www.snapdeal.com/products//filters/CompatiblePhoneModel_s~Xiaomi%20Redmi%20Note%204#bcrumbSearch:mobile%20cover
+- text: "1"
+- button "View More"
+- text: Color 
+- link "Black":
+  - /url: https://www.snapdeal.com/products//filters/Color_s~Black#bcrumbSearch:mobile%20cover
+- text: "70"
+- link "Blue":
+  - /url: https://www.snapdeal.com/products//filters/Color_s~Blue#bcrumbSearch:mobile%20cover
+- text: "94"
+- link "Brown":
+  - /url: https://www.snapdeal.com/products//filters/Color_s~Brown#bcrumbSearch:mobile%20cover
+- text: "19"
+- link "Fluorescent Green":
+  - /url: https://www.snapdeal.com/products//filters/Color_s~Fluorescent%20Green#bcrumbSearch:mobile%20cover
+- text: "1"
+- link "Gold":
+  - /url: https://www.snapdeal.com/products//filters/Color_s~Gold#bcrumbSearch:mobile%20cover
+- text: "3"
+- link "Green":
+  - /url: https://www.snapdeal.com/products//filters/Color_s~Green#bcrumbSearch:mobile%20cover
+- text: "26"
+- link "Grey":
+  - /url: https://www.snapdeal.com/products//filters/Color_s~Grey#bcrumbSearch:mobile%20cover
+- text: "20"
+- link "Light Blue":
+  - /url: https://www.snapdeal.com/products//filters/Color_s~Light%20Blue#bcrumbSearch:mobile%20cover
+- text: "1"
+- link "Mauve":
+  - /url: https://www.snapdeal.com/products//filters/Color_s~Mauve#bcrumbSearch:mobile%20cover
+- text: "1"
+- link "Multi":
+  - /url: https://www.snapdeal.com/products//filters/Color_s~Multi#bcrumbSearch:mobile%20cover
+- text: "12"
+- link "Multicolor":
+  - /url: https://www.snapdeal.com/products//filters/Color_s~Multicolor#bcrumbSearch:mobile%20cover
+- text: "176"
+- link "Pink":
+  - /url: https://www.snapdeal.com/products//filters/Color_s~Pink#bcrumbSearch:mobile%20cover
+- text: "7"
+- link "Purple":
+  - /url: https://www.snapdeal.com/products//filters/Color_s~Purple#bcrumbSearch:mobile%20cover
+- text: "12"
+- link "Red":
+  - /url: https://www.snapdeal.com/products//filters/Color_s~Red#bcrumbSearch:mobile%20cover
+- text: "11"
+- link "Silver":
+  - /url: https://www.snapdeal.com/products//filters/Color_s~Silver#bcrumbSearch:mobile%20cover
+- text: "5"
+- link "Teal":
+  - /url: https://www.snapdeal.com/products//filters/Color_s~Teal#bcrumbSearch:mobile%20cover
+- text: "2"
+- link "Transparent":
+  - /url: https://www.snapdeal.com/products//filters/Color_s~Transparent#bcrumbSearch:mobile%20cover
+- text: "2"
+- link "White":
+  - /url: https://www.snapdeal.com/products//filters/Color_s~White#bcrumbSearch:mobile%20cover
+- text: "5"
+- link "Yellow":
+  - /url: https://www.snapdeal.com/products//filters/Color_s~Yellow#bcrumbSearch:mobile%20cover
+- text: "3"
+- button "View More"
+- text: Pack 
+- link "Pack of 1":
+  - /url: https://www.snapdeal.com/products//filters/Pack_s~Pack%20of%201#bcrumbSearch:mobile%20cover
+- text: "451"
+- link "Pack of 2":
+  - /url: https://www.snapdeal.com/products//filters/Pack_s~Pack%20of%202#bcrumbSearch:mobile%20cover
+- text: "4"
+- link "Pack of 3":
+  - /url: https://www.snapdeal.com/products//filters/Pack_s~Pack%20of%203#bcrumbSearch:mobile%20cover
+- text: "4"
+- link "Pack of 4":
+  - /url: https://www.snapdeal.com/products//filters/Pack_s~Pack%20of%204#bcrumbSearch:mobile%20cover
+- text: "6"
+- link "Pack of 6":
+  - /url: https://www.snapdeal.com/products//filters/Pack_s~Pack%20of%206#bcrumbSearch:mobile%20cover
+- text: "1 Showing 958 items for mobile cover Sort by: Relevance "
+- textbox "Enter your pincode"
+- button "Check"
+- link "BIG WINGS Shock Proof Case Compatible For Polycarbonate Motorola Edge 50 Pro 5G ( Pack of 1 ) BIG WINGS Shock Proof Case Compatible For Polycarbonate Motorola Edge 50 Pro 5G ( Pack of 1 )":
+  - /url: https://www.snapdeal.com/product/big-wings-shock-proof-case/6917529682712470297#bcrumbSearch:mobile%20cover
+  - img "BIG WINGS Shock Proof Case Compatible For Polycarbonate Motorola Edge 50 Pro 5G ( Pack of 1 )"
+- link "BIG WINGS Shock Proof Case Compatible For Polycarbonate Motorola Edge 50 Pro 5G ( Pack of 1 ) Rs. 1,499 Rs. 338 77% Off ★★★★★ ★★★★★ (1)":
+  - /url: https://www.snapdeal.com/product/big-wings-shock-proof-case/6917529682712470297#bcrumbSearch:mobile%20cover
+  - paragraph: BIG WINGS Shock Proof Case Compatible For Polycarbonate Motorola Edge 50 Pro 5G ( Pack of 1 )
+  - text: Rs. 1,499 Rs. 338 77% Off ★★★★★ ★★★★★
+  - paragraph: (1)
+- link "BIG WINGS Plain Cases Compatible For Polycarbonate Samsung Galaxy S23 5G ( Pack of 1 ) BIG WINGS Plain Cases Compatible For Polycarbonate Samsung Galaxy S23 5G ( Pack of 1 )":
+  - /url: https://www.snapdeal.com/product/big-wings-plain-cases-compatible/7493990460678700333#bcrumbSearch:mobile%20cover
+  - img "BIG WINGS Plain Cases Compatible For Polycarbonate Samsung Galaxy S23 5G ( Pack of 1 )"
+- link "BIG WINGS Plain Cases Compatible For Polycarbonate Samsung Galaxy S23 5G ( Pack of 1 ) Rs. 1,999 Rs. 288 86% Off ★★★★★ ★★★★★ (1)":
+  - /url: https://www.snapdeal.com/product/big-wings-plain-cases-compatible/7493990460678700333#bcrumbSearch:mobile%20cover
+  - paragraph: BIG WINGS Plain Cases Compatible For Polycarbonate Samsung Galaxy S23 5G ( Pack of 1 )
+  - text: Rs. 1,999 Rs. 288 86% Off ★★★★★ ★★★★★
+  - paragraph: (1)
+- link "BIG WINGS Shock Proof Case Compatible For Polycarbonate Apple iPhone 15 Pro Max ( Pack of 1 ) BIG WINGS Shock Proof Case Compatible For Polycarbonate Apple iPhone 15 Pro Max ( Pack of 1 )":
+  - /url: https://www.snapdeal.com/product/big-wings-shock-proof-case/8070451181221820581#bcrumbSearch:mobile%20cover
+  - img "BIG WINGS Shock Proof Case Compatible For Polycarbonate Apple iPhone 15 Pro Max ( Pack of 1 )"
+- link "BIG WINGS Shock Proof Case Compatible For Polycarbonate Apple iPhone 15 Pro Max ( Pack of 1 ) Rs. 1,499 Rs. 288 81% Off ★★★★★ ★★★★★ (4)":
+  - /url: https://www.snapdeal.com/product/big-wings-shock-proof-case/8070451181221820581#bcrumbSearch:mobile%20cover
+  - paragraph: BIG WINGS Shock Proof Case Compatible For Polycarbonate Apple iPhone 15 Pro Max ( Pack of 1 )
+  - text: Rs. 1,499 Rs. 288 81% Off ★★★★★ ★★★★★
+  - paragraph: (4)
+- link "BIG WINGS Shock Proof Case Compatible For Polycarbonate Apple iPhone 13 ( Pack of 1 ) BIG WINGS Shock Proof Case Compatible For Polycarbonate Apple iPhone 13 ( Pack of 1 )":
+  - /url: https://www.snapdeal.com/product/big-wings-shock-proof-case/6341068899060968743#bcrumbSearch:mobile%20cover
+  - img "BIG WINGS Shock Proof Case Compatible For Polycarbonate Apple iPhone 13 ( Pack of 1 )"
+- link "BIG WINGS Shock Proof Case Compatible For Polycarbonate Apple iPhone 13 ( Pack of 1 ) Rs. 1,999 Rs. 388 81% Off ★★★★★ ★★★★★ (7)":
+  - /url: https://www.snapdeal.com/product/big-wings-shock-proof-case/6341068899060968743#bcrumbSearch:mobile%20cover
+  - paragraph: BIG WINGS Shock Proof Case Compatible For Polycarbonate Apple iPhone 13 ( Pack of 1 )
+  - text: Rs. 1,999 Rs. 388 81% Off ★★★★★ ★★★★★
+  - paragraph: (7)
+- link "MOBCURE Bumper Cases Compatible For Polycarbonate Poco C31 ( Pack of 1 ) MOBCURE Bumper Cases Compatible For Polycarbonate Poco C31 ( Pack of 1 )":
+  - /url: https://www.snapdeal.com/product/mobcure-bumper-cases-compatible-for/643470357856#bcrumbSearch:mobile%20cover
+  - img "MOBCURE Bumper Cases Compatible For Polycarbonate Poco C31 ( Pack of 1 )"
+- link "MOBCURE Bumper Cases Compatible For Polycarbonate Poco C31 ( Pack of 1 ) Rs. 1,099 Rs. 163 85% Off":
+  - /url: https://www.snapdeal.com/product/mobcure-bumper-cases-compatible-for/643470357856#bcrumbSearch:mobile%20cover
+  - paragraph: MOBCURE Bumper Cases Compatible For Polycarbonate Poco C31 ( Pack of 1 )
+  - text: Rs. 1,099 Rs. 163 85% Off
+- link "BIG WINGS Shock Proof Case Compatible For Polycarbonate Vivo Y90 ( Pack of 1 ) BIG WINGS Shock Proof Case Compatible For Polycarbonate Vivo Y90 ( Pack of 1 )":
+  - /url: https://www.snapdeal.com/product/big-wings-shock-proof-case/8070451169597774591#bcrumbSearch:mobile%20cover
+  - img "BIG WINGS Shock Proof Case Compatible For Polycarbonate Vivo Y90 ( Pack of 1 )"
+- link "BIG WINGS Shock Proof Case Compatible For Polycarbonate Vivo Y90 ( Pack of 1 ) Rs. 1,999 Rs. 288 86% Off ★★★★★ ★★★★★ (1)":
+  - /url: https://www.snapdeal.com/product/big-wings-shock-proof-case/8070451169597774591#bcrumbSearch:mobile%20cover
+  - paragraph: BIG WINGS Shock Proof Case Compatible For Polycarbonate Vivo Y90 ( Pack of 1 )
+  - text: Rs. 1,999 Rs. 288 86% Off ★★★★★ ★★★★★
+  - paragraph: (1)
+- link "BIG WINGS Plain Cases Compatible For Artificial Leather OnePlus Nord ce 4 5G ( Pack of 1 ) BIG WINGS Plain Cases Compatible For Artificial Leather OnePlus Nord ce 4 5G ( Pack of 1 )":
+  - /url: https://www.snapdeal.com/product/big-wings-plain-cases-compatible/6917529698431911166#bcrumbSearch:mobile%20cover
+  - img "BIG WINGS Plain Cases Compatible For Artificial Leather OnePlus Nord ce 4 5G ( Pack of 1 )"
+- link "BIG WINGS Plain Cases Compatible For Artificial Leather OnePlus Nord ce 4 5G ( Pack of 1 ) Rs. 1,499 Rs. 388 74% Off ★★★★★ ★★★★★ (2)":
+  - /url: https://www.snapdeal.com/product/big-wings-plain-cases-compatible/6917529698431911166#bcrumbSearch:mobile%20cover
+  - paragraph: BIG WINGS Plain Cases Compatible For Artificial Leather OnePlus Nord ce 4 5G ( Pack of 1 )
+  - text: Rs. 1,499 Rs. 388 74% Off ★★★★★ ★★★★★
+  - paragraph: (2)
+- link "BIG WINGS Shock Proof Case Compatible For Polycarbonate Apple iPhone 15 Pro Max ( Pack of 1 ) BIG WINGS Shock Proof Case Compatible For Polycarbonate Apple iPhone 15 Pro Max ( Pack of 1 )":
+  - /url: https://www.snapdeal.com/product/big-wings-shock-proof-case/6917529676614973605#bcrumbSearch:mobile%20cover
+  - img "BIG WINGS Shock Proof Case Compatible For Polycarbonate Apple iPhone 15 Pro Max ( Pack of 1 )"
+- link "BIG WINGS Shock Proof Case Compatible For Polycarbonate Apple iPhone 15 Pro Max ( Pack of 1 ) Rs. 1,499 Rs. 187 88% Off ★★★★★ ★★★★★ (4)":
+  - /url: https://www.snapdeal.com/product/big-wings-shock-proof-case/6917529676614973605#bcrumbSearch:mobile%20cover
+  - paragraph: BIG WINGS Shock Proof Case Compatible For Polycarbonate Apple iPhone 15 Pro Max ( Pack of 1 )
+  - text: Rs. 1,499 Rs. 187 88% Off ★★★★★ ★★★★★
+  - paragraph: (4)
+- link "BIG WINGS Shock Proof Case Compatible For Polycarbonate Apple iPhone 15 Pro Max ( Pack of 1 ) BIG WINGS Shock Proof Case Compatible For Polycarbonate Apple iPhone 15 Pro Max ( Pack of 1 )":
+  - /url: https://www.snapdeal.com/product/big-wings-shock-proof-case/5764608172008126629#bcrumbSearch:mobile%20cover
+  - img "BIG WINGS Shock Proof Case Compatible For Polycarbonate Apple iPhone 15 Pro Max ( Pack of 1 )"
+- link "BIG WINGS Shock Proof Case Compatible For Polycarbonate Apple iPhone 15 Pro Max ( Pack of 1 ) Rs. 1,499 Rs. 288 81% Off ★★★★★ ★★★★★ (4)":
+  - /url: https://www.snapdeal.com/product/big-wings-shock-proof-case/5764608172008126629#bcrumbSearch:mobile%20cover
+  - paragraph: BIG WINGS Shock Proof Case Compatible For Polycarbonate Apple iPhone 15 Pro Max ( Pack of 1 )
+  - text: Rs. 1,499 Rs. 288 81% Off ★★★★★ ★★★★★
+  - paragraph: (4)
+- link "BIG WINGS Shock Proof Case Compatible For Silicon Apple iPhone 6 ( Pack of 1 ) BIG WINGS Shock Proof Case Compatible For Silicon Apple iPhone 6 ( Pack of 1 )":
+  - /url: https://www.snapdeal.com/product/big-wings-shock-proof-case/5764608199704254370#bcrumbSearch:mobile%20cover
+  - img "BIG WINGS Shock Proof Case Compatible For Silicon Apple iPhone 6 ( Pack of 1 )"
+- link "BIG WINGS Shock Proof Case Compatible For Silicon Apple iPhone 6 ( Pack of 1 ) Rs. 999 Rs. 187 81% Off":
+  - /url: https://www.snapdeal.com/product/big-wings-shock-proof-case/5764608199704254370#bcrumbSearch:mobile%20cover
+  - paragraph: BIG WINGS Shock Proof Case Compatible For Silicon Apple iPhone 6 ( Pack of 1 )
+  - text: Rs. 999 Rs. 187 81% Off
+- link "BIG WINGS Shock Proof Case Compatible For Silicon Nothing Phone 2 ( Pack of 1 ) BIG WINGS Shock Proof Case Compatible For Silicon Nothing Phone 2 ( Pack of 1 )":
+  - /url: https://www.snapdeal.com/product/big-wings-shock-proof-case/8070451163908818461#bcrumbSearch:mobile%20cover
+  - img "BIG WINGS Shock Proof Case Compatible For Silicon Nothing Phone 2 ( Pack of 1 )"
+- link "BIG WINGS Shock Proof Case Compatible For Silicon Nothing Phone 2 ( Pack of 1 ) Rs. 1,499 Rs. 338 77% Off ★★★★★ ★★★★★ (1)":
+  - /url: https://www.snapdeal.com/product/big-wings-shock-proof-case/8070451163908818461#bcrumbSearch:mobile%20cover
+  - paragraph: BIG WINGS Shock Proof Case Compatible For Silicon Nothing Phone 2 ( Pack of 1 )
+  - text: Rs. 1,499 Rs. 338 77% Off ★★★★★ ★★★★★
+  - paragraph: (1)
+- link "BIG WINGS Shock Proof Case Compatible For Silicon Apple iPhone 13 Pro ( Pack of 1 ) BIG WINGS Shock Proof Case Compatible For Silicon Apple iPhone 13 Pro ( Pack of 1 )":
+  - /url: https://www.snapdeal.com/product/big-wings-shock-proof-case/8070451218748863857#bcrumbSearch:mobile%20cover
+  - img "BIG WINGS Shock Proof Case Compatible For Silicon Apple iPhone 13 Pro ( Pack of 1 )"
+- link "BIG WINGS Shock Proof Case Compatible For Silicon Apple iPhone 13 Pro ( Pack of 1 ) Rs. 1,499 Rs. 388 74% Off ★★★★★ ★★★★★ (2)":
+  - /url: https://www.snapdeal.com/product/big-wings-shock-proof-case/8070451218748863857#bcrumbSearch:mobile%20cover
+  - paragraph: BIG WINGS Shock Proof Case Compatible For Silicon Apple iPhone 13 Pro ( Pack of 1 )
+  - text: Rs. 1,499 Rs. 388 74% Off ★★★★★ ★★★★★
+  - paragraph: (2)
+- link "BIG WINGS Shock Proof Case Compatible For Polycarbonate Samsung Galaxy S25 Ultra 5g ( Pack of 1 ) BIG WINGS Shock Proof Case Compatible For Polycarbonate Samsung Galaxy S25 Ultra 5g ( Pack of 1 )":
+  - /url: https://www.snapdeal.com/product/big-wings-shock-proof-case/6917529652585419848#bcrumbSearch:mobile%20cover
+  - img "BIG WINGS Shock Proof Case Compatible For Polycarbonate Samsung Galaxy S25 Ultra 5g ( Pack of 1 )"
+- link "BIG WINGS Shock Proof Case Compatible For Polycarbonate Samsung Galaxy S25 Ultra 5g ( Pack of 1 ) Rs. 1,499 Rs. 338 77% Off ★★★★★ ★★★★★ (3)":
+  - /url: https://www.snapdeal.com/product/big-wings-shock-proof-case/6917529652585419848#bcrumbSearch:mobile%20cover
+  - paragraph: BIG WINGS Shock Proof Case Compatible For Polycarbonate Samsung Galaxy S25 Ultra 5g ( Pack of 1 )
+  - text: Rs. 1,499 Rs. 338 77% Off ★★★★★ ★★★★★
+  - paragraph: (3)
+- link "Gemesha Plain Cases Compatible For Polycarbonate Iphone 14 PRO MAX ( ) Gemesha Plain Cases Compatible For Polycarbonate Iphone 14 PRO MAX ( )":
+  - /url: https://www.snapdeal.com/product/gemesha-plain-cases-compatible-for/646788513005#bcrumbSearch:mobile%20cover
+  - img "Gemesha Plain Cases Compatible For Polycarbonate Iphone 14 PRO MAX ( )"
+- link "Gemesha Plain Cases Compatible For Polycarbonate Iphone 14 PRO MAX ( ) Rs. 599 Rs. 216 64% Off":
+  - /url: https://www.snapdeal.com/product/gemesha-plain-cases-compatible-for/646788513005#bcrumbSearch:mobile%20cover
+  - paragraph: Gemesha Plain Cases Compatible For Polycarbonate Iphone 14 PRO MAX ( )
+  - text: Rs. 599 Rs. 216 64% Off
+- link "BIG WINGS Shock Proof Case Compatible For Polycarbonate OnePlus Nord ce 4 5G ( Pack of 1 ) BIG WINGS Shock Proof Case Compatible For Polycarbonate OnePlus Nord ce 4 5G ( Pack of 1 )":
+  - /url: https://www.snapdeal.com/product/big-wings-shock-proof-case/6917529711623633825#bcrumbSearch:mobile%20cover
+  - img "BIG WINGS Shock Proof Case Compatible For Polycarbonate OnePlus Nord ce 4 5G ( Pack of 1 )"
+- link "BIG WINGS Shock Proof Case Compatible For Polycarbonate OnePlus Nord ce 4 5G ( Pack of 1 ) Rs. 1,499 Rs. 338 77% Off ★★★★★ ★★★★★ (6)":
+  - /url: https://www.snapdeal.com/product/big-wings-shock-proof-case/6917529711623633825#bcrumbSearch:mobile%20cover
+  - paragraph: BIG WINGS Shock Proof Case Compatible For Polycarbonate OnePlus Nord ce 4 5G ( Pack of 1 )
+  - text: Rs. 1,499 Rs. 338 77% Off ★★★★★ ★★★★★
+  - paragraph: (6)
+- link "BIG WINGS Plain Cases Compatible For Artificial Leather Samsung Galaxy A24 ( Pack of 1 ) BIG WINGS Plain Cases Compatible For Artificial Leather Samsung Galaxy A24 ( Pack of 1 )":
+  - /url: https://www.snapdeal.com/product/big-wings-plain-cases-compatible/8070451198850544865#bcrumbSearch:mobile%20cover
+  - img "BIG WINGS Plain Cases Compatible For Artificial Leather Samsung Galaxy A24 ( Pack of 1 )"
+- link "BIG WINGS Plain Cases Compatible For Artificial Leather Samsung Galaxy A24 ( Pack of 1 ) Rs. 1,999 Rs. 388 81% Off ★★★★★ ★★★★★ (1)":
+  - /url: https://www.snapdeal.com/product/big-wings-plain-cases-compatible/8070451198850544865#bcrumbSearch:mobile%20cover
+  - paragraph: BIG WINGS Plain Cases Compatible For Artificial Leather Samsung Galaxy A24 ( Pack of 1 )
+  - text: Rs. 1,999 Rs. 388 81% Off ★★★★★ ★★★★★
+  - paragraph: (1)
+- link "BIG WINGS Shock Proof Case Compatible For Polycarbonate Apple iPhone 14 Pro Max ( Pack of 1 ) BIG WINGS Shock Proof Case Compatible For Polycarbonate Apple iPhone 14 Pro Max ( Pack of 1 )":
+  - /url: https://www.snapdeal.com/product/big-wings-shock-proof-case/8070451211868999027#bcrumbSearch:mobile%20cover
+  - img "BIG WINGS Shock Proof Case Compatible For Polycarbonate Apple iPhone 14 Pro Max ( Pack of 1 )"
+- link "BIG WINGS Shock Proof Case Compatible For Polycarbonate Apple iPhone 14 Pro Max ( Pack of 1 ) Rs. 1,499 Rs. 308 79% Off ★★★★★ ★★★★★ (1)":
+  - /url: https://www.snapdeal.com/product/big-wings-shock-proof-case/8070451211868999027#bcrumbSearch:mobile%20cover
+  - paragraph: BIG WINGS Shock Proof Case Compatible For Polycarbonate Apple iPhone 14 Pro Max ( Pack of 1 )
+  - text: Rs. 1,499 Rs. 308 79% Off ★★★★★ ★★★★★
+  - paragraph: (1)
+- link "BIG WINGS Shock Proof Case Compatible For Polycarbonate Samsung Galaxy S23 FE 5G ( Pack of 1 ) BIG WINGS Shock Proof Case Compatible For Polycarbonate Samsung Galaxy S23 FE 5G ( Pack of 1 )":
+  - /url: https://www.snapdeal.com/product/big-wings-shock-proof-case/8070451203422047459#bcrumbSearch:mobile%20cover
+  - img "BIG WINGS Shock Proof Case Compatible For Polycarbonate Samsung Galaxy S23 FE 5G ( Pack of 1 )"
+- link "BIG WINGS Shock Proof Case Compatible For Polycarbonate Samsung Galaxy S23 FE 5G ( Pack of 1 ) Rs. 1,999 Rs. 288 86% Off ★★★★★ ★★★★★ (4)":
+  - /url: https://www.snapdeal.com/product/big-wings-shock-proof-case/8070451203422047459#bcrumbSearch:mobile%20cover
+  - paragraph: BIG WINGS Shock Proof Case Compatible For Polycarbonate Samsung Galaxy S23 FE 5G ( Pack of 1 )
+  - text: Rs. 1,999 Rs. 288 86% Off ★★★★★ ★★★★★
+  - paragraph: (4)
+- link "BIG WINGS Shock Proof Case Compatible For Silicon CMF PHONE 1 by nothing ( Pack of 1 ) BIG WINGS Shock Proof Case Compatible For Silicon CMF PHONE 1 by nothing ( Pack of 1 )":
+  - /url: https://www.snapdeal.com/product/big-wings-shock-proof-case/5764608199167261143#bcrumbSearch:mobile%20cover
+  - img "BIG WINGS Shock Proof Case Compatible For Silicon CMF PHONE 1 by nothing ( Pack of 1 )"
+- link "BIG WINGS Shock Proof Case Compatible For Silicon CMF PHONE 1 by nothing ( Pack of 1 ) Rs. 1,499 Rs. 338 77% Off":
+  - /url: https://www.snapdeal.com/product/big-wings-shock-proof-case/5764608199167261143#bcrumbSearch:mobile%20cover
+  - paragraph: BIG WINGS Shock Proof Case Compatible For Silicon CMF PHONE 1 by nothing ( Pack of 1 )
+  - text: Rs. 1,499 Rs. 338 77% Off
+- link "BIG WINGS Shock Proof Case Compatible For Polycarbonate MOTOROLA G34 5G ( Pack of 1 ) BIG WINGS Shock Proof Case Compatible For Polycarbonate MOTOROLA G34 5G ( Pack of 1 )":
+  - /url: https://www.snapdeal.com/product/big-wings-shock-proof-case/8070451211532982495#bcrumbSearch:mobile%20cover
+  - img "BIG WINGS Shock Proof Case Compatible For Polycarbonate MOTOROLA G34 5G ( Pack of 1 )"
+- link "BIG WINGS Shock Proof Case Compatible For Polycarbonate MOTOROLA G34 5G ( Pack of 1 ) Rs. 1,499 Rs. 338 77% Off ★★★★★ ★★★★★ (2)":
+  - /url: https://www.snapdeal.com/product/big-wings-shock-proof-case/8070451211532982495#bcrumbSearch:mobile%20cover
+  - paragraph: BIG WINGS Shock Proof Case Compatible For Polycarbonate MOTOROLA G34 5G ( Pack of 1 )
+  - text: Rs. 1,499 Rs. 338 77% Off ★★★★★ ★★★★★
+  - paragraph: (2)
+- text: Show 21 - 40 Items Did you find what you are looking for? Yes No
+- link "100% Secure Payments Moving your card details to a much more secured place":
+  - /url: https://www.snapdeal.com/page/terms#bcrumbSearch:mobile%20cover
+  - paragraph: 100% Secure Payments
+  - paragraph: Moving your card details to a much more
+  - paragraph: secured place
+- link "TrustPay 100% Payment Protection. Easy Return Policy":
+  - /url: https://www.snapdeal.com/page/TrustPay#bcrumbSearch:mobile%20cover
+  - paragraph: TrustPay
+  - paragraph: 100% Payment Protection. Easy
+  - paragraph: Return Policy
+- link "Help Center Got a question? Look no further. Browse our FAQs or submit your query here.":
+  - /url: https://www.snapdeal.com/help?redirectFrom=footerstrip#bcrumbSearch:mobile%20cover
+  - paragraph: Help Center
+  - paragraph: Got a question? Look no further.
+  - paragraph: Browse our FAQs or submit your query here.
+- link "Shop on the Go Download the app and get exciting app only offers at your fingertips":
+  - /url: https://play.google.com/store/apps/details?id=com.snapdeal.main&utm_source=web_footer&utm_campaign=android
+  - paragraph: Shop on the Go
+  - paragraph: Download the app and get exciting
+  - paragraph: app only offers at your fingertips
+- text: Policy Info
+- list:
+  - listitem:
+    - link "Privacy Policy":
+      - /url: https://www.snapdeal.com/page/privacy-policy#bcrumbSearch:mobile%20cover
+  - listitem:
+    - link "Terms of Sale":
+      - /url: https://www.snapdeal.com/page/terms-of-sale#bcrumbSearch:mobile%20cover
+  - listitem:
+    - link "Terms of Use":
+      - /url: https://www.snapdeal.com/offers/terms-of-use#bcrumbSearch:mobile%20cover
+  - listitem:
+    - link "Report Abuse & Takedown Policy":
+      - /url: https://www.snapdeal.com/page/abusePolicy#bcrumbSearch:mobile%20cover
+  - listitem:
+    - link "Know Your BIS Standard":
+      - /url: https://www.services.bis.gov.in/php/BIS_2.0/bisconnect/knowyourstandards/indian_standards/isdetails/
+  - listitem:
+    - link "Products Under Cumpulsory BIS Certification":
+      - /url: https://www.bis.gov.in/products-under-compulsory-certification/
+  - listitem:
+    - link "FAQ":
+      - /url: https://www.snapdeal.com/faq/faqhome#bcrumbSearch:mobile%20cover
+- text: Company
+- list:
+  - listitem:
+    - link "About Us":
+      - /url: http://www.snapdeal.com/page/about-us#bcrumbSearch:mobile%20cover
+  - listitem:
+    - link "Careers":
+      - /url: https://www.linkedin.com/company/snapdeal/
+  - listitem:
+    - link "Blog":
+      - /url: http://blog.snapdeal.com/
+  - listitem:
+    - link "Sitemap":
+      - /url: https://www.snapdeal.com/info/sitemap#bcrumbSearch:mobile%20cover
+  - listitem:
+    - link "Contact Us":
+      - /url: https://www.snapdeal.com/faq/faqCustomerCare#bcrumbSearch:mobile%20cover
+- text: Snapdeal Business
+- list:
+  - listitem:
+    - link "Shopping App":
+      - /url: https://play.google.com/store/apps/details?id=com.snapdeal.main&hl=en_IN
+  - listitem:
+    - link "Sell on Snapdeal":
+      - /url: http://sellers.snapdeal.com/
+  - listitem:
+    - link "Media Enquiries":
+      - /url: mailto:mediarelations@snapdeal.com
+- text: Popular Links
+- list:
+  - listitem:
+    - link "Lehenga":
+      - /url: https://www.snapdeal.com/products/women-apparel-lehenga#bcrumbSearch:mobile%20cover
+  - listitem:
+    - link "Kid's Clothing":
+      - /url: https://www.snapdeal.com/products/kids-clothing#bcrumbSearch:mobile%20cover
+  - listitem:
+    - link "Sarees":
+      - /url: https://www.snapdeal.com/products/women-apparel-sarees#bcrumbSearch:mobile%20cover
+  - listitem:
+    - link "Winter Wear":
+      - /url: https://www.snapdeal.com/products/mens-winter-wear-store#bcrumbSearch:mobile%20cover
+  - listitem:
+    - link "Sweatshirts":
+      - /url: https://www.snapdeal.com/products/men-apparel-sweatshirts#bcrumbSearch:mobile%20cover
+- text: Subscribe
+- textbox "Your email address"
+- button "Subscribe"
+- paragraph: Register now to get updates on promotions and
+- paragraph:
+  - text: coupons.
+  - link "Or Download App":
+    - /url: https://play.google.com/store/apps/details?id=com.snapdeal.main
+- paragraph: Payment
+- paragraph: Connect
+- link "Snapdeal Facebook Page":
+  - /url: https://www.facebook.com/Snapdeal
+  - img "Snapdeal Facebook Page"
+- link "Snapdeal Twitter Page":
+  - /url: https://twitter.com/snapdeal
+  - img "Snapdeal Twitter Page"
+- link "Snapdeal Instagram Page":
+  - /url: https://instagram.com/snapdeal/
+  - img "Snapdeal Instagram Page"
+- link "Snapdeal Linkedin Page":
+  - /url: https://www.linkedin.com/company/snapdeal/
+  - img "Snapdeal Linkedin Page"
+- link "Snapdeal Youtube Page":
+  - /url: https://www.youtube.com/user/snapdeal
+  - img "Snapdeal Youtube Page"
+- link "Telegram":
+  - /url: https://t.me/sdwapp
+  - img "Telegram"
+- link "Whats App":
+  - /url: https://wa.me/918130222868?text=Hello%20Snapdeal,%20I%20need%20help
+  - img "Whats App"
+- text: Copyright © 2021, Acevector Limited. All Rights Reserved Made for Bharat 
+```
+
+# Test source
+
+```ts
+  1  | 
+  2  | import { Page, Locator, expect } from "@playwright/test";
+  3  | 
+  4  | export class SearchPage {
+  5  | 
+  6  |     readonly page: Page;
+  7  |     readonly Suggestions: Locator;
+  8  |     readonly ProductName: Locator;
+  9  | 
+  10 |     constructor(page: Page) {
+  11 |         this.page = page;
+  12 | 
+  13 |         this.Suggestions = page.locator(
+  14 |             "//div[contains(@class,'HeaderStyle__AutoSuggestions')]//span//span"
+  15 |         );
+  16 | 
+  17 |         this.ProductName = page.locator(
+  18 |             "a.dp-widget-link"
+  19 |         ).filter({
+  20 |             hasText: "VDLooks Cotton Blend Regular Fit"
+  21 |         });
+  22 |     }
+  23 | 
+  24 |     async clickProduct() {
+  25 | 
+  26 |         console.log("Product count:", await this.ProductName.count());
+  27 | 
+> 28 |         await expect(this.ProductName.first()).toBeVisible({
+     |                                                ^ Error: expect(locator).toBeVisible() failed
+  29 |             timeout: 15000
+  30 |         });
+  31 | 
+  32 |         await this.ProductName.first().click();
+  33 |     }
+  34 | }
+  35 | 
+```

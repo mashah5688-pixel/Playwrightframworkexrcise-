@@ -1,0 +1,931 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: Search.spec.ts >> Click on product
+- Location: tests\Search.spec.ts:4:5
+
+# Error details
+
+```
+Test timeout of 30000ms exceeded.
+```
+
+```
+Error: browserContext.waitForEvent: Test timeout of 30000ms exceeded.
+```
+
+# Page snapshot
+
+```yaml
+- generic [ref=e1]:
+  - generic [ref=e4]:
+    - generic [ref=e5]:
+      - generic [ref=e6]: FREE Delivery
+      - generic [ref=e8]: 7 Days Easy Returns
+      - generic [ref=e10]: Best Prices
+    - generic [ref=e11]:
+      - link "Our Blog" [ref=e12] [cursor=pointer]:
+        - /url: http://blog.snapdeal.com/
+      - link "Help Center" [ref=e17] [cursor=pointer]:
+        - /url: https://www.snapdeal.com/helpcenter
+      - link "Sell on Snapdeal" [ref=e22] [cursor=pointer]:
+        - /url: https://sellers.snapdeal.com/
+  - generic [ref=e26]:
+    - generic [ref=e40]:
+      - generic [ref=e42]:
+        - generic [ref=e43]:
+          - generic: Brands & Products
+          - textbox [active] [ref=e44]
+        - generic [ref=e46]:
+          - generic [ref=e47]: Trending Searches
+          - generic [ref=e48] [cursor=pointer]: kitchen product
+          - generic [ref=e52] [cursor=pointer]: shoes for men
+          - generic [ref=e56] [cursor=pointer]: kurti set
+          - generic [ref=e60] [cursor=pointer]: sandal men
+          - generic [ref=e64] [cursor=pointer]: sport shoe men
+          - generic [ref=e68] [cursor=pointer]: saree
+          - generic [ref=e72] [cursor=pointer]: tshirt
+          - generic [ref=e76] [cursor=pointer]: wall stickers
+          - generic [ref=e80] [cursor=pointer]: bluetooth headphone
+          - generic [ref=e84] [cursor=pointer]: jeans pant
+          - generic [ref=e88] [cursor=pointer]: top
+          - generic [ref=e92] [cursor=pointer]: mens shirt
+      - generic [ref=e96] [cursor=pointer]: Login
+      - generic [ref=e102] [cursor=pointer]: My Cart
+      - button "Download App" [ref=e110] [cursor=pointer]
+    - generic [ref=e117]:
+      - generic [ref=e118] [cursor=pointer]:
+        - img "imgs/l/c/0/mensnavigationwebhome-92990.jpeg" [ref=e119]
+        - generic [ref=e120]: Men's Fashion
+      - generic [ref=e121] [cursor=pointer]:
+        - img "imgs/l/c/1/WoMen_sitenavne-d9da9.jpeg" [ref=e122]
+        - generic [ref=e123]: Women's Fashion
+      - generic [ref=e124] [cursor=pointer]:
+        - img "imgs/l/c/1/homesiteiconne-d6c37.jpeg" [ref=e125]
+        - generic [ref=e126]: Home & Kitchen
+      - generic [ref=e127] [cursor=pointer]:
+        - img "imgs/l/c/1/kidshomeico-c52fa.jpeg" [ref=e128]
+        - generic [ref=e129]: Kid's Fashion
+      - generic [ref=e130] [cursor=pointer]:
+        - img "imgs/l/c/1/Beauty_Site_homene-162a5.jpeg" [ref=e131]
+        - generic [ref=e132]: Beauty & Health
+      - generic [ref=e133] [cursor=pointer]:
+        - img "imgs/l/d/h/Automotive1-56b92.jpg" [ref=e134]
+        - generic [ref=e135]: Automotives
+      - generic [ref=e136] [cursor=pointer]:
+        - img "imgs/l/d/h/MobileAccessories1-32874.jpg" [ref=e137]
+        - generic [ref=e138]: Mobile Accessories
+      - generic [ref=e139] [cursor=pointer]:
+        - img "imgs/l/d/h/elctronic1-cbb06.jpg" [ref=e140]
+        - generic [ref=e141]: Electronics
+      - generic [ref=e142] [cursor=pointer]:
+        - img "imgs/l/d/h/sportsandfitnes1-b8667.jpg" [ref=e143]
+        - generic [ref=e144]: Sports & Fitness
+      - generic [ref=e145] [cursor=pointer]:
+        - img "imgs/l/d/h/computer11-f7d7d.jpg" [ref=e146]
+        - generic [ref=e147]: Computers & Gaming
+      - generic [ref=e148] [cursor=pointer]:
+        - img "imgs/l/d/h/book22-0de0f.jpg" [ref=e149]
+        - generic [ref=e150]: Books
+      - generic [ref=e151] [cursor=pointer]:
+        - img "imgs/l/d/h/hobby11-29566.jpg" [ref=e152]
+        - generic [ref=e153]: Hobbies
+  - generic [ref=e155]:
+    - generic [ref=e156]:
+      - generic [ref=e157]:
+        - link [ref=e159] [cursor=pointer]:
+          - /url: https://www.snapdeal.com/products/boys-clothing-sets?sort=plrty&q=Type_s%3AT-Shirt%20%26%20Shorts%7CPrice%3A113%2C299%7C
+          - img "ATOP" [ref=e160]
+        - link [ref=e162] [cursor=pointer]:
+          - /url: https://www.snapdeal.com/products/mens-tshirts-polos?sort=plrty&q=Price%3A77%2C249%7C
+          - img "ATOP" [ref=e163]
+        - link [ref=e165] [cursor=pointer]:
+          - /url: https://www.snapdeal.com/products/women-apparel-sarees?sort=plrty&q=Price%3A192%2C499%7C#bcrumbLabelId:3033
+          - img "ATOP" [ref=e166]
+        - link [ref=e168] [cursor=pointer]:
+          - /url: https://www.snapdeal.com/products/casual-shirts?sort=plrty&q=Price%3A167%2C399%7C#bcrumbLabelId:191
+          - img "ATOP" [ref=e169]
+        - link [ref=e171] [cursor=pointer]:
+          - /url: https://www.snapdeal.com/products/women-apparel-salwar-suits?sort=plrty&q=Price%3A215%2C599%7C#bcrumbLabelId:46102946
+          - img "ATOP" [ref=e172]
+        - link [ref=e174] [cursor=pointer]:
+          - /url: https://www.snapdeal.com/products/mens-footwear-slippers-floaters?sort=plrty&q=Price%3A142%2C299%7C#bcrumbLabelId:416
+          - img "ATOP" [ref=e175]
+        - link [ref=e177] [cursor=pointer]:
+          - /url: https://www.snapdeal.com/products/mens-footwear-casual-shoes?sort=plrty&q=Price%3A195%2C799%7C#bcrumbLabelId:257
+          - img "ATOP" [ref=e178]
+        - link [ref=e180] [cursor=pointer]:
+          - /url: https://www.snapdeal.com/products/boys-clothing-sets?sort=plrty&q=Type_s%3AT-Shirt%20%26%20Shorts%7CPrice%3A113%2C299%7C
+          - img "ATOP" [ref=e181]
+        - link [ref=e183] [cursor=pointer]:
+          - /url: https://www.snapdeal.com/products/mens-tshirts-polos?sort=plrty&q=Price%3A77%2C249%7C
+          - img "ATOP" [ref=e184]
+      - button "Previous" [ref=e185] [cursor=pointer]
+      - button "Next" [ref=e188] [cursor=pointer]
+      - generic [ref=e191]:
+        - generic [ref=e192] [cursor=pointer]
+        - generic [ref=e193] [cursor=pointer]
+        - generic [ref=e194] [cursor=pointer]
+        - generic [ref=e195] [cursor=pointer]
+        - generic [ref=e196] [cursor=pointer]
+        - generic [ref=e197] [cursor=pointer]
+        - generic [ref=e198] [cursor=pointer]
+    - img "freedeliverystripwebupdated" [ref=e200] [cursor=pointer]
+    - generic [ref=e201]:
+      - generic [ref=e202]: Deal Of The Day
+      - generic [ref=e203]:
+        - generic [ref=e204] [cursor=pointer]
+        - img "Travel Accessories" [ref=e210] [cursor=pointer]
+        - img "Jewellery" [ref=e212] [cursor=pointer]
+        - img "Makeup" [ref=e214] [cursor=pointer]
+        - img "Women's Innerwear" [ref=e216] [cursor=pointer]
+        - img "Salwar Suits" [ref=e218] [cursor=pointer]
+        - img "Dress Material" [ref=e220] [cursor=pointer]
+        - img "Sarees" [ref=e222] [cursor=pointer]
+        - img "Decor" [ref=e224] [cursor=pointer]
+        - img "Kurtis" [ref=e226] [cursor=pointer]
+        - img "Men's Shirts" [ref=e228] [cursor=pointer]
+        - img "Men's Open Footwear" [ref=e230] [cursor=pointer]
+        - img "Bedsheets" [ref=e232] [cursor=pointer]
+        - img "Belts & Wallets" [ref=e234] [cursor=pointer]
+        - img "Women's Accessories" [ref=e236] [cursor=pointer]
+        - img "Women's Topwear" [ref=e238] [cursor=pointer]
+        - generic [ref=e239] [cursor=pointer]
+    - img "appdownload" [ref=e245] [cursor=pointer]
+    - generic [ref=e246]:
+      - generic [ref=e247]: Explore More on Snapdeal
+      - generic [ref=e248]:
+        - generic [ref=e249] [cursor=pointer]:
+          - generic [ref=e251]: DUCKINS Tan Men's Sports Running Shoes
+          - generic [ref=e252]:
+            - generic [ref=e253]: ₹476
+            - generic [ref=e254]: ₹1999
+            - generic [ref=e255]: 76% off
+          - generic [ref=e256]:
+            - generic [ref=e260]: 4.3/5
+            - generic [ref=e261]: (150)
+        - generic [ref=e262] [cursor=pointer]:
+          - generic [ref=e264]: VCANEE Black Cotton Blend Regular Fit Men's Tracksuit ( Pack of 1 )
+          - generic [ref=e265]:
+            - generic [ref=e266]: ₹491
+            - generic [ref=e267]: ₹1999
+            - generic [ref=e268]: 75% off
+          - generic [ref=e269]:
+            - generic [ref=e273]: 3.9/5
+            - generic [ref=e274]: (112)
+        - generic [ref=e275] [cursor=pointer]:
+          - generic [ref=e277]: PIYURZ Pack of 6 Cotton Blend Hipster For Women ( Multi Color )
+          - generic [ref=e278]:
+            - generic [ref=e279]: ₹221
+            - generic [ref=e280]: ₹788
+            - generic [ref=e281]: 72% off
+          - generic [ref=e282]:
+            - generic [ref=e286]: 3.9/5
+            - generic [ref=e287]: (7544)
+        - generic [ref=e288] [cursor=pointer]:
+          - generic [ref=e290]: Stallion 500 Meter 4 Mode rechargeable battery zoomable Waterproof Torchlight LED Full Metal Body 10W Flashlight Torch Outdoor Search Light for home and camping hiking
+          - generic [ref=e291]:
+            - generic [ref=e292]: ₹210
+            - generic [ref=e293]: ₹542
+            - generic [ref=e294]: 61% off
+          - generic [ref=e295]:
+            - generic [ref=e299]: 4.1/5
+            - generic [ref=e300]: (2987)
+        - generic [ref=e301] [cursor=pointer]:
+          - generic [ref=e303]: Mcp MCP Nebulizer Mask Combo Adult and Child
+          - generic [ref=e304]:
+            - generic [ref=e305]: ₹164
+            - generic [ref=e306]: ₹600
+            - generic [ref=e307]: 73% off
+          - generic [ref=e308]:
+            - generic [ref=e312]: 4.2/5
+            - generic [ref=e313]: (116)
+        - generic [ref=e314] [cursor=pointer]:
+          - generic [ref=e316]: OLIVE OPS - BT Calling Smart Watch with Strap Upto 4 hours Backup ( BLACK )
+          - generic [ref=e317]:
+            - generic [ref=e318]: ₹424
+            - generic [ref=e319]: ₹1499
+            - generic [ref=e320]: 72% off
+          - generic [ref=e321]:
+            - generic [ref=e325]: 3.8/5
+            - generic [ref=e326]: (1607)
+        - generic [ref=e327] [cursor=pointer]:
+          - generic [ref=e329]: UBON T9 Gold Cordless,Corded Beard Trimmer With 120 minutes Runtime
+          - generic [ref=e330]:
+            - generic [ref=e331]: ₹279
+            - generic [ref=e332]: ₹499
+            - generic [ref=e333]: 44% off
+          - generic [ref=e334]:
+            - generic [ref=e338]: 4/5
+            - generic [ref=e339]: (6061)
+        - generic [ref=e340] [cursor=pointer]:
+          - generic [ref=e342]: PCS Animal Room Darkening Eyelet Door Curtain 5 ft ( Pack of 1 ) - Multicolor
+          - generic [ref=e343]:
+            - generic [ref=e344]: ₹272
+            - generic [ref=e345]: ₹999
+            - generic [ref=e346]: 73% off
+          - generic [ref=e347]:
+            - generic [ref=e351]: 4.2/5
+            - generic [ref=e352]: (479)
+        - generic [ref=e353] [cursor=pointer]:
+          - generic [ref=e355]: Loopa - Black Leather Men's Formal Belt ( Pack of 1 )
+          - generic [ref=e356]:
+            - generic [ref=e357]: ₹167
+            - generic [ref=e358]: ₹1099
+            - generic [ref=e359]: 85% off
+          - generic [ref=e360]:
+            - generic [ref=e364]: 4.1/5
+            - generic [ref=e365]: (4281)
+        - generic [ref=e366] [cursor=pointer]:
+          - generic [ref=e368]: MAAN Black Women's Gladiators Flats
+          - generic [ref=e369]:
+            - generic [ref=e370]: ₹187
+            - generic [ref=e371]: ₹1499
+            - generic [ref=e372]: 88% off
+          - generic [ref=e373]:
+            - generic [ref=e377]: 3.8/5
+            - generic [ref=e378]: (243)
+        - generic [ref=e379] [cursor=pointer]:
+          - generic [ref=e381]: SNDArt Engineered Wood Multicolor Piggy Bank ( Pack of 1 )
+          - generic [ref=e382]:
+            - generic [ref=e383]: ₹161
+            - generic [ref=e384]: ₹599
+            - generic [ref=e385]: 73% off
+          - generic [ref=e386]:
+            - generic [ref=e390]: 4.1/5
+            - generic [ref=e391]: (1089)
+        - generic [ref=e392] [cursor=pointer]:
+          - generic [ref=e394]: AROTEK Men Casual Wear Light Weight & Comfort Flip-Flop Slipper Daily Use Sandal Grey Men's Daily Slipper
+          - generic [ref=e395]:
+            - generic [ref=e396]: ₹211
+            - generic [ref=e397]: ₹899
+            - generic [ref=e398]: 77% off
+          - generic [ref=e399]:
+            - generic [ref=e403]: 4.1/5
+            - generic [ref=e404]: (238)
+        - generic [ref=e405] [cursor=pointer]:
+          - generic [ref=e407]: FAYROUZ Pack of 1 Unisex Hosiery Sweatshirt & Trackpant Set ( White )
+          - generic [ref=e408]:
+            - generic [ref=e409]: ₹210
+            - generic [ref=e410]: ₹1999
+            - generic [ref=e411]: 89% off
+          - generic [ref=e412]:
+            - generic [ref=e416]: 3.8/5
+            - generic [ref=e417]: (567)
+        - generic [ref=e418] [cursor=pointer]:
+          - generic [ref=e420]: PR Prints Multicolor Bracelet ( Pack of 1 )
+          - generic [ref=e421]:
+            - generic [ref=e422]: ₹177
+            - generic [ref=e423]: ₹699
+            - generic [ref=e424]: 75% off
+          - generic [ref=e425]:
+            - generic [ref=e429]: 4.2/5
+            - generic [ref=e430]: (312)
+        - generic [ref=e431] [cursor=pointer]:
+          - generic [ref=e433]: SGJET 4 UNIVERSAL SOCKET 3 SWITCH MULTI PLUG EXTENSION BOARD 4 Socket Extension Boards (White)
+          - generic [ref=e434]:
+            - generic [ref=e435]: ₹181
+            - generic [ref=e436]: ₹499
+            - generic [ref=e437]: 64% off
+          - generic [ref=e438]:
+            - generic [ref=e442]: 4.3/5
+            - generic [ref=e443]: (30079)
+        - generic [ref=e444] [cursor=pointer]:
+          - generic [ref=e446]: Life Like A10 PRO 2 Bluetooth Earbuds In Ear TWS Black
+          - generic [ref=e447]:
+            - generic [ref=e448]: ₹269
+            - generic [ref=e449]: ₹1499
+            - generic [ref=e450]: 82% off
+          - generic [ref=e451]:
+            - generic [ref=e455]: 3.8/5
+            - generic [ref=e456]: (1476)
+        - generic [ref=e457] [cursor=pointer]:
+          - generic [ref=e459]: ZOHA IMPEX Plastic Tiara For Women ( Medium , Pack of 3 )
+          - generic [ref=e460]:
+            - generic [ref=e461]: ₹165
+            - generic [ref=e462]: ₹499
+            - generic [ref=e463]: 67% off
+          - generic [ref=e464]:
+            - generic [ref=e468]: 4.1/5
+            - generic [ref=e469]: (109)
+        - generic [ref=e470] [cursor=pointer]:
+          - generic [ref=e472]: HIRU Fan Regulators 1 Module (Pack of 4)
+          - generic [ref=e473]:
+            - generic [ref=e474]: ₹163
+            - generic [ref=e475]: ₹399
+            - generic [ref=e476]: 59% off
+          - generic [ref=e477]:
+            - generic [ref=e481]: 4/5
+            - generic [ref=e482]: (1156)
+        - generic [ref=e483] [cursor=pointer]:
+          - generic [ref=e485]: HAMZ FASHION POINT Silver Hathphool ( Pack of 5 )
+          - generic [ref=e486]:
+            - generic [ref=e487]: ₹200
+            - generic [ref=e488]: ₹499
+            - generic [ref=e489]: 60% off
+          - generic [ref=e490]:
+            - generic [ref=e494]: 0/5
+            - generic [ref=e495]: (0)
+      - button "View More" [ref=e496] [cursor=pointer]
+  - generic [ref=e498]:
+    - generic [ref=e499]:
+      - generic [ref=e500]:
+        - heading "Policy Info" [level=4] [ref=e501]
+        - list [ref=e502]:
+          - listitem [ref=e503]:
+            - link "Privacy Policy" [ref=e504] [cursor=pointer]:
+              - /url: https://www.snapdeal.com/page/privacy-policy
+          - listitem [ref=e505]:
+            - link "Terms of Sale" [ref=e506] [cursor=pointer]:
+              - /url: https://www.snapdeal.com/page/terms-of-sale
+          - listitem [ref=e507]:
+            - link "Terms of Use" [ref=e508] [cursor=pointer]:
+              - /url: https://www.snapdeal.com/offers/terms-of-use
+          - listitem [ref=e509]:
+            - link "Report Abuse & Takedown Policy" [ref=e510] [cursor=pointer]:
+              - /url: https://www.snapdeal.com/page/abusePolicy
+          - listitem [ref=e511]:
+            - link "Know Your BIS Standard" [ref=e512] [cursor=pointer]:
+              - /url: https://www.services.bis.gov.in/php/BIS_2.0/bisconnect/knowyourstandards/indian_standards/isdetails/
+          - listitem [ref=e513]:
+            - link "Products Under Cumpulsory BIS Certification" [ref=e514] [cursor=pointer]:
+              - /url: https://www.bis.gov.in/products-under-compulsory-certification/
+          - listitem [ref=e515]:
+            - link "FAQ" [ref=e516] [cursor=pointer]:
+              - /url: https://www.snapdeal.com/faq/faqhome
+      - generic [ref=e517]:
+        - heading "Company" [level=4] [ref=e518]
+        - list [ref=e519]:
+          - listitem [ref=e520]:
+            - link "About Us" [ref=e521] [cursor=pointer]:
+              - /url: http://www.snapdeal.com/page/about-us
+          - listitem [ref=e522]:
+            - link "Careers" [ref=e523] [cursor=pointer]:
+              - /url: https://www.linkedin.com/company/snapdeal/
+          - listitem [ref=e524]:
+            - link "Blog" [ref=e525] [cursor=pointer]:
+              - /url: http://blog.snapdeal.com/
+          - listitem [ref=e526]:
+            - link "Sitemap" [ref=e527] [cursor=pointer]:
+              - /url: https://www.snapdeal.com/info/sitemap
+          - listitem [ref=e528]:
+            - link "Contact Us" [ref=e529] [cursor=pointer]:
+              - /url: https://www.snapdeal.com/faq/faqCustomerCare
+      - generic [ref=e530]:
+        - heading "Snapdeal Business" [level=4] [ref=e531]
+        - list [ref=e532]:
+          - listitem [ref=e533]:
+            - link "Shopping App" [ref=e534] [cursor=pointer]:
+              - /url: https://play.google.com/store/apps/details?id=com.snapdeal.main&hl=en_IN
+          - listitem [ref=e535]:
+            - link "Sell on Snapdeal" [ref=e536] [cursor=pointer]:
+              - /url: http://sellers.snapdeal.com/
+          - listitem [ref=e537]:
+            - link "Media Enquiries" [ref=e538] [cursor=pointer]:
+              - /url: mailto:mediarelations@snapdeal.com
+      - generic [ref=e539]:
+        - heading "Popular Links" [level=4] [ref=e540]
+        - list [ref=e541]:
+          - listitem [ref=e542]:
+            - link "Lehenga" [ref=e543] [cursor=pointer]:
+              - /url: https://www.snapdeal.com/products/women-apparel-lehenga
+          - listitem [ref=e544]:
+            - link "Kid's Clothing" [ref=e545] [cursor=pointer]:
+              - /url: https://www.snapdeal.com/products/kids-clothing
+          - listitem [ref=e546]:
+            - link "Sarees" [ref=e547] [cursor=pointer]:
+              - /url: https://www.snapdeal.com/products/women-apparel-sarees
+          - listitem [ref=e548]:
+            - link "Winter Wear" [ref=e549] [cursor=pointer]:
+              - /url: https://www.snapdeal.com/products/mens-winter-wear-store
+          - listitem [ref=e550]:
+            - link "Sweatshirts" [ref=e551] [cursor=pointer]:
+              - /url: https://www.snapdeal.com/products/men-apparel-sweatshirts
+    - generic [ref=e552]:
+      - generic [ref=e553]:
+        - generic [ref=e554]: Payment
+        - img "payment cards" [ref=e556]
+      - generic [ref=e557]:
+        - paragraph [ref=e558]: Connect
+        - generic [ref=e559]:
+          - link [ref=e560] [cursor=pointer]:
+            - /url: https://www.facebook.com/Snapdeal
+            - img "Snapdeal Facebook Page" [ref=e561]
+          - link [ref=e562] [cursor=pointer]:
+            - /url: https://twitter.com/snapdeal
+            - img "Snapdeal Twitter Page" [ref=e563]
+          - link [ref=e564] [cursor=pointer]:
+            - /url: https://instagram.com/snapdeal/
+            - img "Snapdeal Instagram Page" [ref=e565]
+          - link [ref=e566] [cursor=pointer]:
+            - /url: https://www.linkedin.com/company/snapdeal/
+            - img "Snapdeal Linkedin Page" [ref=e567]
+          - link [ref=e568] [cursor=pointer]:
+            - /url: https://www.youtube.com/user/snapdeal
+            - img "Snapdeal Youtube Page" [ref=e569]
+          - link [ref=e570] [cursor=pointer]:
+            - /url: https://t.me/sdwapp
+            - img "Telegram" [ref=e571]
+          - link [ref=e572] [cursor=pointer]:
+            - /url: https://wa.me/918130222868?text=Hello%20Snapdeal,%20I%20need%20help
+            - img "Whats App" [ref=e573]
+    - generic [ref=e574]:
+      - generic [ref=e575]:
+        - list [ref=e577]:
+          - link "Men:" [ref=e578] [cursor=pointer]:
+            - /url: https://www.snapdeal.com/products/men-apparel
+          - listitem [ref=e579]:
+            - link "Shirts for Men" [ref=e580] [cursor=pointer]:
+              - /url: https://www.snapdeal.com/products/men-apparel-shirts
+            - text: /
+          - listitem [ref=e581]:
+            - link "Casual Shirts for Men" [ref=e582] [cursor=pointer]:
+              - /url: https://www.snapdeal.com/products/casual-shirts
+            - text: /
+          - listitem [ref=e583]:
+            - link "Formal Shirts for Men" [ref=e584] [cursor=pointer]:
+              - /url: https://www.snapdeal.com/products/formal-shirts
+            - text: /
+          - listitem [ref=e585]:
+            - link "Hoodies for Men" [ref=e586] [cursor=pointer]:
+              - /url: https://www.snapdeal.com/products/men-apparel-sweatshirts/filters/NeckShape_s~Hooded
+            - text: /
+          - listitem [ref=e587]:
+            - link "Cotton Shirts for Men" [ref=e588] [cursor=pointer]:
+              - /url: https://www.snapdeal.com/products/men-apparel-shirts/filters/Fabric_s~100%20Percent%20Cotton
+            - text: /
+          - listitem [ref=e589]:
+            - link "T Shirts for Men" [ref=e590] [cursor=pointer]:
+              - /url: https://www.snapdeal.com/products/men-apparel-tshirts
+            - text: /
+          - listitem [ref=e591]:
+            - link "Polo T shirts" [ref=e592] [cursor=pointer]:
+              - /url: https://www.snapdeal.com/products/men-apparel-polo-tshirts
+            - text: /
+          - listitem [ref=e593]:
+            - link "Kurta Pajama for Men" [ref=e594] [cursor=pointer]:
+              - /url: https://m.snapdeal.com/products/men-ethnic-wear-kurta-pyjama-sets
+            - text: /
+          - listitem [ref=e595]:
+            - link "White Shirt" [ref=e596] [cursor=pointer]:
+              - /url: https://m.snapdeal.com/products/men-apparel-shirts/filters/Color_s~White
+            - text: /
+          - listitem [ref=e597]:
+            - link "Black Shirt" [ref=e598] [cursor=pointer]:
+              - /url: https://m.snapdeal.com/products/men-apparel-shirts/filters/Color_s~Black
+            - text: /
+          - listitem [ref=e599]:
+            - link "Lower for Men" [ref=e600] [cursor=pointer]:
+              - /url: https://m.snapdeal.com/products/men-apparel-trackpants
+            - text: /
+          - listitem [ref=e601]:
+            - link "Trousers for Men" [ref=e602] [cursor=pointer]:
+              - /url: https://www.snapdeal.com/products/men-apparel-trousers
+            - text: /
+          - listitem [ref=e603]:
+            - link "Jacket for Men" [ref=e604] [cursor=pointer]:
+              - /url: https://www.snapdeal.com/products/men-apparel-outerwear-jackets
+            - text: /
+          - listitem [ref=e605]:
+            - link "Formal Pants for Men" [ref=e606] [cursor=pointer]:
+              - /url: https://www.snapdeal.com/products/men-apparel-formal-trouser?sort=plrty#
+            - text: /
+          - listitem [ref=e607]:
+            - link "Tracksuit for Men" [ref=e608] [cursor=pointer]:
+              - /url: https://www.snapdeal.com/products/men-apparel-tracksuits
+            - text: /
+          - listitem [ref=e609]:
+            - link "Jeans for Men" [ref=e610] [cursor=pointer]:
+              - /url: https://www.snapdeal.com/products/men-apparel-jeans
+            - text: /
+          - listitem [ref=e611]:
+            - link "Kurta Payjama Sets" [ref=e612] [cursor=pointer]:
+              - /url: https://www.snapdeal.com/products/men-ethnic-wear-kurta-pyjama-sets/filters/Type_s~Kurta%20Pyjama%20Set
+            - text: /
+          - listitem [ref=e613]:
+            - link "Kurta for Men" [ref=e614] [cursor=pointer]:
+              - /url: https://www.snapdeal.com/products/men-ethnic-wear-kurtas
+            - text: /
+          - listitem [ref=e615]:
+            - link "Sweater for Men" [ref=e616] [cursor=pointer]:
+              - /url: https://www.snapdeal.com/products/men-apparel-sweaters
+        - list [ref=e618]:
+          - link "Women:" [ref=e619] [cursor=pointer]:
+            - /url: https://www.snapdeal.com/products/women-apparel
+          - listitem [ref=e620]:
+            - link "Tops for Women" [ref=e621] [cursor=pointer]:
+              - /url: https://www.snapdeal.com/products/women-apparel-tops-tunics
+            - text: /
+          - listitem [ref=e622]:
+            - link "Kurti" [ref=e623] [cursor=pointer]:
+              - /url: https://www.snapdeal.com/products/women-apparel-stiched-kurtis?sort=plrty#
+            - text: /
+          - listitem [ref=e624]:
+            - link "Cotton Sarees" [ref=e625] [cursor=pointer]:
+              - /url: https://www.snapdeal.com/products/women-apparel-sarees/filters/Fabric_s~Cotton
+            - text: /
+          - listitem [ref=e626]:
+            - link "Georgette Sarees" [ref=e627] [cursor=pointer]:
+              - /url: https://www.snapdeal.com/products/women-apparel-sarees/filters/Fabric_s~Georgette
+            - text: /
+          - listitem [ref=e628]:
+            - link "Chiffon Sarees" [ref=e629] [cursor=pointer]:
+              - /url: https://www.snapdeal.com/products/women-apparel-sarees/filters/Fabric_s~Chiffon
+            - text: /
+          - listitem [ref=e630]:
+            - link "Net Sarees" [ref=e631] [cursor=pointer]:
+              - /url: https://www.snapdeal.com/products/women-apparel-sarees/filters/Fabric_s~Net
+            - text: /
+          - listitem [ref=e632]:
+            - link "Dresses for Women" [ref=e633] [cursor=pointer]:
+              - /url: https://www.snapdeal.com/products/dresses-gowns-jumpsuits
+            - text: /
+          - listitem [ref=e634]:
+            - link "Jumpsuit for Women" [ref=e635] [cursor=pointer]:
+              - /url: https://www.snapdeal.com/products/women-apparel-jumpsuits
+            - text: /
+          - listitem [ref=e636]:
+            - link "Jeans for Women" [ref=e637] [cursor=pointer]:
+              - /url: https://www.snapdeal.com/products/women-apparel-trousers-jeans?sort=plrty#
+            - text: /
+          - listitem [ref=e638]:
+            - link "Salwar Suit" [ref=e639] [cursor=pointer]:
+              - /url: https://www.snapdeal.com/products/women-apparel-salwar-suits?sort=plrty#
+            - text: /
+          - listitem [ref=e640]:
+            - link "Bra" [ref=e641] [cursor=pointer]:
+              - /url: https://www.snapdeal.com/products/womens-innerwear-bras
+            - text: /
+          - listitem [ref=e642]:
+            - link "Jacket for Women" [ref=e643] [cursor=pointer]:
+              - /url: https://www.snapdeal.com/products/women-apparel-outerwear-jackets
+            - text: /
+          - listitem [ref=e644]:
+            - link "Night Dress for Women" [ref=e645] [cursor=pointer]:
+              - /url: https://www.snapdeal.com/products/women-apparel-nighties-nightdress?sort=plrty#
+            - text: /
+          - listitem [ref=e646]:
+            - link "Sweatshirt for Women" [ref=e647] [cursor=pointer]:
+              - /url: https://www.snapdeal.com/products/women-apparel-sweatshirts
+            - text: /
+          - listitem [ref=e648]:
+            - link "Shorts for Women" [ref=e649] [cursor=pointer]:
+              - /url: https://www.snapdeal.com/products/women-apparel-shorts?sort=plrty#
+            - text: /
+          - listitem [ref=e650]:
+            - link "Blouse" [ref=e651] [cursor=pointer]:
+              - /url: https://www.snapdeal.com/products/women-ethnicwear-blouse?sort=plrty#
+            - text: /
+          - listitem [ref=e652]:
+            - link "Dupatta" [ref=e653] [cursor=pointer]:
+              - /url: https://www.snapdeal.com/products/women-apparel-dupattas
+            - text: /
+          - listitem [ref=e654]:
+            - link "T Shirt for Women" [ref=e655] [cursor=pointer]:
+              - /url: https://www.snapdeal.com/products/women-apparel-tees
+            - text: /
+          - listitem [ref=e656]:
+            - link "Shirts for Women" [ref=e657] [cursor=pointer]:
+              - /url: https://www.snapdeal.com/products/women-apparel-shirts-blouses
+            - text: /
+          - listitem [ref=e658]:
+            - link "Skirts for Women" [ref=e659] [cursor=pointer]:
+              - /url: https://www.snapdeal.com/products/women-apparel-skirts
+            - text: /
+          - listitem [ref=e660]:
+            - link "Ethnic wear for Women" [ref=e661] [cursor=pointer]:
+              - /url: https://www.snapdeal.com/products/womens-ethnicwear?sort=plrty#
+            - text: /
+          - listitem [ref=e662]:
+            - link "Ethnic Bottomwear" [ref=e663] [cursor=pointer]:
+              - /url: https://www.snapdeal.com/products/women-apparel-ethnic-bottomwear?sort=plrty
+        - list [ref=e665]:
+          - link "Footwear:" [ref=e666] [cursor=pointer]:
+            - /url: https://www.snapdeal.com/products/footwear
+          - listitem [ref=e667]:
+            - link "Men's Footwear" [ref=e668] [cursor=pointer]:
+              - /url: https://www.snapdeal.com/products/mens-footwear
+            - text: /
+          - listitem [ref=e669]:
+            - link "Casual Shoes for Men" [ref=e670] [cursor=pointer]:
+              - /url: https://www.snapdeal.com/products/mens-footwear-casual-shoes
+            - text: /
+          - listitem [ref=e671]:
+            - link "Formal Shoes for Men" [ref=e672] [cursor=pointer]:
+              - /url: https://www.snapdeal.com/products/mens-footwear-formal-shoes
+            - text: /
+          - listitem [ref=e673]:
+            - link "Loafers for Men" [ref=e674] [cursor=pointer]:
+              - /url: https://www.snapdeal.com/products/mens-footwear-loafers
+            - text: /
+          - listitem [ref=e675]:
+            - link "Slippers for Men" [ref=e676] [cursor=pointer]:
+              - /url: https://www.snapdeal.com/products/mens-footwear-slippers-floaters
+            - text: /
+          - listitem [ref=e677]:
+            - link "Boots for Men" [ref=e678] [cursor=pointer]:
+              - /url: https://www.snapdeal.com/products/mens-footwear-boots
+            - text: /
+          - listitem [ref=e679]:
+            - link "Sandals for Men" [ref=e680] [cursor=pointer]:
+              - /url: https://www.snapdeal.com/products/mens-footwear-sandals
+            - text: /
+          - listitem [ref=e681]:
+            - link "Footwear for Women" [ref=e682] [cursor=pointer]:
+              - /url: https://www.snapdeal.com/products/womens-footwear
+            - text: /
+          - listitem [ref=e683]:
+            - link "Heels for Women" [ref=e684] [cursor=pointer]:
+              - /url: https://www.snapdeal.com/products/womens-footwear-heeled-slipon-pump
+            - text: /
+          - listitem [ref=e685]:
+            - link "Sandals for Women" [ref=e686] [cursor=pointer]:
+              - /url: https://www.snapdeal.com/products/womens-footwear-sandal
+            - text: /
+          - listitem [ref=e687]:
+            - link "Shoes for Women" [ref=e688] [cursor=pointer]:
+              - /url: https://www.snapdeal.com/products/womens-footwear-casual-shoes
+            - text: /
+          - listitem [ref=e689]:
+            - link "Sandals for Women" [ref=e690] [cursor=pointer]:
+              - /url: https://www.snapdeal.com/products/womens-footwear-floater-sandal
+            - text: /
+          - listitem [ref=e691]:
+            - link "Slippers for Women" [ref=e692] [cursor=pointer]:
+              - /url: https://www.snapdeal.com/products/womens-footwear-slippers-floaters
+            - text: /
+          - listitem [ref=e693]:
+            - link "Boots for Women" [ref=e694] [cursor=pointer]:
+              - /url: https://www.snapdeal.com/products/womens-footwear-boot
+            - text: /
+          - listitem [ref=e695]:
+            - link "Jutti for Women" [ref=e696] [cursor=pointer]:
+              - /url: https://www.snapdeal.com/products/womens-footwear-ethnic
+            - text: /
+          - listitem [ref=e697]:
+            - link "Sports Shoes for Women" [ref=e698] [cursor=pointer]:
+              - /url: https://www.snapdeal.com/products/womens-footwear-sports-shoes
+        - list [ref=e700]:
+          - link "Home & Kitchen:" [ref=e701] [cursor=pointer]:
+            - /url: https://www.snapdeal.com/products/home-kitchen
+          - listitem [ref=e702]:
+            - link "Wall Painting" [ref=e703] [cursor=pointer]:
+              - /url: https://www.snapdeal.com/products/paintings
+            - text: /
+          - listitem [ref=e704]:
+            - link "Wall Stickers" [ref=e705] [cursor=pointer]:
+              - /url: https://www.snapdeal.com/products/wall-stickers
+            - text: /
+          - listitem [ref=e706]:
+            - link "Dream Catcher" [ref=e707] [cursor=pointer]:
+              - /url: https://www.snapdeal.com/products/dream-catcher
+            - text: /
+          - listitem [ref=e708]:
+            - link "Rangoli Designs" [ref=e709] [cursor=pointer]:
+              - /url: https://www.snapdeal.com/products/decor-rangoli
+            - text: /
+          - listitem [ref=e710]:
+            - link "Clock" [ref=e711] [cursor=pointer]:
+              - /url: https://www.snapdeal.com/products/home-kitchen-clocks
+            - text: /
+          - listitem [ref=e712]:
+            - link "Wall Clock" [ref=e713] [cursor=pointer]:
+              - /url: https://www.snapdeal.com/products/wall-clocks
+            - text: /
+          - listitem [ref=e714]:
+            - link "Alarm Clock" [ref=e715] [cursor=pointer]:
+              - /url: https://www.snapdeal.com/products/alarm-clocks
+            - text: /
+          - listitem [ref=e716]:
+            - link "Diya" [ref=e717] [cursor=pointer]:
+              - /url: https://www.snapdeal.com/products/religion-spirituality-diyas
+            - text: /
+          - listitem [ref=e718]:
+            - link "Wall Hanging" [ref=e719] [cursor=pointer]:
+              - /url: https://www.snapdeal.com/products/wall-hangings
+            - text: /
+          - listitem [ref=e720]:
+            - link "Hanging & Ceiling Light" [ref=e721] [cursor=pointer]:
+              - /url: https://www.snapdeal.com/products/hanging-lamps-ceiling-lights
+            - text: /
+          - listitem [ref=e722]:
+            - link "Table Lamp" [ref=e723] [cursor=pointer]:
+              - /url: https://www.snapdeal.com/products/table-lamps
+            - text: /
+          - listitem [ref=e724]:
+            - link "Hanging Lights" [ref=e725] [cursor=pointer]:
+              - /url: https://www.snapdeal.com/products/hanging-lamps-ceiling-lights?sort=plrty
+            - text: /
+          - listitem [ref=e726]:
+            - link "LED Bulbs" [ref=e727] [cursor=pointer]:
+              - /url: https://www.snapdeal.com/products/led-bulbs?sort=plrty
+            - text: /
+          - listitem [ref=e728]:
+            - link "Torch Light" [ref=e729] [cursor=pointer]:
+              - /url: https://www.snapdeal.com/products/flashlights-torches
+            - text: /
+          - listitem [ref=e730]:
+            - link "Flower Vase" [ref=e731] [cursor=pointer]:
+              - /url: https://www.snapdeal.com/products/home-accents-florals-plants-vases
+            - text: /
+          - listitem [ref=e732]:
+            - link "Keychain" [ref=e733] [cursor=pointer]:
+              - /url: https://www.snapdeal.com/products/home-accents-key-chains
+            - text: /
+          - listitem [ref=e734]:
+            - link "Rudraksha" [ref=e735] [cursor=pointer]:
+              - /url: https://www.snapdeal.com/products/health-therapy-rudraksha
+            - text: /
+          - listitem [ref=e736]:
+            - link "Screwdriver" [ref=e737] [cursor=pointer]:
+              - /url: https://www.snapdeal.com/products/hand-tools-screwdrivers
+        - list [ref=e739]:
+          - link "Watch:" [ref=e740] [cursor=pointer]:
+            - /url: https://www.snapdeal.com/products/lifestyle-watches
+          - listitem [ref=e741]:
+            - link "Watch For Men" [ref=e742] [cursor=pointer]:
+              - /url: https://www.snapdeal.com/products/watches-men
+            - text: /
+          - listitem [ref=e743]:
+            - link "Womens Watches" [ref=e744] [cursor=pointer]:
+              - /url: https://www.snapdeal.com/products/watches-women
+            - text: /
+          - listitem [ref=e745]:
+            - link "Smart Watch" [ref=e746] [cursor=pointer]:
+              - /url: https://www.snapdeal.com/products/wearable-smartwatches?sort=plrty
+            - text: /
+          - listitem [ref=e747]:
+            - link "Boys Watch" [ref=e748] [cursor=pointer]:
+              - /url: https://www.snapdeal.com/products/boys-watches
+            - text: /
+          - listitem [ref=e749]:
+            - link "Girls Watch" [ref=e750] [cursor=pointer]:
+              - /url: https://m.snapdeal.com/products/girls-watches
+        - list [ref=e752]:
+          - link "Home Furnishing:" [ref=e753] [cursor=pointer]:
+            - /url: https://www.snapdeal.com/products/home-furnishing
+          - listitem [ref=e754]:
+            - link "Bed Sheet" [ref=e755] [cursor=pointer]:
+              - /url: https://www.snapdeal.com/products/bed-sheets
+            - text: /
+          - listitem [ref=e756]:
+            - link "Mosquito Net" [ref=e757] [cursor=pointer]:
+              - /url: https://www.snapdeal.com/products/moquito-nets
+            - text: /
+          - listitem [ref=e758]:
+            - link "Mattress" [ref=e759] [cursor=pointer]:
+              - /url: https://www.snapdeal.com/products/home-furnishing-mattress-protectors
+            - text: /
+          - listitem [ref=e760]:
+            - link "Curtains" [ref=e761] [cursor=pointer]:
+              - /url: https://www.snapdeal.com/products/curtains
+            - text: /
+          - listitem [ref=e762]:
+            - link "Sofa Cover" [ref=e763] [cursor=pointer]:
+              - /url: https://www.snapdeal.com/products/sofa-covers
+            - text: /
+          - listitem [ref=e764]:
+            - link "Blanket" [ref=e765] [cursor=pointer]:
+              - /url: https://www.snapdeal.com/products/blankets
+            - text: /
+          - listitem [ref=e766]:
+            - link "Pillow" [ref=e767] [cursor=pointer]:
+              - /url: https://www.snapdeal.com/products/fibre-pillows
+            - text: /
+          - listitem [ref=e768]:
+            - link "Carpet" [ref=e769] [cursor=pointer]:
+              - /url: https://www.snapdeal.com/products/carpets
+            - text: /
+          - listitem [ref=e770]:
+            - link "Apron" [ref=e771] [cursor=pointer]:
+              - /url: https://www.snapdeal.com/products/kitchen-aprons
+            - text: /
+          - listitem [ref=e772]:
+            - link "Quilt" [ref=e773] [cursor=pointer]:
+              - /url: https://www.snapdeal.com/products/quilt-comforter-rajai
+            - text: /
+          - listitem [ref=e774]:
+            - link "Floor Mat" [ref=e775] [cursor=pointer]:
+              - /url: https://www.snapdeal.com/products/floor-mats
+            - text: /
+          - listitem [ref=e776]:
+            - link "Towel" [ref=e777] [cursor=pointer]:
+              - /url: https://www.snapdeal.com/products/bath-towels
+            - text: /
+          - listitem [ref=e778]:
+            - link "Pillow Cover" [ref=e779] [cursor=pointer]:
+              - /url: https://www.snapdeal.com/products/pillow-covers
+        - list [ref=e781]:
+          - link "Electronics:" [ref=e782] [cursor=pointer]:
+            - /url: https://www.snapdeal.com/products/appliances-home
+          - listitem [ref=e783]:
+            - link "Bluetooth Speakers" [ref=e784] [cursor=pointer]:
+              - /url: https://www.snapdeal.com/products/electronics-bluetooth-speakers
+            - text: /
+          - listitem [ref=e785]:
+            - link "Headphones" [ref=e786] [cursor=pointer]:
+              - /url: https://www.snapdeal.com/products/electronics-headphones
+            - text: /
+          - listitem [ref=e787]:
+            - link "Earphone" [ref=e788] [cursor=pointer]:
+              - /url: https://www.snapdeal.com/products/electronics-earphones
+            - text: /
+          - listitem [ref=e789]:
+            - link "Trimmer" [ref=e790] [cursor=pointer]:
+              - /url: https://www.snapdeal.com/products/trimmers
+            - text: /
+          - listitem [ref=e791]:
+            - link "Hair Straightner" [ref=e792] [cursor=pointer]:
+              - /url: https://www.snapdeal.com/products/hair-straightners
+            - text: /
+          - listitem [ref=e793]:
+            - link "Hair Dryer" [ref=e794] [cursor=pointer]:
+              - /url: https://www.snapdeal.com/products/hair-dryers
+            - text: /
+          - listitem [ref=e795]:
+            - link "Water Purifier" [ref=e796] [cursor=pointer]:
+              - /url: https://www.snapdeal.com/products/appliances-water-purifiers
+            - text: /
+          - listitem [ref=e797]:
+            - link "Mixer Grinder" [ref=e798] [cursor=pointer]:
+              - /url: https://www.snapdeal.com/products/appliances-mixer-grinders
+            - text: /
+          - listitem [ref=e799]:
+            - link "Gas Stove" [ref=e800] [cursor=pointer]:
+              - /url: https://www.snapdeal.com/products/appliances-gas-stoves-hobs
+            - text: /
+          - listitem [ref=e801]:
+            - link "Electric Kettle" [ref=e802] [cursor=pointer]:
+              - /url: https://www.snapdeal.com/products/electric-kettle
+            - text: /
+          - listitem [ref=e803]:
+            - link "Computer Mouse" [ref=e804] [cursor=pointer]:
+              - /url: https://www.snapdeal.com/products/computers-mouse
+            - text: /
+          - listitem [ref=e805]:
+            - link "Computer Keyboard" [ref=e806] [cursor=pointer]:
+              - /url: https://www.snapdeal.com/products/computers-keyboard
+            - text: /
+          - listitem [ref=e807]:
+            - link "USB & HDMI Cables" [ref=e808] [cursor=pointer]:
+              - /url: https://www.snapdeal.com/products/computer-cables
+            - text: /
+          - listitem [ref=e809]:
+            - link "Computer Antivirus" [ref=e810] [cursor=pointer]:
+              - /url: https://www.snapdeal.com/products/computers-software-security
+        - list [ref=e812]:
+          - link "Mobiles Accessories:" [ref=e813] [cursor=pointer]:
+            - /url: https://www.snapdeal.com/products/mobiles-accessories
+          - listitem [ref=e814]:
+            - link "Mobile Covers" [ref=e815] [cursor=pointer]:
+              - /url: https://www.snapdeal.com/products/mobiles-cases-covers
+            - text: /
+          - listitem [ref=e816]:
+            - link "Leather Mobile Covers" [ref=e817] [cursor=pointer]:
+              - /url: https://www.snapdeal.com/products/mobiles-cases-covers/filters/Material_s~Leather
+            - text: /
+          - listitem [ref=e818]:
+            - link "Printed Back Covers" [ref=e819] [cursor=pointer]:
+              - /url: https://www.snapdeal.com/products/mobiles-printed-back-covers
+            - text: /
+          - listitem [ref=e820]:
+            - link "Tempered Glass" [ref=e821] [cursor=pointer]:
+              - /url: https://www.snapdeal.com/products/mobiles-tempered-glass
+      - generic [ref=e822]: Snapdeal is India's leading pure-play value Ecommerce platform. Founded in 2010 by Kunal Bahl and Rohit Bansal, Snapdeal is one of the top four online lifestyle shopping destinations of India. Snapdeal brings together a wide assortment of good quality and value- priced merchandise on its platform. Snapdeal's vision is to enable the shoppers of Bharat to experience the joy of living their aspirations through reliable, value-for-money shopping. With a personalized, multilingual interface and cutting edge technology, Snapdeal has simplified the shopping experience for its value-conscious buyers by showcasing the most relevant products- products that are a good functional fit with their needs and of a quality that lasts- thereby delivering true value to its customers. With its commitment to high service standards, Snapdeal suppliers operate under a well structured ecosystem that enables them to offer great quality products at affordable prices. With majority of the value-seeking, middle-income, price-conscious buyers coming from the non-metros, Snapdeal’s logistics networks powered by third party logistics cover more than 96% of India’s pin codes enabling order deliveries to more than 2500 towns and cities and expanding. Further, Snapdeal's mission is to become India’s value lifestyle omni-channel leader. We are excited about continuing to build a complete ecosystem around value commerce, where we can serve Bharat consumers wherever they are on their offline to online shopping journey. Snapdeal is part of the AceVector Group and one of India’s best-known e-commerce companies with an exclusive focus on the value segment.
+    - generic [ref=e823]:
+      - generic [ref=e824]: Copyright © 2021, AceVector Limited. All Rights Reserved
+      - generic [ref=e825]: Made for Bharat
+  - alert [ref=e829]
+```
+
+# Test source
+
+```ts
+  1  | import { test, expect } from "@playwright/test";
+  2  | import { SearchPage } from "../pages/SearchPage";
+  3  | 
+  4  | test("Click on product", async ({ page, context }) => {
+  5  | 
+  6  |     const searchPage = new SearchPage(page);
+  7  | 
+  8  |     await page.goto("https://www.snapdeal.com/");
+  9  | 
+  10 |     const [newPage] = await Promise.all([
+> 11 |         context.waitForEvent("page"),
+     |                 ^ Error: browserContext.waitForEvent: Test timeout of 30000ms exceeded.
+  12 |         searchPage.clickProduct()
+  13 |     ]);
+  14 | 
+  15 |     await newPage.waitForLoadState("domcontentloaded");
+  16 | 
+  17 |     console.log("Product URL:", newPage.url());
+  18 | 
+  19 |     await expect(newPage).toHaveURL(/product/);
+  20 | 
+  21 | });
+```

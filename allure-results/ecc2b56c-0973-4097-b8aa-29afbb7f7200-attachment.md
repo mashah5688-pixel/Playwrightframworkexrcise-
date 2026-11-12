@@ -1,0 +1,1938 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: Shoppingflow.spec.ts >> Snapdeal Shopping Flow: 1
+- Location: tests\Shoppingflow.spec.ts:9:9
+
+# Error details
+
+```
+Test timeout of 30000ms exceeded.
+```
+
+# Page snapshot
+
+```yaml
+- generic [ref=f2e1]:
+  - generic [ref=f2e2]:
+    - generic [ref=f2e4]:
+      - iframe
+    - generic [ref=f2e5]:
+      - generic [ref=f2e7]:
+        - generic [ref=f2e8]: India's leading online shopping destination
+        - generic [ref=f2e9]:
+          - link "Our Blog" [ref=f2e11] [cursor=pointer]:
+            - /url: http://blog.snapdeal.com/
+          - link "Help Center" [ref=f2e13] [cursor=pointer]:
+            - /url: /help#bcrumbSearch:mens%20shirt
+          - link "Sell On Snapdeal" [ref=f2e15] [cursor=pointer]:
+            - /url: https://sellers.snapdeal.com/
+          - link "Download App" [ref=f2e21] [cursor=pointer]:
+            - /url: http://www.snapdeal.com/offers/getsnapdealapp#bcrumbSearch:mens%20shirt
+      - generic [ref=f2e22]:
+        - generic:
+          - generic [ref=f2e23]:
+            - link [ref=f2e24] [cursor=pointer]:
+              - /url: https://www.snapdeal.com
+              - img "Snapdeal" [ref=f2e25]
+            - generic [ref=f2e26]: 
+          - generic [ref=f2e28]:
+            - textbox "Search products & brands" [ref=f2e30]: mens shirt
+            - button " Search" [ref=f2e31] [cursor=pointer]:
+              - generic [ref=f2e32]:
+                - generic [ref=f2e33]: 
+                - text: Search
+          - generic [ref=f2e34]:
+            - generic [ref=f2e36] [cursor=pointer]:
+              - text: Cart
+              - generic [ref=f2e37]: 
+            - generic [ref=f2e39] [cursor=pointer]:
+              - generic [ref=f2e40]: Sign In
+              - generic [ref=f2e41]: 
+              - text: 
+  - text: 
+  - generic [ref=f2e43]:
+    - generic [ref=f2e44]: 
+    - heading [level=3] [ref=f2e47]
+  - generic [ref=f2e49]:
+    - generic [ref=f2e52]:
+      - list [ref=f2e54]:
+        - listitem [ref=f2e55]:
+          - generic [ref=f2e56]: 
+          - link "Men's Clothing" [ref=f2e57] [cursor=pointer]:
+            - /url: https://www.snapdeal.com/search?keyword=mens%20shirt&santizedKeyword=mens%20shirt&catId=0&categoryId=17&suggested=false&vertical=p&noOfResults=20&searchState=k3%3Dtrue%7Ck5%3D0%7Ck6%3D0%7Ck7%3DIAGCGACAAAAAAAAAAAAAAAQAAAAAAAAAAAAAEAAAAEAAAAAAAAAAAAAAAAAAiAAAAAAAAAAAAAIAEAACAIAAAABCBAEg%7Ck8%3D0&clickSrc=searchOnSubCat&lastKeyword=&prodCatId=&changeBackToAll=true&foundInAll=false&categoryIdSearched=&cityPageUrl=&categoryUrl=&url=&utmContent=&dealDetail=#bcrumbSearch:mens%20shirt
+          - list [ref=f2e59]:
+            - listitem [ref=f2e60]:
+              - generic [ref=f2e61]: 
+              - link "Shirts For Men 54320" [ref=f2e62] [cursor=pointer]:
+                - /url: https://www.snapdeal.com/search?keyword=mens%20shirt&santizedKeyword=mens%20shirt&catId=0&categoryId=191&suggested=false&vertical=p&noOfResults=20&searchState=k3%3Dtrue%7Ck5%3D0%7Ck6%3D0%7Ck7%3DIAGCGACAAAAAAAAAAAAAAAQAAAAAAAAAAAAAEAAAAEAAAAAAAAAAAAAAAAAAiAAAAAAAAAAAAAIAEAACAIAAAABCBAEg%7Ck8%3D0&clickSrc=searchOnSubCat&lastKeyword=&prodCatId=&changeBackToAll=true&foundInAll=false&categoryIdSearched=&cityPageUrl=&categoryUrl=&url=&utmContent=&dealDetail=#bcrumbSearch:mens%20shirt
+                - generic [ref=f2e63]: Shirts For Men
+                - generic [ref=f2e64]: "54320"
+              - list:
+                - listitem [ref=f2e65]:
+                  - link "Casual Shirts for Men 45193" [ref=f2e66] [cursor=pointer]:
+                    - /url: https://www.snapdeal.com/search?keyword=mens%20shirt&santizedKeyword=mens%20shirt&catId=0&categoryId=2946&suggested=false&vertical=p&noOfResults=20&searchState=k3%3Dtrue%7Ck5%3D0%7Ck6%3D0%7Ck7%3DIAGCGACAAAAAAAAAAAAAAAQAAAAAAAAAAAAAEAAAAEAAAAAAAAAAAAAAAAAAiAAAAAAAAAAAAAIAEAACAIAAAABCBAEg%7Ck8%3D0&clickSrc=searchOnSubCat&lastKeyword=&prodCatId=&changeBackToAll=true&foundInAll=false&categoryIdSearched=&cityPageUrl=&categoryUrl=&url=&utmContent=&dealDetail=#bcrumbSearch:mens%20shirt
+                    - generic [ref=f2e67]: Casual Shirts for Men
+                    - generic [ref=f2e68]: "45193"
+                - listitem [ref=f2e69]:
+                  - link "Formal Shirts For Men 9127" [ref=f2e70] [cursor=pointer]:
+                    - /url: https://www.snapdeal.com/search?keyword=mens%20shirt&santizedKeyword=mens%20shirt&catId=0&categoryId=2934&suggested=false&vertical=p&noOfResults=20&searchState=k3%3Dtrue%7Ck5%3D0%7Ck6%3D0%7Ck7%3DIAGCGACAAAAAAAAAAAAAAAQAAAAAAAAAAAAAEAAAAEAAAAAAAAAAAAAAAAAAiAAAAAAAAAAAAAIAEAACAIAAAABCBAEg%7Ck8%3D0&clickSrc=searchOnSubCat&lastKeyword=&prodCatId=&changeBackToAll=true&foundInAll=false&categoryIdSearched=&cityPageUrl=&categoryUrl=&url=&utmContent=&dealDetail=#bcrumbSearch:mens%20shirt
+                    - generic [ref=f2e71]: Formal Shirts For Men
+                    - generic [ref=f2e72]: "9127"
+            - listitem [ref=f2e73]:
+              - generic [ref=f2e74]: 
+              - link "Men's T-Shirts & Polos 102172" [ref=f2e75] [cursor=pointer]:
+                - /url: https://www.snapdeal.com/search?keyword=mens%20shirt&santizedKeyword=mens%20shirt&catId=0&categoryId=3033&suggested=false&vertical=p&noOfResults=20&searchState=k3%3Dtrue%7Ck5%3D0%7Ck6%3D0%7Ck7%3DIAGCGACAAAAAAAAAAAAAAAQAAAAAAAAAAAAAEAAAAEAAAAAAAAAAAAAAAAAAiAAAAAAAAAAAAAIAEAACAIAAAABCBAEg%7Ck8%3D0&clickSrc=searchOnSubCat&lastKeyword=&prodCatId=&changeBackToAll=true&foundInAll=false&categoryIdSearched=&cityPageUrl=&categoryUrl=&url=&utmContent=&dealDetail=#bcrumbSearch:mens%20shirt
+                - generic [ref=f2e76]: Men's T-Shirts & Polos
+                - generic [ref=f2e77]: "102172"
+              - list:
+                - listitem [ref=f2e78]:
+                  - link "T Shirt For Men 60952" [ref=f2e79] [cursor=pointer]:
+                    - /url: https://www.snapdeal.com/search?keyword=mens%20shirt&santizedKeyword=mens%20shirt&catId=0&categoryId=193&suggested=false&vertical=p&noOfResults=20&searchState=k3%3Dtrue%7Ck5%3D0%7Ck6%3D0%7Ck7%3DIAGCGACAAAAAAAAAAAAAAAQAAAAAAAAAAAAAEAAAAEAAAAAAAAAAAAAAAAAAiAAAAAAAAAAAAAIAEAACAIAAAABCBAEg%7Ck8%3D0&clickSrc=searchOnSubCat&lastKeyword=&prodCatId=&changeBackToAll=true&foundInAll=false&categoryIdSearched=&cityPageUrl=&categoryUrl=&url=&utmContent=&dealDetail=#bcrumbSearch:mens%20shirt
+                    - generic [ref=f2e80]: T Shirt For Men
+                    - generic [ref=f2e81]: "60952"
+                - listitem [ref=f2e82]:
+                  - link "Polo T Shirt For Men 41220" [ref=f2e83] [cursor=pointer]:
+                    - /url: https://www.snapdeal.com/search?keyword=mens%20shirt&santizedKeyword=mens%20shirt&catId=0&categoryId=470&suggested=false&vertical=p&noOfResults=20&searchState=k3%3Dtrue%7Ck5%3D0%7Ck6%3D0%7Ck7%3DIAGCGACAAAAAAAAAAAAAAAQAAAAAAAAAAAAAEAAAAEAAAAAAAAAAAAAAAAAAiAAAAAAAAAAAAAIAEAACAIAAAABCBAEg%7Ck8%3D0&clickSrc=searchOnSubCat&lastKeyword=&prodCatId=&changeBackToAll=true&foundInAll=false&categoryIdSearched=&cityPageUrl=&categoryUrl=&url=&utmContent=&dealDetail=#bcrumbSearch:mens%20shirt
+                    - generic [ref=f2e84]: Polo T Shirt For Men
+                    - generic [ref=f2e85]: "41220"
+            - listitem [ref=f2e86]:
+              - generic [ref=f2e87]: 
+              - link "Ethnic Wear For Men 21485" [ref=f2e88] [cursor=pointer]:
+                - /url: https://www.snapdeal.com/search?keyword=mens%20shirt&santizedKeyword=mens%20shirt&catId=0&categoryId=110&suggested=false&vertical=p&noOfResults=20&searchState=k3%3Dtrue%7Ck5%3D0%7Ck6%3D0%7Ck7%3DIAGCGACAAAAAAAAAAAAAAAQAAAAAAAAAAAAAEAAAAEAAAAAAAAAAAAAAAAAAiAAAAAAAAAAAAAIAEAACAIAAAABCBAEg%7Ck8%3D0&clickSrc=searchOnSubCat&lastKeyword=&prodCatId=&changeBackToAll=true&foundInAll=false&categoryIdSearched=&cityPageUrl=&categoryUrl=&url=&utmContent=&dealDetail=#bcrumbSearch:mens%20shirt
+                - generic [ref=f2e89]: Ethnic Wear For Men
+                - generic [ref=f2e90]: "21485"
+              - list:
+                - listitem [ref=f2e91]:
+                  - link "Kurta For Men 21435" [ref=f2e92] [cursor=pointer]:
+                    - /url: https://www.snapdeal.com/search?keyword=mens%20shirt&santizedKeyword=mens%20shirt&catId=0&categoryId=46102651&suggested=false&vertical=p&noOfResults=20&searchState=k3%3Dtrue%7Ck5%3D0%7Ck6%3D0%7Ck7%3DIAGCGACAAAAAAAAAAAAAAAQAAAAAAAAAAAAAEAAAAEAAAAAAAAAAAAAAAAAAiAAAAAAAAAAAAAIAEAACAIAAAABCBAEg%7Ck8%3D0&clickSrc=searchOnSubCat&lastKeyword=&prodCatId=&changeBackToAll=true&foundInAll=false&categoryIdSearched=&cityPageUrl=&categoryUrl=&url=&utmContent=&dealDetail=#bcrumbSearch:mens%20shirt
+                    - generic [ref=f2e93]: Kurta For Men
+                    - generic [ref=f2e94]: "21435"
+                - listitem [ref=f2e95]:
+                  - link "Kurta Pyjama For Men 50" [ref=f2e96] [cursor=pointer]:
+                    - /url: https://www.snapdeal.com/search?keyword=mens%20shirt&santizedKeyword=mens%20shirt&catId=0&categoryId=46102656&suggested=false&vertical=p&noOfResults=20&searchState=k3%3Dtrue%7Ck5%3D0%7Ck6%3D0%7Ck7%3DIAGCGACAAAAAAAAAAAAAAAQAAAAAAAAAAAAAEAAAAEAAAAAAAAAAAAAAAAAAiAAAAAAAAAAAAAIAEAACAIAAAABCBAEg%7Ck8%3D0&clickSrc=searchOnSubCat&lastKeyword=&prodCatId=&changeBackToAll=true&foundInAll=false&categoryIdSearched=&cityPageUrl=&categoryUrl=&url=&utmContent=&dealDetail=#bcrumbSearch:mens%20shirt
+                    - generic [ref=f2e97]: Kurta Pyjama For Men
+                    - generic [ref=f2e98]: "50"
+            - listitem [ref=f2e99]:
+              - link "Unstitched Suit & Shirts For Men 1974" [ref=f2e100] [cursor=pointer]:
+                - /url: https://www.snapdeal.com/search?keyword=mens%20shirt&santizedKeyword=mens%20shirt&catId=0&categoryId=195&suggested=false&vertical=p&noOfResults=20&searchState=k3%3Dtrue%7Ck5%3D0%7Ck6%3D0%7Ck7%3DIAGCGACAAAAAAAAAAAAAAAQAAAAAAAAAAAAAEAAAAEAAAAAAAAAAAAAAAAAAiAAAAAAAAAAAAAIAEAACAIAAAABCBAEg%7Ck8%3D0&clickSrc=searchOnSubCat&lastKeyword=&prodCatId=&changeBackToAll=true&foundInAll=false&categoryIdSearched=&cityPageUrl=&categoryUrl=&url=&utmContent=&dealDetail=#bcrumbSearch:mens%20shirt
+                - generic [ref=f2e101]: Unstitched Suit & Shirts For Men
+                - generic [ref=f2e102]: "1974"
+            - listitem [ref=f2e103]:
+              - generic [ref=f2e104]: 
+              - link "Winter Wear For Men 13525" [ref=f2e105] [cursor=pointer]:
+                - /url: https://www.snapdeal.com/search?keyword=mens%20shirt&santizedKeyword=mens%20shirt&catId=0&categoryId=46138880&suggested=false&vertical=p&noOfResults=20&searchState=k3%3Dtrue%7Ck5%3D0%7Ck6%3D0%7Ck7%3DIAGCGACAAAAAAAAAAAAAAAQAAAAAAAAAAAAAEAAAAEAAAAAAAAAAAAAAAAAAiAAAAAAAAAAAAAIAEAACAIAAAABCBAEg%7Ck8%3D0&clickSrc=searchOnSubCat&lastKeyword=&prodCatId=&changeBackToAll=true&foundInAll=false&categoryIdSearched=&cityPageUrl=&categoryUrl=&url=&utmContent=&dealDetail=#bcrumbSearch:mens%20shirt
+                - generic [ref=f2e106]: Winter Wear For Men
+                - generic [ref=f2e107]: "13525"
+              - list:
+                - listitem [ref=f2e108]:
+                  - link "Sweatshirt For Men 13525" [ref=f2e109] [cursor=pointer]:
+                    - /url: https://www.snapdeal.com/search?keyword=mens%20shirt&santizedKeyword=mens%20shirt&catId=0&categoryId=358&suggested=false&vertical=p&noOfResults=20&searchState=k3%3Dtrue%7Ck5%3D0%7Ck6%3D0%7Ck7%3DIAGCGACAAAAAAAAAAAAAAAQAAAAAAAAAAAAAEAAAAEAAAAAAAAAAAAAAAAAAiAAAAAAAAAAAAAIAEAACAIAAAABCBAEg%7Ck8%3D0&clickSrc=searchOnSubCat&lastKeyword=&prodCatId=&changeBackToAll=true&foundInAll=false&categoryIdSearched=&cityPageUrl=&categoryUrl=&url=&utmContent=&dealDetail=#bcrumbSearch:mens%20shirt
+                    - generic [ref=f2e110]: Sweatshirt For Men
+                    - generic [ref=f2e111]: "13525"
+            - listitem [ref=f2e112]:
+              - generic [ref=f2e113]: 
+              - link "Sportswear For Men 5707" [ref=f2e114] [cursor=pointer]:
+                - /url: https://www.snapdeal.com/search?keyword=mens%20shirt&santizedKeyword=mens%20shirt&catId=0&categoryId=109&suggested=false&vertical=p&noOfResults=20&searchState=k3%3Dtrue%7Ck5%3D0%7Ck6%3D0%7Ck7%3DIAGCGACAAAAAAAAAAAAAAAQAAAAAAAAAAAAAEAAAAEAAAAAAAAAAAAAAAAAAiAAAAAAAAAAAAAIAEAACAIAAAABCBAEg%7Ck8%3D0&clickSrc=searchOnSubCat&lastKeyword=&prodCatId=&changeBackToAll=true&foundInAll=false&categoryIdSearched=&cityPageUrl=&categoryUrl=&url=&utmContent=&dealDetail=#bcrumbSearch:mens%20shirt
+                - generic [ref=f2e115]: Sportswear For Men
+                - generic [ref=f2e116]: "5707"
+              - list:
+                - listitem [ref=f2e117]:
+                  - link "Sports T-Shirts & Polos 5543" [ref=f2e118] [cursor=pointer]:
+                    - /url: https://www.snapdeal.com/search?keyword=mens%20shirt&santizedKeyword=mens%20shirt&catId=0&categoryId=46102723&suggested=false&vertical=p&noOfResults=20&searchState=k3%3Dtrue%7Ck5%3D0%7Ck6%3D0%7Ck7%3DIAGCGACAAAAAAAAAAAAAAAQAAAAAAAAAAAAAEAAAAEAAAAAAAAAAAAAAAAAAiAAAAAAAAAAAAAIAEAACAIAAAABCBAEg%7Ck8%3D0&clickSrc=searchOnSubCat&lastKeyword=&prodCatId=&changeBackToAll=true&foundInAll=false&categoryIdSearched=&cityPageUrl=&categoryUrl=&url=&utmContent=&dealDetail=#bcrumbSearch:mens%20shirt
+                    - generic [ref=f2e119]: Sports T-Shirts & Polos
+                    - generic [ref=f2e120]: "5543"
+                - listitem [ref=f2e121]:
+                  - link "Sports Jacket For Men 160" [ref=f2e122] [cursor=pointer]:
+                    - /url: https://www.snapdeal.com/search?keyword=mens%20shirt&santizedKeyword=mens%20shirt&catId=0&categoryId=46102727&suggested=false&vertical=p&noOfResults=20&searchState=k3%3Dtrue%7Ck5%3D0%7Ck6%3D0%7Ck7%3DIAGCGACAAAAAAAAAAAAAAAQAAAAAAAAAAAAAEAAAAEAAAAAAAAAAAAAAAAAAiAAAAAAAAAAAAAIAEAACAIAAAABCBAEg%7Ck8%3D0&clickSrc=searchOnSubCat&lastKeyword=&prodCatId=&changeBackToAll=true&foundInAll=false&categoryIdSearched=&cityPageUrl=&categoryUrl=&url=&utmContent=&dealDetail=#bcrumbSearch:mens%20shirt
+                    - generic [ref=f2e123]: Sports Jacket For Men
+                    - generic [ref=f2e124]: "160"
+                - listitem [ref=f2e125]:
+                  - link "Men's Sports Tights 4" [ref=f2e126] [cursor=pointer]:
+                    - /url: https://www.snapdeal.com/search?keyword=mens%20shirt&santizedKeyword=mens%20shirt&catId=0&categoryId=46102728&suggested=false&vertical=p&noOfResults=20&searchState=k3%3Dtrue%7Ck5%3D0%7Ck6%3D0%7Ck7%3DIAGCGACAAAAAAAAAAAAAAAQAAAAAAAAAAAAAEAAAAEAAAAAAAAAAAAAAAAAAiAAAAAAAAAAAAAIAEAACAIAAAABCBAEg%7Ck8%3D0&clickSrc=searchOnSubCat&lastKeyword=&prodCatId=&changeBackToAll=true&foundInAll=false&categoryIdSearched=&cityPageUrl=&categoryUrl=&url=&utmContent=&dealDetail=#bcrumbSearch:mens%20shirt
+                    - generic [ref=f2e127]: Men's Sports Tights
+                    - generic [ref=f2e128]: "4"
+            - listitem [ref=f2e129]:
+              - link "Men's Co-ords Set 3960" [ref=f2e130] [cursor=pointer]:
+                - /url: https://www.snapdeal.com/search?keyword=mens%20shirt&santizedKeyword=mens%20shirt&catId=0&categoryId=46139376&suggested=false&vertical=p&noOfResults=20&searchState=k3%3Dtrue%7Ck5%3D0%7Ck6%3D0%7Ck7%3DIAGCGACAAAAAAAAAAAAAAAQAAAAAAAAAAAAAEAAAAEAAAAAAAAAAAAAAAAAAiAAAAAAAAAAAAAIAEAACAIAAAABCBAEg%7Ck8%3D0&clickSrc=searchOnSubCat&lastKeyword=&prodCatId=&changeBackToAll=true&foundInAll=false&categoryIdSearched=&cityPageUrl=&categoryUrl=&url=&utmContent=&dealDetail=#bcrumbSearch:mens%20shirt
+                - generic [ref=f2e131]: Men's Co-ords Set
+                - generic [ref=f2e132]: "3960"
+            - listitem [ref=f2e133]:
+              - link "Couple Combos 455" [ref=f2e134] [cursor=pointer]:
+                - /url: https://www.snapdeal.com/search?keyword=mens%20shirt&santizedKeyword=mens%20shirt&catId=0&categoryId=46139436&suggested=false&vertical=p&noOfResults=20&searchState=k3%3Dtrue%7Ck5%3D0%7Ck6%3D0%7Ck7%3DIAGCGACAAAAAAAAAAAAAAAQAAAAAAAAAAAAAEAAAAEAAAAAAAAAAAAAAAAAAiAAAAAAAAAAAAAIAEAACAIAAAABCBAEg%7Ck8%3D0&clickSrc=searchOnSubCat&lastKeyword=&prodCatId=&changeBackToAll=true&foundInAll=false&categoryIdSearched=&cityPageUrl=&categoryUrl=&url=&utmContent=&dealDetail=#bcrumbSearch:mens%20shirt
+                - generic [ref=f2e135]: Couple Combos
+                - generic [ref=f2e136]: "455"
+            - listitem [ref=f2e137]:
+              - generic [ref=f2e138]: 
+              - link "Innerwear For Men 161" [ref=f2e139] [cursor=pointer]:
+                - /url: https://www.snapdeal.com/search?keyword=mens%20shirt&santizedKeyword=mens%20shirt&catId=0&categoryId=196&suggested=false&vertical=p&noOfResults=20&searchState=k3%3Dtrue%7Ck5%3D0%7Ck6%3D0%7Ck7%3DIAGCGACAAAAAAAAAAAAAAAQAAAAAAAAAAAAAEAAAAEAAAAAAAAAAAAAAAAAAiAAAAAAAAAAAAAIAEAACAIAAAABCBAEg%7Ck8%3D0&clickSrc=searchOnSubCat&lastKeyword=&prodCatId=&changeBackToAll=true&foundInAll=false&categoryIdSearched=&cityPageUrl=&categoryUrl=&url=&utmContent=&dealDetail=#bcrumbSearch:mens%20shirt
+                - generic [ref=f2e140]: Innerwear For Men
+                - generic [ref=f2e141]: "161"
+              - list:
+                - listitem [ref=f2e142]:
+                  - link "Night Suits For Men 161" [ref=f2e143] [cursor=pointer]:
+                    - /url: https://www.snapdeal.com/search?keyword=mens%20shirt&santizedKeyword=mens%20shirt&catId=0&categoryId=46102517&suggested=false&vertical=p&noOfResults=20&searchState=k3%3Dtrue%7Ck5%3D0%7Ck6%3D0%7Ck7%3DIAGCGACAAAAAAAAAAAAAAAQAAAAAAAAAAAAAEAAAAEAAAAAAAAAAAAAAAAAAiAAAAAAAAAAAAAIAEAACAIAAAABCBAEg%7Ck8%3D0&clickSrc=searchOnSubCat&lastKeyword=&prodCatId=&changeBackToAll=true&foundInAll=false&categoryIdSearched=&cityPageUrl=&categoryUrl=&url=&utmContent=&dealDetail=#bcrumbSearch:mens%20shirt
+                    - generic [ref=f2e144]: Night Suits For Men
+                    - generic [ref=f2e145]: "161"
+            - listitem [ref=f2e146]:
+              - generic [ref=f2e147]: 
+              - link "Men's Trackpants & Tracksuits 2" [ref=f2e148] [cursor=pointer]:
+                - /url: https://www.snapdeal.com/search?keyword=mens%20shirt&santizedKeyword=mens%20shirt&catId=0&categoryId=357&suggested=false&vertical=p&noOfResults=20&searchState=k3%3Dtrue%7Ck5%3D0%7Ck6%3D0%7Ck7%3DIAGCGACAAAAAAAAAAAAAAAQAAAAAAAAAAAAAEAAAAEAAAAAAAAAAAAAAAAAAiAAAAAAAAAAAAAIAEAACAIAAAABCBAEg%7Ck8%3D0&clickSrc=searchOnSubCat&lastKeyword=&prodCatId=&changeBackToAll=true&foundInAll=false&categoryIdSearched=&cityPageUrl=&categoryUrl=&url=&utmContent=&dealDetail=#bcrumbSearch:mens%20shirt
+                - generic [ref=f2e149]: Men's Trackpants & Tracksuits
+                - generic [ref=f2e150]: "2"
+              - list:
+                - listitem [ref=f2e151]:
+                  - link "Tracksuits For Men 2" [ref=f2e152] [cursor=pointer]:
+                    - /url: https://www.snapdeal.com/search?keyword=mens%20shirt&santizedKeyword=mens%20shirt&catId=0&categoryId=46102779&suggested=false&vertical=p&noOfResults=20&searchState=k3%3Dtrue%7Ck5%3D0%7Ck6%3D0%7Ck7%3DIAGCGACAAAAAAAAAAAAAAAQAAAAAAAAAAAAAEAAAAEAAAAAAAAAAAAAAAAAAiAAAAAAAAAAAAAIAEAACAIAAAABCBAEg%7Ck8%3D0&clickSrc=searchOnSubCat&lastKeyword=&prodCatId=&changeBackToAll=true&foundInAll=false&categoryIdSearched=&cityPageUrl=&categoryUrl=&url=&utmContent=&dealDetail=#bcrumbSearch:mens%20shirt
+                    - generic [ref=f2e153]: Tracksuits For Men
+                    - generic [ref=f2e154]: "2"
+            - listitem [ref=f2e155]:
+              - link "Men's Swimwear 1" [ref=f2e156] [cursor=pointer]:
+                - /url: https://www.snapdeal.com/search?keyword=mens%20shirt&santizedKeyword=mens%20shirt&catId=0&categoryId=46102725&suggested=false&vertical=p&noOfResults=20&searchState=k3%3Dtrue%7Ck5%3D0%7Ck6%3D0%7Ck7%3DIAGCGACAAAAAAAAAAAAAAAQAAAAAAAAAAAAAEAAAAEAAAAAAAAAAAAAAAAAAiAAAAAAAAAAAAAIAEAACAIAAAABCBAEg%7Ck8%3D0&clickSrc=searchOnSubCat&lastKeyword=&prodCatId=&changeBackToAll=true&foundInAll=false&categoryIdSearched=&cityPageUrl=&categoryUrl=&url=&utmContent=&dealDetail=#bcrumbSearch:mens%20shirt
+                - generic [ref=f2e157]: Men's Swimwear
+                - generic [ref=f2e158]: "1"
+      - separator [ref=f2e159]
+      - generic [ref=f2e160]:
+        - generic [ref=f2e161]:
+          - generic [ref=f2e162]:
+            - generic [ref=f2e163]: Price
+            - generic [ref=f2e164] [cursor=pointer]: 
+          - generic [ref=f2e167]:
+            - generic [ref=f2e168]:
+              - link [ref=f2e169] [cursor=pointer]:
+                - /url: "#bcrumbLabelId:175"
+              - link [ref=f2e170] [cursor=pointer]:
+                - /url: "#bcrumbLabelId:175"
+            - generic [ref=f2e172]:
+              - text: Rs. 120
+              - generic [ref=f2e173]: Rs. 2272
+            - generic [ref=f2e175]:
+              - textbox [ref=f2e176]: "120"
+              - generic [ref=f2e177]: Rs.
+            - generic [ref=f2e178]: "-"
+            - generic [ref=f2e180]:
+              - textbox [ref=f2e181]: "2272"
+              - generic [ref=f2e182]: Rs.
+            - generic [ref=f2e183] [cursor=pointer]: GO
+        - generic [ref=f2e184]:
+          - generic [ref=f2e185]:
+            - generic [ref=f2e186]: Customer Rating
+            - generic [ref=f2e187] [cursor=pointer]: 
+          - generic [ref=f2e190]:
+            - generic [ref=f2e192] [cursor=pointer]:
+              - link "★★★★★ ★★★★★ & Up":
+                - /url: https://www.snapdeal.com/products//filters/avgRating~4~$~0#bcrumbSearch:mens%20shirt
+                - generic:
+                  - generic: ★★★★★
+                  - generic: ★★★★★
+                - text: "& Up"
+              - generic [ref=f2e193]: "32108"
+            - generic [ref=f2e195] [cursor=pointer]:
+              - link "★★★★★ ★★★★★ & Up":
+                - /url: https://www.snapdeal.com/products//filters/avgRating~3~$~0#bcrumbSearch:mens%20shirt
+                - generic:
+                  - generic: ★★★★★
+                  - generic: ★★★★★
+                - text: "& Up"
+              - generic [ref=f2e196]: "52207"
+            - generic [ref=f2e198] [cursor=pointer]:
+              - link "★★★★★ ★★★★★ & Up":
+                - /url: https://www.snapdeal.com/products//filters/avgRating~2~$~0#bcrumbSearch:mens%20shirt
+                - generic:
+                  - generic: ★★★★★
+                  - generic: ★★★★★
+                - text: "& Up"
+              - generic [ref=f2e199]: "55599"
+            - generic [ref=f2e201] [cursor=pointer]:
+              - link "★★★★★ ★★★★★ & Up":
+                - /url: https://www.snapdeal.com/products//filters/avgRating~1~$~0#bcrumbSearch:mens%20shirt
+                - generic:
+                  - generic: ★★★★★
+                  - generic: ★★★★★
+                - text: "& Up"
+              - generic [ref=f2e202]: "58900"
+        - generic [ref=f2e203]:
+          - generic [ref=f2e204]:
+            - generic [ref=f2e205]: Discount %
+            - generic [ref=f2e206] [cursor=pointer]: 
+          - generic [ref=f2e208]:
+            - generic [ref=f2e209]:
+              - generic [ref=f2e211] [cursor=pointer]:
+                - link "0 - 10":
+                  - /url: https://www.snapdeal.com/products//filters/discount~0%20-%2010#bcrumbSearch:mens%20shirt
+                - generic [ref=f2e212]: "276"
+              - generic [ref=f2e214] [cursor=pointer]:
+                - link "10 - 20":
+                  - /url: https://www.snapdeal.com/products//filters/discount~10%20-%2020#bcrumbSearch:mens%20shirt
+                - generic [ref=f2e215]: "352"
+              - generic [ref=f2e217] [cursor=pointer]:
+                - link "20 - 30":
+                  - /url: https://www.snapdeal.com/products//filters/discount~20%20-%2030#bcrumbSearch:mens%20shirt
+                - generic [ref=f2e218]: "750"
+              - generic [ref=f2e220] [cursor=pointer]:
+                - link "30 - 40":
+                  - /url: https://www.snapdeal.com/products//filters/discount~30%20-%2040#bcrumbSearch:mens%20shirt
+                - generic [ref=f2e221]: "2146"
+              - generic [ref=f2e223] [cursor=pointer]:
+                - link "40 - 50":
+                  - /url: https://www.snapdeal.com/products//filters/discount~40%20-%2050#bcrumbSearch:mens%20shirt
+                - generic [ref=f2e224]: "6312"
+              - generic [ref=f2e226] [cursor=pointer]:
+                - link "50 - 60":
+                  - /url: https://www.snapdeal.com/products//filters/discount~50%20-%2060#bcrumbSearch:mens%20shirt
+                - generic [ref=f2e227]: "30316"
+              - generic [ref=f2e229] [cursor=pointer]:
+                - link "60 - 70":
+                  - /url: https://www.snapdeal.com/products//filters/discount~60%20-%2070#bcrumbSearch:mens%20shirt
+                - generic [ref=f2e230]: "52741"
+              - generic [ref=f2e232] [cursor=pointer]:
+                - link "70 - 80":
+                  - /url: https://www.snapdeal.com/products//filters/discount~70%20-%2080#bcrumbSearch:mens%20shirt
+                - generic [ref=f2e233]: "94408"
+              - generic [ref=f2e235] [cursor=pointer]:
+                - link "80 - 90":
+                  - /url: https://www.snapdeal.com/products//filters/discount~80%20-%2090#bcrumbSearch:mens%20shirt
+                - generic [ref=f2e236]: "44436"
+              - generic [ref=f2e238] [cursor=pointer]:
+                - link "90 - 100":
+                  - /url: https://www.snapdeal.com/products//filters/discount~90%20-%20100#bcrumbSearch:mens%20shirt
+                - generic [ref=f2e239]: "549"
+            - button "View More" [ref=f2e240] [cursor=pointer]
+        - generic [ref=f2e241]:
+          - generic [ref=f2e242]:
+            - generic [ref=f2e243]: Fabric Composition
+            - generic [ref=f2e244] [cursor=pointer]: 
+          - generic [ref=f2e249] [cursor=pointer]:
+            - link "60% Cotton & 40% Polyester":
+              - /url: https://www.snapdeal.com/products//filters/FabricComposition_s~60%%20Cotton%20&%2040%%20Polyester#bcrumbSearch:mens%20shirt
+            - generic [ref=f2e250]: "25"
+        - generic [ref=f2e251]:
+          - generic [ref=f2e252]:
+            - generic [ref=f2e253]: Number of Pocket
+            - generic [ref=f2e254] [cursor=pointer]: 
+          - generic [ref=f2e257]:
+            - generic [ref=f2e259] [cursor=pointer]:
+              - link "1":
+                - /url: https://www.snapdeal.com/products//filters/NumberofPocket_s~1#bcrumbSearch:mens%20shirt
+              - generic [ref=f2e260]: "4874"
+            - generic [ref=f2e262] [cursor=pointer]:
+              - link "Double Pocket":
+                - /url: https://www.snapdeal.com/products//filters/NumberofPocket_s~Double%20Pocket#bcrumbSearch:mens%20shirt
+              - generic [ref=f2e263]: "1449"
+            - generic [ref=f2e265] [cursor=pointer]:
+              - link "Multiple Pockets":
+                - /url: https://www.snapdeal.com/products//filters/NumberofPocket_s~Multiple%20Pockets#bcrumbSearch:mens%20shirt
+              - generic [ref=f2e266]: "1"
+            - generic [ref=f2e268] [cursor=pointer]:
+              - link "No Pocket":
+                - /url: https://www.snapdeal.com/products//filters/NumberofPocket_s~No%20Pocket#bcrumbSearch:mens%20shirt
+              - generic [ref=f2e269]: "15279"
+            - generic [ref=f2e271] [cursor=pointer]:
+              - link "Single Pocket":
+                - /url: https://www.snapdeal.com/products//filters/NumberofPocket_s~Single%20Pocket#bcrumbSearch:mens%20shirt
+              - generic [ref=f2e272]: "15743"
+        - generic [ref=f2e273]:
+          - generic [ref=f2e274]:
+            - generic [ref=f2e275]: Color
+            - generic [ref=f2e276] [cursor=pointer]: 
+          - generic:
+            - generic [ref=f2e278]:
+              - generic [ref=f2e280] [cursor=pointer]:
+                - link "Beige":
+                  - /url: https://www.snapdeal.com/products//filters/Color_s~Beige#bcrumbSearch:mens%20shirt
+                - generic [ref=f2e282]: "5736"
+              - generic [ref=f2e284] [cursor=pointer]:
+                - link "Black":
+                  - /url: https://www.snapdeal.com/products//filters/Color_s~Black#bcrumbSearch:mens%20shirt
+                - generic [ref=f2e286]: "26068"
+              - generic [ref=f2e288] [cursor=pointer]:
+                - link "Blue":
+                  - /url: https://www.snapdeal.com/products//filters/Color_s~Blue#bcrumbSearch:mens%20shirt
+                - generic [ref=f2e290]: "14348"
+              - generic [ref=f2e292] [cursor=pointer]:
+                - link "Bronze":
+                  - /url: https://www.snapdeal.com/products//filters/Color_s~Bronze#bcrumbSearch:mens%20shirt
+                - generic [ref=f2e294]: "46"
+              - generic [ref=f2e296] [cursor=pointer]:
+                - link "Brown":
+                  - /url: https://www.snapdeal.com/products//filters/Color_s~Brown#bcrumbSearch:mens%20shirt
+                - generic [ref=f2e298]: "6622"
+              - generic [ref=f2e300] [cursor=pointer]:
+                - link "Burgandy":
+                  - /url: https://www.snapdeal.com/products//filters/Color_s~Burgandy#bcrumbSearch:mens%20shirt
+                - generic [ref=f2e302]: "1"
+              - generic [ref=f2e304] [cursor=pointer]:
+                - link "Burgundy":
+                  - /url: https://www.snapdeal.com/products//filters/Color_s~Burgundy#bcrumbSearch:mens%20shirt
+                - generic [ref=f2e306]: "98"
+              - generic [ref=f2e308] [cursor=pointer]:
+                - link "Camel":
+                  - /url: https://www.snapdeal.com/products//filters/Color_s~Camel#bcrumbSearch:mens%20shirt
+                - generic [ref=f2e310]: "168"
+              - generic [ref=f2e312] [cursor=pointer]:
+                - link "Charcoal":
+                  - /url: https://www.snapdeal.com/products//filters/Color_s~Charcoal#bcrumbSearch:mens%20shirt
+                - generic [ref=f2e314]: "228"
+              - generic [ref=f2e316] [cursor=pointer]:
+                - link "Coffee":
+                  - /url: https://www.snapdeal.com/products//filters/Color_s~Coffee#bcrumbSearch:mens%20shirt
+                - generic [ref=f2e318]: "662"
+              - generic [ref=f2e320] [cursor=pointer]:
+                - link "Coral":
+                  - /url: https://www.snapdeal.com/products//filters/Color_s~Coral#bcrumbSearch:mens%20shirt
+                - generic [ref=f2e322]: "172"
+              - generic [ref=f2e324] [cursor=pointer]:
+                - link "Cream":
+                  - /url: https://www.snapdeal.com/products//filters/Color_s~Cream#bcrumbSearch:mens%20shirt
+                - generic [ref=f2e326]: "1225"
+              - generic [ref=f2e328] [cursor=pointer]:
+                - link "Dark Grey":
+                  - /url: https://www.snapdeal.com/products//filters/Color_s~Dark%20Grey#bcrumbSearch:mens%20shirt
+                - generic [ref=f2e330]: "424"
+              - generic [ref=f2e332] [cursor=pointer]:
+                - link "Fluorescent Green":
+                  - /url: https://www.snapdeal.com/products//filters/Color_s~Fluorescent%20Green#bcrumbSearch:mens%20shirt
+                - generic [ref=f2e334]: "60"
+              - generic [ref=f2e336] [cursor=pointer]:
+                - link "Fluorescent Orange":
+                  - /url: https://www.snapdeal.com/products//filters/Color_s~Fluorescent%20Orange#bcrumbSearch:mens%20shirt
+                - generic [ref=f2e338]: "30"
+              - generic [ref=f2e340] [cursor=pointer]:
+                - link "Fluorescent Pink":
+                  - /url: https://www.snapdeal.com/products//filters/Color_s~Fluorescent%20Pink#bcrumbSearch:mens%20shirt
+                - generic [ref=f2e342]: "32"
+              - generic [ref=f2e344] [cursor=pointer]:
+                - link "Gold":
+                  - /url: https://www.snapdeal.com/products//filters/Color_s~Gold#bcrumbSearch:mens%20shirt
+                - generic [ref=f2e346]: "867"
+              - generic [ref=f2e348] [cursor=pointer]:
+                - link "Green":
+                  - /url: https://www.snapdeal.com/products//filters/Color_s~Green#bcrumbSearch:mens%20shirt
+                - generic [ref=f2e350]: "11760"
+              - generic [ref=f2e352] [cursor=pointer]:
+                - link "Grey":
+                  - /url: https://www.snapdeal.com/products//filters/Color_s~Grey#bcrumbSearch:mens%20shirt
+                - generic [ref=f2e354]: "10816"
+              - generic [ref=f2e356] [cursor=pointer]:
+                - link "Grey Melange":
+                  - /url: https://www.snapdeal.com/products//filters/Color_s~Grey%20Melange#bcrumbSearch:mens%20shirt
+                - generic [ref=f2e358]: "208"
+              - generic [ref=f2e360] [cursor=pointer]:
+                - link "Indigo":
+                  - /url: https://www.snapdeal.com/products//filters/Color_s~Indigo#bcrumbSearch:mens%20shirt
+                - generic [ref=f2e362]: "1679"
+              - generic [ref=f2e364] [cursor=pointer]:
+                - link "Khaki":
+                  - /url: https://www.snapdeal.com/products//filters/Color_s~Khaki#bcrumbSearch:mens%20shirt
+                - generic [ref=f2e366]: "440"
+              - generic [ref=f2e368] [cursor=pointer]:
+                - link "Lavender":
+                  - /url: https://www.snapdeal.com/products//filters/Color_s~Lavender#bcrumbSearch:mens%20shirt
+                - generic [ref=f2e370]: "1343"
+              - generic [ref=f2e372] [cursor=pointer]:
+                - link "Light Blue":
+                  - /url: https://www.snapdeal.com/products//filters/Color_s~Light%20Blue#bcrumbSearch:mens%20shirt
+                - generic [ref=f2e374]: "3324"
+              - generic [ref=f2e376] [cursor=pointer]:
+                - link "Light Grey":
+                  - /url: https://www.snapdeal.com/products//filters/Color_s~Light%20Grey#bcrumbSearch:mens%20shirt
+                - generic [ref=f2e378]: "525"
+              - generic [ref=f2e380] [cursor=pointer]:
+                - link "Lime Green":
+                  - /url: https://www.snapdeal.com/products//filters/Color_s~Lime%20Green#bcrumbSearch:mens%20shirt
+                - generic [ref=f2e382]: "322"
+              - generic [ref=f2e384] [cursor=pointer]:
+                - link "Magenta":
+                  - /url: https://www.snapdeal.com/products//filters/Color_s~Magenta#bcrumbSearch:mens%20shirt
+                - generic [ref=f2e386]: "894"
+              - generic [ref=f2e388] [cursor=pointer]:
+                - link "Maroon":
+                  - /url: https://www.snapdeal.com/products//filters/Color_s~Maroon#bcrumbSearch:mens%20shirt
+                - generic [ref=f2e390]: "10260"
+              - generic [ref=f2e392] [cursor=pointer]:
+                - link "Mauve":
+                  - /url: https://www.snapdeal.com/products//filters/Color_s~Mauve#bcrumbSearch:mens%20shirt
+                - generic [ref=f2e394]: "131"
+              - generic [ref=f2e396] [cursor=pointer]:
+                - link "Mint Green":
+                  - /url: https://www.snapdeal.com/products//filters/Color_s~Mint%20Green#bcrumbSearch:mens%20shirt
+                - generic [ref=f2e398]: "723"
+              - generic [ref=f2e400] [cursor=pointer]:
+                - link "Multi":
+                  - /url: https://www.snapdeal.com/products//filters/Color_s~Multi#bcrumbSearch:mens%20shirt
+                - generic [ref=f2e402]: "3510"
+              - generic [ref=f2e404] [cursor=pointer]:
+                - link "Multicolor":
+                  - /url: https://www.snapdeal.com/products//filters/Color_s~Multicolor#bcrumbSearch:mens%20shirt
+                - generic [ref=f2e406]: "26586"
+              - generic [ref=f2e408] [cursor=pointer]:
+                - link "Mustard":
+                  - /url: https://www.snapdeal.com/products//filters/Color_s~Mustard#bcrumbSearch:mens%20shirt
+                - generic [ref=f2e410]: "1203"
+              - generic [ref=f2e412] [cursor=pointer]:
+                - link "Navy":
+                  - /url: https://www.snapdeal.com/products//filters/Color_s~Navy#bcrumbSearch:mens%20shirt
+                - generic [ref=f2e414]: "2668"
+              - generic [ref=f2e416] [cursor=pointer]:
+                - link "Navy Blue":
+                  - /url: https://www.snapdeal.com/products//filters/Color_s~Navy%20Blue#bcrumbSearch:mens%20shirt
+                - generic [ref=f2e418]: "5707"
+              - generic [ref=f2e420] [cursor=pointer]:
+                - link "Nude":
+                  - /url: https://www.snapdeal.com/products//filters/Color_s~Nude#bcrumbSearch:mens%20shirt
+                - generic [ref=f2e422]: "32"
+              - generic [ref=f2e424] [cursor=pointer]:
+                - link "Off White":
+                  - /url: https://www.snapdeal.com/products//filters/Color_s~Off%20White#bcrumbSearch:mens%20shirt
+                - generic [ref=f2e426]: "335"
+              - generic [ref=f2e428] [cursor=pointer]:
+                - link "Off-White":
+                  - /url: https://www.snapdeal.com/products//filters/Color_s~Off-White#bcrumbSearch:mens%20shirt
+                - generic [ref=f2e430]: "309"
+              - generic [ref=f2e432] [cursor=pointer]:
+                - link "Olive":
+                  - /url: https://www.snapdeal.com/products//filters/Color_s~Olive#bcrumbSearch:mens%20shirt
+                - generic [ref=f2e434]: "1839"
+              - generic [ref=f2e436] [cursor=pointer]:
+                - link "Orange":
+                  - /url: https://www.snapdeal.com/products//filters/Color_s~Orange#bcrumbSearch:mens%20shirt
+                - generic [ref=f2e438]: "3138"
+              - generic [ref=f2e440] [cursor=pointer]:
+                - link "Peach":
+                  - /url: https://www.snapdeal.com/products//filters/Color_s~Peach#bcrumbSearch:mens%20shirt
+                - generic [ref=f2e442]: "2668"
+              - generic [ref=f2e444] [cursor=pointer]:
+                - link "Pink":
+                  - /url: https://www.snapdeal.com/products//filters/Color_s~Pink#bcrumbSearch:mens%20shirt
+                - generic [ref=f2e446]: "6265"
+              - generic [ref=f2e448] [cursor=pointer]:
+                - link "Purple":
+                  - /url: https://www.snapdeal.com/products//filters/Color_s~Purple#bcrumbSearch:mens%20shirt
+                - generic [ref=f2e450]: "3057"
+              - generic [ref=f2e452] [cursor=pointer]:
+                - link "Red":
+                  - /url: https://www.snapdeal.com/products//filters/Color_s~Red#bcrumbSearch:mens%20shirt
+                - generic [ref=f2e454]: "6465"
+              - generic [ref=f2e456] [cursor=pointer]:
+                - link "Rose Gold":
+                  - /url: https://www.snapdeal.com/products//filters/Color_s~Rose%20Gold#bcrumbSearch:mens%20shirt
+                - generic [ref=f2e458]: "59"
+              - generic [ref=f2e460] [cursor=pointer]:
+                - link "Royal Blue":
+                  - /url: https://www.snapdeal.com/products//filters/Color_s~Royal%20Blue#bcrumbSearch:mens%20shirt
+                - generic [ref=f2e462]: "8"
+              - generic [ref=f2e464] [cursor=pointer]:
+                - link "Rust":
+                  - /url: https://www.snapdeal.com/products//filters/Color_s~Rust#bcrumbSearch:mens%20shirt
+                - generic [ref=f2e466]: "588"
+              - generic [ref=f2e468] [cursor=pointer]:
+                - link "Sea Green":
+                  - /url: https://www.snapdeal.com/products//filters/Color_s~Sea%20Green#bcrumbSearch:mens%20shirt
+                - generic [ref=f2e470]: "3031"
+              - generic [ref=f2e472] [cursor=pointer]:
+                - link "Silver":
+                  - /url: https://www.snapdeal.com/products//filters/Color_s~Silver#bcrumbSearch:mens%20shirt
+                - generic [ref=f2e474]: "756"
+              - generic [ref=f2e476] [cursor=pointer]:
+                - link "Tan":
+                  - /url: https://www.snapdeal.com/products//filters/Color_s~Tan#bcrumbSearch:mens%20shirt
+                - generic [ref=f2e478]: "84"
+              - generic [ref=f2e480] [cursor=pointer]:
+                - link "Teal":
+                  - /url: https://www.snapdeal.com/products//filters/Color_s~Teal#bcrumbSearch:mens%20shirt
+                - generic [ref=f2e482]: "1076"
+              - generic [ref=f2e484] [cursor=pointer]:
+                - link "Turquoise":
+                  - /url: https://www.snapdeal.com/products//filters/Color_s~Turquoise#bcrumbSearch:mens%20shirt
+                - generic [ref=f2e486]: "2588"
+              - generic [ref=f2e488] [cursor=pointer]:
+                - link "Violet":
+                  - /url: https://www.snapdeal.com/products//filters/Color_s~Violet#bcrumbSearch:mens%20shirt
+                - generic [ref=f2e490]: "4"
+              - generic [ref=f2e492] [cursor=pointer]:
+                - link "White":
+                  - /url: https://www.snapdeal.com/products//filters/Color_s~White#bcrumbSearch:mens%20shirt
+                - generic [ref=f2e494]: "19618"
+              - generic [ref=f2e496] [cursor=pointer]:
+                - link "Wine":
+                  - /url: https://www.snapdeal.com/products//filters/Color_s~Wine#bcrumbSearch:mens%20shirt
+                - generic [ref=f2e498]: "674"
+              - generic [ref=f2e500] [cursor=pointer]:
+                - link "Yellow":
+                  - /url: https://www.snapdeal.com/products//filters/Color_s~Yellow#bcrumbSearch:mens%20shirt
+                - generic [ref=f2e502]: "6327"
+            - button "View More" [ref=f2e503] [cursor=pointer]
+        - generic [ref=f2e504]:
+          - generic [ref=f2e505]:
+            - generic [ref=f2e506]: Size
+            - generic [ref=f2e507] [cursor=pointer]: 
+          - generic:
+            - generic [ref=f2e509]:
+              - generic [ref=f2e511] [cursor=pointer]:
+                - link "0-1 Month":
+                  - /url: https://www.snapdeal.com/products//filters/Size_s~0-1%20Month#bcrumbSearch:mens%20shirt
+                - generic [ref=f2e512]: "25"
+              - generic [ref=f2e514] [cursor=pointer]:
+                - link "0-3 Months":
+                  - /url: https://www.snapdeal.com/products//filters/Size_s~0-3%20Months#bcrumbSearch:mens%20shirt
+                - generic [ref=f2e515]: "171"
+              - generic [ref=f2e517] [cursor=pointer]:
+                - link "0-6 Months":
+                  - /url: https://www.snapdeal.com/products//filters/Size_s~0-6%20Months#bcrumbSearch:mens%20shirt
+                - generic [ref=f2e518]: "157"
+              - generic [ref=f2e520] [cursor=pointer]:
+                - link "1.2 Metre":
+                  - /url: https://www.snapdeal.com/products//filters/Size_s~1~$~2%20Metre#bcrumbSearch:mens%20shirt
+                - generic [ref=f2e521]: "283"
+              - generic [ref=f2e523] [cursor=pointer]:
+                - link "1.3 Metre":
+                  - /url: https://www.snapdeal.com/products//filters/Size_s~1~$~3%20Metre#bcrumbSearch:mens%20shirt
+                - generic [ref=f2e524]: "226"
+              - generic [ref=f2e526] [cursor=pointer]:
+                - link "1.6 Metre":
+                  - /url: https://www.snapdeal.com/products//filters/Size_s~1~$~6%20Metre#bcrumbSearch:mens%20shirt
+                - generic [ref=f2e527]: "42"
+              - generic [ref=f2e529] [cursor=pointer]:
+                - link "10-11 Years":
+                  - /url: https://www.snapdeal.com/products//filters/Size_s~10-11%20Years#bcrumbSearch:mens%20shirt
+                - generic [ref=f2e530]: "1"
+              - generic [ref=f2e532] [cursor=pointer]:
+                - link "11-12 Years":
+                  - /url: https://www.snapdeal.com/products//filters/Size_s~11-12%20Years#bcrumbSearch:mens%20shirt
+                - generic [ref=f2e533]: "1"
+              - generic [ref=f2e535] [cursor=pointer]:
+                - link "12-18 Months":
+                  - /url: https://www.snapdeal.com/products//filters/Size_s~12-18%20Months#bcrumbSearch:mens%20shirt
+                - generic [ref=f2e536]: "315"
+              - generic [ref=f2e538] [cursor=pointer]:
+                - link "18-24 Months":
+                  - /url: https://www.snapdeal.com/products//filters/Size_s~18-24%20Months#bcrumbSearch:mens%20shirt
+                - generic [ref=f2e539]: "250"
+              - generic [ref=f2e541] [cursor=pointer]:
+                - link "2-3 Years":
+                  - /url: https://www.snapdeal.com/products//filters/Size_s~2-3%20Years#bcrumbSearch:mens%20shirt
+                - generic [ref=f2e542]: "6"
+              - generic [ref=f2e544] [cursor=pointer]:
+                - link "2.25 Metre":
+                  - /url: https://www.snapdeal.com/products//filters/Size_s~2~$~25%20Metre#bcrumbSearch:mens%20shirt
+                - generic [ref=f2e545]: "113"
+              - generic [ref=f2e547] [cursor=pointer]:
+                - link "2.5 Metre":
+                  - /url: https://www.snapdeal.com/products//filters/Size_s~2~$~5%20Metre#bcrumbSearch:mens%20shirt
+                - generic [ref=f2e548]: "5"
+              - generic [ref=f2e550] [cursor=pointer]:
+                - link "2.8 Metre":
+                  - /url: https://www.snapdeal.com/products//filters/Size_s~2~$~8%20Metre#bcrumbSearch:mens%20shirt
+                - generic [ref=f2e551]: "9"
+              - generic [ref=f2e553] [cursor=pointer]:
+                - link "2XL":
+                  - /url: https://www.snapdeal.com/products//filters/Size_s~2XL#bcrumbSearch:mens%20shirt
+                - generic [ref=f2e554]: "99674"
+              - generic [ref=f2e556] [cursor=pointer]:
+                - link "2XS":
+                  - /url: https://www.snapdeal.com/products//filters/Size_s~2XS#bcrumbSearch:mens%20shirt
+                - generic [ref=f2e557]: "834"
+              - generic [ref=f2e559] [cursor=pointer]:
+                - link "3 Metre":
+                  - /url: https://www.snapdeal.com/products//filters/Size_s~3%20Metre#bcrumbSearch:mens%20shirt
+                - generic [ref=f2e560]: "9"
+              - generic [ref=f2e562] [cursor=pointer]:
+                - link "3-4 Years":
+                  - /url: https://www.snapdeal.com/products//filters/Size_s~3-4%20Years#bcrumbSearch:mens%20shirt
+                - generic [ref=f2e563]: "6"
+              - generic [ref=f2e565] [cursor=pointer]:
+                - link "3-6 Months":
+                  - /url: https://www.snapdeal.com/products//filters/Size_s~3-6%20Months#bcrumbSearch:mens%20shirt
+                - generic [ref=f2e566]: "261"
+              - generic [ref=f2e568] [cursor=pointer]:
+                - link "3.5 Metre":
+                  - /url: https://www.snapdeal.com/products//filters/Size_s~3~$~5%20Metre#bcrumbSearch:mens%20shirt
+                - generic [ref=f2e569]: "1"
+              - generic [ref=f2e571] [cursor=pointer]:
+                - link "36":
+                  - /url: https://www.snapdeal.com/products//filters/Size_s~36#bcrumbSearch:mens%20shirt
+                - generic [ref=f2e572]: "16579"
+              - generic [ref=f2e574] [cursor=pointer]:
+                - link "37":
+                  - /url: https://www.snapdeal.com/products//filters/Size_s~37#bcrumbSearch:mens%20shirt
+                - generic [ref=f2e575]: "52"
+              - generic [ref=f2e577] [cursor=pointer]:
+                - link "38":
+                  - /url: https://www.snapdeal.com/products//filters/Size_s~38#bcrumbSearch:mens%20shirt
+                - generic [ref=f2e578]: "40632"
+              - generic [ref=f2e580] [cursor=pointer]:
+                - link "39":
+                  - /url: https://www.snapdeal.com/products//filters/Size_s~39#bcrumbSearch:mens%20shirt
+                - generic [ref=f2e581]: "1546"
+              - generic [ref=f2e583] [cursor=pointer]:
+                - link "3XL":
+                  - /url: https://www.snapdeal.com/products//filters/Size_s~3XL#bcrumbSearch:mens%20shirt
+                - generic [ref=f2e584]: "9794"
+              - generic [ref=f2e586] [cursor=pointer]:
+                - link "4-5 Years":
+                  - /url: https://www.snapdeal.com/products//filters/Size_s~4-5%20Years#bcrumbSearch:mens%20shirt
+                - generic [ref=f2e587]: "4"
+              - generic [ref=f2e589] [cursor=pointer]:
+                - link "40":
+                  - /url: https://www.snapdeal.com/products//filters/Size_s~40#bcrumbSearch:mens%20shirt
+                - generic [ref=f2e590]: "49261"
+              - generic [ref=f2e592] [cursor=pointer]:
+                - link "42":
+                  - /url: https://www.snapdeal.com/products//filters/Size_s~42#bcrumbSearch:mens%20shirt
+                - generic [ref=f2e593]: "48929"
+              - generic [ref=f2e595] [cursor=pointer]:
+                - link "44":
+                  - /url: https://www.snapdeal.com/products//filters/Size_s~44#bcrumbSearch:mens%20shirt
+                - generic [ref=f2e596]: "45799"
+              - generic [ref=f2e598] [cursor=pointer]:
+                - link "46":
+                  - /url: https://www.snapdeal.com/products//filters/Size_s~46#bcrumbSearch:mens%20shirt
+                - generic [ref=f2e599]: "14629"
+              - generic [ref=f2e601] [cursor=pointer]:
+                - link "48":
+                  - /url: https://www.snapdeal.com/products//filters/Size_s~48#bcrumbSearch:mens%20shirt
+                - generic [ref=f2e602]: "1891"
+              - generic [ref=f2e604] [cursor=pointer]:
+                - link "4XL":
+                  - /url: https://www.snapdeal.com/products//filters/Size_s~4XL#bcrumbSearch:mens%20shirt
+                - generic [ref=f2e605]: "4895"
+              - generic [ref=f2e607] [cursor=pointer]:
+                - link "5-6 Years":
+                  - /url: https://www.snapdeal.com/products//filters/Size_s~5-6%20Years#bcrumbSearch:mens%20shirt
+                - generic [ref=f2e608]: "2"
+              - generic [ref=f2e610] [cursor=pointer]:
+                - link "50":
+                  - /url: https://www.snapdeal.com/products//filters/Size_s~50#bcrumbSearch:mens%20shirt
+                - generic [ref=f2e611]: "1201"
+              - generic [ref=f2e613] [cursor=pointer]:
+                - link "52":
+                  - /url: https://www.snapdeal.com/products//filters/Size_s~52#bcrumbSearch:mens%20shirt
+                - generic [ref=f2e614]: "370"
+              - generic [ref=f2e616] [cursor=pointer]:
+                - link "54":
+                  - /url: https://www.snapdeal.com/products//filters/Size_s~54#bcrumbSearch:mens%20shirt
+                - generic [ref=f2e617]: "285"
+              - generic [ref=f2e619] [cursor=pointer]:
+                - link "56":
+                  - /url: https://www.snapdeal.com/products//filters/Size_s~56#bcrumbSearch:mens%20shirt
+                - generic [ref=f2e620]: "151"
+              - generic [ref=f2e622] [cursor=pointer]:
+                - link "58":
+                  - /url: https://www.snapdeal.com/products//filters/Size_s~58#bcrumbSearch:mens%20shirt
+                - generic [ref=f2e623]: "128"
+              - generic [ref=f2e625] [cursor=pointer]:
+                - link "5XL":
+                  - /url: https://www.snapdeal.com/products//filters/Size_s~5XL#bcrumbSearch:mens%20shirt
+                - generic [ref=f2e626]: "3341"
+              - generic [ref=f2e628] [cursor=pointer]:
+                - link "6-12 Months":
+                  - /url: https://www.snapdeal.com/products//filters/Size_s~6-12%20Months#bcrumbSearch:mens%20shirt
+                - generic [ref=f2e629]: "329"
+              - generic [ref=f2e631] [cursor=pointer]:
+                - link "6-7 Years":
+                  - /url: https://www.snapdeal.com/products//filters/Size_s~6-7%20Years#bcrumbSearch:mens%20shirt
+                - generic [ref=f2e632]: "1"
+              - generic [ref=f2e634] [cursor=pointer]:
+                - link "6-9 Months":
+                  - /url: https://www.snapdeal.com/products//filters/Size_s~6-9%20Months#bcrumbSearch:mens%20shirt
+                - generic [ref=f2e635]: "141"
+              - generic [ref=f2e637] [cursor=pointer]:
+                - link "6XL":
+                  - /url: https://www.snapdeal.com/products//filters/Size_s~6XL#bcrumbSearch:mens%20shirt
+                - generic [ref=f2e638]: "1166"
+              - generic [ref=f2e640] [cursor=pointer]:
+                - link "7-8 Years":
+                  - /url: https://www.snapdeal.com/products//filters/Size_s~7-8%20Years#bcrumbSearch:mens%20shirt
+                - generic [ref=f2e641]: "2"
+              - generic [ref=f2e643] [cursor=pointer]:
+                - link "7XL":
+                  - /url: https://www.snapdeal.com/products//filters/Size_s~7XL#bcrumbSearch:mens%20shirt
+                - generic [ref=f2e644]: "655"
+              - generic [ref=f2e646] [cursor=pointer]:
+                - link "8-9 Years":
+                  - /url: https://www.snapdeal.com/products//filters/Size_s~8-9%20Years#bcrumbSearch:mens%20shirt
+                - generic [ref=f2e647]: "1"
+              - generic [ref=f2e649] [cursor=pointer]:
+                - link "8XL":
+                  - /url: https://www.snapdeal.com/products//filters/Size_s~8XL#bcrumbSearch:mens%20shirt
+                - generic [ref=f2e650]: "583"
+              - generic [ref=f2e652] [cursor=pointer]:
+                - link "9-10 Years":
+                  - /url: https://www.snapdeal.com/products//filters/Size_s~9-10%20Years#bcrumbSearch:mens%20shirt
+                - generic [ref=f2e653]: "1"
+              - generic [ref=f2e655] [cursor=pointer]:
+                - link "9-12 Months":
+                  - /url: https://www.snapdeal.com/products//filters/Size_s~9-12%20Months#bcrumbSearch:mens%20shirt
+                - generic [ref=f2e656]: "142"
+              - generic [ref=f2e658] [cursor=pointer]:
+                - link "L":
+                  - /url: https://www.snapdeal.com/products//filters/Size_s~L#bcrumbSearch:mens%20shirt
+                - generic [ref=f2e659]: "127846"
+              - generic [ref=f2e661] [cursor=pointer]:
+                - link "M":
+                  - /url: https://www.snapdeal.com/products//filters/Size_s~M#bcrumbSearch:mens%20shirt
+                - generic [ref=f2e662]: "128633"
+              - generic [ref=f2e664] [cursor=pointer]:
+                - link "S":
+                  - /url: https://www.snapdeal.com/products//filters/Size_s~S#bcrumbSearch:mens%20shirt
+                - generic [ref=f2e665]: "99925"
+              - generic [ref=f2e667] [cursor=pointer]:
+                - link "XL":
+                  - /url: https://www.snapdeal.com/products//filters/Size_s~XL#bcrumbSearch:mens%20shirt
+                - generic [ref=f2e668]: "128354"
+              - generic [ref=f2e670] [cursor=pointer]:
+                - link "XS":
+                  - /url: https://www.snapdeal.com/products//filters/Size_s~XS#bcrumbSearch:mens%20shirt
+                - generic [ref=f2e671]: "4904"
+              - generic [ref=f2e673] [cursor=pointer]:
+                - link "XXL":
+                  - /url: https://www.snapdeal.com/products//filters/Size_s~XXL#bcrumbSearch:mens%20shirt
+                - generic [ref=f2e674]: "4027"
+              - generic [ref=f2e676] [cursor=pointer]:
+                - link "XXS":
+                  - /url: https://www.snapdeal.com/products//filters/Size_s~XXS#bcrumbSearch:mens%20shirt
+                - generic [ref=f2e677]: "2245"
+            - button "View More" [ref=f2e678] [cursor=pointer]
+        - generic [ref=f2e679]:
+          - generic [ref=f2e680]:
+            - generic [ref=f2e681]: Brand
+            - generic [ref=f2e682] [cursor=pointer]: 
+          - generic:
+            - generic [ref=f2e684]: 
+            - textbox "Search by Brand" [ref=f2e685] [cursor=pointer]
+            - generic [ref=f2e686]:
+              - generic [ref=f2e688] [cursor=pointer]:
+                - link ".NEYANSH CREATION.":
+                  - /url: https://www.snapdeal.com/products//filters/Brand~~$~NEYANSH%20CREATION~$~#bcrumbSearch:mens%20shirt
+                - generic [ref=f2e689]: "24"
+              - generic [ref=f2e691] [cursor=pointer]:
+                - link ".RAVIINTERNATIONAL.":
+                  - /url: https://www.snapdeal.com/products//filters/Brand~~$~RAVIINTERNATIONAL~$~#bcrumbSearch:mens%20shirt
+                - generic [ref=f2e692]: "50"
+              - generic [ref=f2e694] [cursor=pointer]:
+                - link "1 Stop Fashion":
+                  - /url: https://www.snapdeal.com/products//filters/Brand~1%20Stop%20Fashion#bcrumbSearch:mens%20shirt
+                - generic [ref=f2e695]: "18"
+              - generic [ref=f2e697] [cursor=pointer]:
+                - link "24 Street":
+                  - /url: https://www.snapdeal.com/products//filters/Brand~24%20Street#bcrumbSearch:mens%20shirt
+                - generic [ref=f2e698]: "26"
+              - generic [ref=f2e700] [cursor=pointer]:
+                - link "3PIN":
+                  - /url: https://www.snapdeal.com/products//filters/Brand~3PIN#bcrumbSearch:mens%20shirt
+                - generic [ref=f2e701]: "39"
+            - button "View More" [ref=f2e702] [cursor=pointer]
+        - generic [ref=f2e703]:
+          - generic [ref=f2e704]:
+            - generic [ref=f2e705]: Fit
+            - generic [ref=f2e706] [cursor=pointer]: 
+          - generic:
+            - generic [ref=f2e708]:
+              - generic [ref=f2e710] [cursor=pointer]:
+                - link "Boxy":
+                  - /url: https://www.snapdeal.com/products//filters/Fit_s~Boxy#bcrumbSearch:mens%20shirt
+                - generic [ref=f2e711]: "217"
+              - generic [ref=f2e713] [cursor=pointer]:
+                - link "Oversized Fit":
+                  - /url: https://www.snapdeal.com/products//filters/Fit_s~Oversized%20Fit#bcrumbSearch:mens%20shirt
+                - generic [ref=f2e714]: "14922"
+              - generic [ref=f2e716] [cursor=pointer]:
+                - link "Regular Fit":
+                  - /url: https://www.snapdeal.com/products//filters/Fit_s~Regular%20Fit#bcrumbSearch:mens%20shirt
+                - generic [ref=f2e717]: "131424"
+              - generic [ref=f2e719] [cursor=pointer]:
+                - link "Relaxed Fit":
+                  - /url: https://www.snapdeal.com/products//filters/Fit_s~Relaxed%20Fit#bcrumbSearch:mens%20shirt
+                - generic [ref=f2e720]: "2190"
+              - generic [ref=f2e722] [cursor=pointer]:
+                - link "Slim Fit":
+                  - /url: https://www.snapdeal.com/products//filters/Fit_s~Slim%20Fit#bcrumbSearch:mens%20shirt
+                - generic [ref=f2e723]: "36886"
+              - generic [ref=f2e725] [cursor=pointer]:
+                - link "Ultra Slim Fit":
+                  - /url: https://www.snapdeal.com/products//filters/Fit_s~Ultra%20Slim%20Fit#bcrumbSearch:mens%20shirt
+                - generic [ref=f2e726]: "2"
+            - button "View More" [ref=f2e727] [cursor=pointer]
+        - generic [ref=f2e728]:
+          - generic [ref=f2e729]:
+            - generic [ref=f2e730]: Fabric
+            - generic [ref=f2e731] [cursor=pointer]: 
+          - generic:
+            - generic [ref=f2e733]:
+              - generic [ref=f2e735] [cursor=pointer]:
+                - link "100 Percent Cotton":
+                  - /url: https://www.snapdeal.com/products//filters/Fabric_s~100%20Percent%20Cotton#bcrumbSearch:mens%20shirt
+                - generic [ref=f2e736]: "97"
+              - generic [ref=f2e738] [cursor=pointer]:
+                - link "100 Percent Cotton Fleece":
+                  - /url: https://www.snapdeal.com/products//filters/Fabric_s~100%20Percent%20Cotton%20Fleece#bcrumbSearch:mens%20shirt
+                - generic [ref=f2e739]: "1"
+              - generic [ref=f2e741] [cursor=pointer]:
+                - link "100 Percent Cotton Terry":
+                  - /url: https://www.snapdeal.com/products//filters/Fabric_s~100%20Percent%20Cotton%20Terry#bcrumbSearch:mens%20shirt
+                - generic [ref=f2e742]: "1"
+              - generic [ref=f2e744] [cursor=pointer]:
+                - link "100% Cotton":
+                  - /url: https://www.snapdeal.com/products//filters/Fabric_s~100%%20Cotton#bcrumbSearch:mens%20shirt
+                - generic [ref=f2e745]: "48"
+              - generic [ref=f2e747] [cursor=pointer]:
+                - link "Acrylic":
+                  - /url: https://www.snapdeal.com/products//filters/Fabric_s~Acrylic#bcrumbSearch:mens%20shirt
+                - generic [ref=f2e748]: "3"
+              - generic [ref=f2e750] [cursor=pointer]:
+                - link "Corduroy":
+                  - /url: https://www.snapdeal.com/products//filters/Fabric_s~Corduroy#bcrumbSearch:mens%20shirt
+                - generic [ref=f2e751]: "173"
+              - generic [ref=f2e753] [cursor=pointer]:
+                - link "Cotton":
+                  - /url: https://www.snapdeal.com/products//filters/Fabric_s~Cotton#bcrumbSearch:mens%20shirt
+                - generic [ref=f2e754]: "29993"
+              - generic [ref=f2e756] [cursor=pointer]:
+                - link "Cotton Blend":
+                  - /url: https://www.snapdeal.com/products//filters/Fabric_s~Cotton%20Blend#bcrumbSearch:mens%20shirt
+                - generic [ref=f2e757]: "121643"
+              - generic [ref=f2e759] [cursor=pointer]:
+                - link "Cotton Blend Fleece":
+                  - /url: https://www.snapdeal.com/products//filters/Fabric_s~Cotton%20Blend%20Fleece#bcrumbSearch:mens%20shirt
+                - generic [ref=f2e760]: "199"
+              - generic [ref=f2e762] [cursor=pointer]:
+                - link "Cotton Spandex":
+                  - /url: https://www.snapdeal.com/products//filters/Fabric_s~Cotton%20Spandex#bcrumbSearch:mens%20shirt
+                - generic [ref=f2e763]: "10"
+              - generic [ref=f2e765] [cursor=pointer]:
+                - link "Crochet":
+                  - /url: https://www.snapdeal.com/products//filters/Fabric_s~Crochet#bcrumbSearch:mens%20shirt
+                - generic [ref=f2e766]: "30"
+              - generic [ref=f2e768] [cursor=pointer]:
+                - link "Denim":
+                  - /url: https://www.snapdeal.com/products//filters/Fabric_s~Denim#bcrumbSearch:mens%20shirt
+                - generic [ref=f2e769]: "183"
+              - generic [ref=f2e771] [cursor=pointer]:
+                - link "Elastane":
+                  - /url: https://www.snapdeal.com/products//filters/Fabric_s~Elastane#bcrumbSearch:mens%20shirt
+                - generic [ref=f2e772]: "22"
+              - generic [ref=f2e774] [cursor=pointer]:
+                - link "Flannel":
+                  - /url: https://www.snapdeal.com/products//filters/Fabric_s~Flannel#bcrumbSearch:mens%20shirt
+                - generic [ref=f2e775]: "60"
+              - generic [ref=f2e777] [cursor=pointer]:
+                - link "Fleece":
+                  - /url: https://www.snapdeal.com/products//filters/Fabric_s~Fleece#bcrumbSearch:mens%20shirt
+                - generic [ref=f2e778]: "5313"
+              - generic [ref=f2e780] [cursor=pointer]:
+                - link "Linen":
+                  - /url: https://www.snapdeal.com/products//filters/Fabric_s~Linen#bcrumbSearch:mens%20shirt
+                - generic [ref=f2e781]: "469"
+              - generic [ref=f2e783] [cursor=pointer]:
+                - link "Linen Blend":
+                  - /url: https://www.snapdeal.com/products//filters/Fabric_s~Linen%20Blend#bcrumbSearch:mens%20shirt
+                - generic [ref=f2e784]: "207"
+              - generic [ref=f2e786] [cursor=pointer]:
+                - link "Lycra":
+                  - /url: https://www.snapdeal.com/products//filters/Fabric_s~Lycra#bcrumbSearch:mens%20shirt
+                - generic [ref=f2e787]: "4875"
+              - generic [ref=f2e789] [cursor=pointer]:
+                - link "Nylon":
+                  - /url: https://www.snapdeal.com/products//filters/Fabric_s~Nylon#bcrumbSearch:mens%20shirt
+                - generic [ref=f2e790]: "158"
+              - generic [ref=f2e792] [cursor=pointer]:
+                - link "Poly Blend":
+                  - /url: https://www.snapdeal.com/products//filters/Fabric_s~Poly%20Blend#bcrumbSearch:mens%20shirt
+                - generic [ref=f2e793]: "12"
+              - generic [ref=f2e795] [cursor=pointer]:
+                - link "Poly Cotton":
+                  - /url: https://www.snapdeal.com/products//filters/Fabric_s~Poly%20Cotton#bcrumbSearch:mens%20shirt
+                - generic [ref=f2e796]: "3115"
+              - generic [ref=f2e798] [cursor=pointer]:
+                - link "Poly Viscose":
+                  - /url: https://www.snapdeal.com/products//filters/Fabric_s~Poly%20Viscose#bcrumbSearch:mens%20shirt
+                - generic [ref=f2e799]: "50"
+              - generic [ref=f2e801] [cursor=pointer]:
+                - link "Polycotton":
+                  - /url: https://www.snapdeal.com/products//filters/Fabric_s~Polycotton#bcrumbSearch:mens%20shirt
+                - generic [ref=f2e802]: "86"
+              - generic [ref=f2e804] [cursor=pointer]:
+                - link "Polyester":
+                  - /url: https://www.snapdeal.com/products//filters/Fabric_s~Polyester#bcrumbSearch:mens%20shirt
+                - generic [ref=f2e805]: "32620"
+              - generic [ref=f2e807] [cursor=pointer]:
+                - link "Polyester Blend":
+                  - /url: https://www.snapdeal.com/products//filters/Fabric_s~Polyester%20Blend#bcrumbSearch:mens%20shirt
+                - generic [ref=f2e808]: "207"
+              - generic [ref=f2e810] [cursor=pointer]:
+                - link "Polyester Cotton":
+                  - /url: https://www.snapdeal.com/products//filters/Fabric_s~Polyester%20Cotton#bcrumbSearch:mens%20shirt
+                - generic [ref=f2e811]: "1"
+              - generic [ref=f2e813] [cursor=pointer]:
+                - link "Polyester Lycra":
+                  - /url: https://www.snapdeal.com/products//filters/Fabric_s~Polyester%20Lycra#bcrumbSearch:mens%20shirt
+                - generic [ref=f2e814]: "3"
+              - generic [ref=f2e816] [cursor=pointer]:
+                - link "Rayon":
+                  - /url: https://www.snapdeal.com/products//filters/Fabric_s~Rayon#bcrumbSearch:mens%20shirt
+                - generic [ref=f2e817]: "301"
+              - generic [ref=f2e819] [cursor=pointer]:
+                - link "Satin":
+                  - /url: https://www.snapdeal.com/products//filters/Fabric_s~Satin#bcrumbSearch:mens%20shirt
+                - generic [ref=f2e820]: "1175"
+              - generic [ref=f2e822] [cursor=pointer]:
+                - link "Silk":
+                  - /url: https://www.snapdeal.com/products//filters/Fabric_s~Silk#bcrumbSearch:mens%20shirt
+                - generic [ref=f2e823]: "91"
+              - generic [ref=f2e825] [cursor=pointer]:
+                - link "Spandex":
+                  - /url: https://www.snapdeal.com/products//filters/Fabric_s~Spandex#bcrumbSearch:mens%20shirt
+                - generic [ref=f2e826]: "2"
+              - generic [ref=f2e828] [cursor=pointer]:
+                - link "Terry Blend":
+                  - /url: https://www.snapdeal.com/products//filters/Fabric_s~Terry%20Blend#bcrumbSearch:mens%20shirt
+                - generic [ref=f2e829]: "27"
+              - generic [ref=f2e831] [cursor=pointer]:
+                - link "Velvet":
+                  - /url: https://www.snapdeal.com/products//filters/Fabric_s~Velvet#bcrumbSearch:mens%20shirt
+                - generic [ref=f2e832]: "2"
+              - generic [ref=f2e834] [cursor=pointer]:
+                - link "Viscose":
+                  - /url: https://www.snapdeal.com/products//filters/Fabric_s~Viscose#bcrumbSearch:mens%20shirt
+                - generic [ref=f2e835]: "585"
+              - generic [ref=f2e837] [cursor=pointer]:
+                - link "Viscose Rayon":
+                  - /url: https://www.snapdeal.com/products//filters/Fabric_s~Viscose%20Rayon#bcrumbSearch:mens%20shirt
+                - generic [ref=f2e838]: "17"
+              - generic [ref=f2e840] [cursor=pointer]:
+                - link "Wool":
+                  - /url: https://www.snapdeal.com/products//filters/Fabric_s~Wool#bcrumbSearch:mens%20shirt
+                - generic [ref=f2e841]: "158"
+              - generic [ref=f2e843] [cursor=pointer]:
+                - link "Woollen":
+                  - /url: https://www.snapdeal.com/products//filters/Fabric_s~Woollen#bcrumbSearch:mens%20shirt
+                - generic [ref=f2e844]: "926"
+            - button "View More" [ref=f2e845] [cursor=pointer]
+        - generic [ref=f2e846]:
+          - generic [ref=f2e847]:
+            - generic [ref=f2e848]: Sleeves Length
+            - generic [ref=f2e849] [cursor=pointer]: 
+          - generic:
+            - generic [ref=f2e851]:
+              - generic [ref=f2e853] [cursor=pointer]:
+                - link "3/4 Sleeves":
+                  - /url: https://www.snapdeal.com/products//filters/SleeveLength_s~3^4%20Sleeves#bcrumbSearch:mens%20shirt
+                - generic [ref=f2e854]: "1"
+              - generic [ref=f2e856] [cursor=pointer]:
+                - link "3/4th Sleeves":
+                  - /url: https://www.snapdeal.com/products//filters/SleeveLength_s~3^4th%20Sleeves#bcrumbSearch:mens%20shirt
+                - generic [ref=f2e857]: "102"
+              - generic [ref=f2e859] [cursor=pointer]:
+                - link "Full Sleeves":
+                  - /url: https://www.snapdeal.com/products//filters/SleeveLength_s~Full%20Sleeves#bcrumbSearch:mens%20shirt
+                - generic [ref=f2e860]: "33464"
+              - generic [ref=f2e862] [cursor=pointer]:
+                - link "Half Sleeves":
+                  - /url: https://www.snapdeal.com/products//filters/SleeveLength_s~Half%20Sleeves#bcrumbSearch:mens%20shirt
+                - generic [ref=f2e863]: "10609"
+              - generic [ref=f2e865] [cursor=pointer]:
+                - link "Rollup Sleeves":
+                  - /url: https://www.snapdeal.com/products//filters/SleeveLength_s~Rollup%20Sleeves#bcrumbSearch:mens%20shirt
+                - generic [ref=f2e866]: "320"
+              - generic [ref=f2e868] [cursor=pointer]:
+                - link "Sleeveless":
+                  - /url: https://www.snapdeal.com/products//filters/SleeveLength_s~Sleeveless#bcrumbSearch:mens%20shirt
+                - generic [ref=f2e869]: "39"
+            - button "View More" [ref=f2e870] [cursor=pointer]
+        - generic [ref=f2e871]:
+          - generic [ref=f2e872]:
+            - generic [ref=f2e873]: Pattern
+            - generic [ref=f2e874] [cursor=pointer]: 
+          - generic:
+            - generic [ref=f2e876]:
+              - generic [ref=f2e878] [cursor=pointer]:
+                - link "Applique":
+                  - /url: https://www.snapdeal.com/products//filters/Pattern_s~Applique#bcrumbSearch:mens%20shirt
+                - generic [ref=f2e879]: "170"
+              - generic [ref=f2e881] [cursor=pointer]:
+                - link "Checks":
+                  - /url: https://www.snapdeal.com/products//filters/Pattern_s~Checks#bcrumbSearch:mens%20shirt
+                - generic [ref=f2e882]: "6263"
+              - generic [ref=f2e884] [cursor=pointer]:
+                - link "Color Block":
+                  - /url: https://www.snapdeal.com/products//filters/Pattern_s~Color%20Block#bcrumbSearch:mens%20shirt
+                - generic [ref=f2e885]: "1"
+              - generic [ref=f2e887] [cursor=pointer]:
+                - link "Color Blocks":
+                  - /url: https://www.snapdeal.com/products//filters/Pattern_s~Color%20Blocks#bcrumbSearch:mens%20shirt
+                - generic [ref=f2e888]: "3"
+              - generic [ref=f2e890] [cursor=pointer]:
+                - link "Colorblock":
+                  - /url: https://www.snapdeal.com/products//filters/Pattern_s~Colorblock#bcrumbSearch:mens%20shirt
+                - generic [ref=f2e891]: "11677"
+              - generic [ref=f2e893] [cursor=pointer]:
+                - link "Cut Outs":
+                  - /url: https://www.snapdeal.com/products//filters/Pattern_s~Cut%20Outs#bcrumbSearch:mens%20shirt
+                - generic [ref=f2e894]: "12"
+              - generic [ref=f2e896] [cursor=pointer]:
+                - link "Dyed":
+                  - /url: https://www.snapdeal.com/products//filters/Pattern_s~Dyed#bcrumbSearch:mens%20shirt
+                - generic [ref=f2e897]: "184"
+              - generic [ref=f2e899] [cursor=pointer]:
+                - link "Embellished":
+                  - /url: https://www.snapdeal.com/products//filters/Pattern_s~Embellished#bcrumbSearch:mens%20shirt
+                - generic [ref=f2e900]: "229"
+              - generic [ref=f2e902] [cursor=pointer]:
+                - link "Embroidered":
+                  - /url: https://www.snapdeal.com/products//filters/Pattern_s~Embroidered#bcrumbSearch:mens%20shirt
+                - generic [ref=f2e903]: "641"
+              - generic [ref=f2e905] [cursor=pointer]:
+                - link "Plain":
+                  - /url: https://www.snapdeal.com/products//filters/Pattern_s~Plain#bcrumbSearch:mens%20shirt
+                - generic [ref=f2e906]: "20934"
+              - generic [ref=f2e908] [cursor=pointer]:
+                - link "Popcorn Textured":
+                  - /url: https://www.snapdeal.com/products//filters/Pattern_s~Popcorn%20Textured#bcrumbSearch:mens%20shirt
+                - generic [ref=f2e909]: "358"
+              - generic [ref=f2e911] [cursor=pointer]:
+                - link "Printed":
+                  - /url: https://www.snapdeal.com/products//filters/Pattern_s~Printed#bcrumbSearch:mens%20shirt
+                - generic [ref=f2e912]: "64312"
+              - generic [ref=f2e914] [cursor=pointer]:
+                - link "Prints":
+                  - /url: https://www.snapdeal.com/products//filters/Pattern_s~Prints#bcrumbSearch:mens%20shirt
+                - generic [ref=f2e915]: "2"
+              - generic [ref=f2e917] [cursor=pointer]:
+                - link "Self Design":
+                  - /url: https://www.snapdeal.com/products//filters/Pattern_s~Self%20Design#bcrumbSearch:mens%20shirt
+                - generic [ref=f2e918]: "27548"
+              - generic [ref=f2e920] [cursor=pointer]:
+                - link "Shacket":
+                  - /url: https://www.snapdeal.com/products//filters/Pattern_s~Shacket#bcrumbSearch:mens%20shirt
+                - generic [ref=f2e921]: "5"
+              - generic [ref=f2e923] [cursor=pointer]:
+                - link "Solid":
+                  - /url: https://www.snapdeal.com/products//filters/Pattern_s~Solid#bcrumbSearch:mens%20shirt
+                - generic [ref=f2e924]: "40219"
+              - generic [ref=f2e926] [cursor=pointer]:
+                - link "Solids":
+                  - /url: https://www.snapdeal.com/products//filters/Pattern_s~Solids#bcrumbSearch:mens%20shirt
+                - generic [ref=f2e927]: "19708"
+              - generic [ref=f2e929] [cursor=pointer]:
+                - link "Striped":
+                  - /url: https://www.snapdeal.com/products//filters/Pattern_s~Striped#bcrumbSearch:mens%20shirt
+                - generic [ref=f2e930]: "10117"
+              - generic [ref=f2e932] [cursor=pointer]:
+                - link "Striper":
+                  - /url: https://www.snapdeal.com/products//filters/Pattern_s~Striper#bcrumbSearch:mens%20shirt
+                - generic [ref=f2e933]: "1"
+              - generic [ref=f2e935] [cursor=pointer]:
+                - link "Stripes":
+                  - /url: https://www.snapdeal.com/products//filters/Pattern_s~Stripes#bcrumbSearch:mens%20shirt
+                - generic [ref=f2e936]: "6"
+              - generic [ref=f2e938] [cursor=pointer]:
+                - link "Washed":
+                  - /url: https://www.snapdeal.com/products//filters/Pattern_s~Washed#bcrumbSearch:mens%20shirt
+                - generic [ref=f2e939]: "71"
+            - button "View More" [ref=f2e940] [cursor=pointer]
+        - generic [ref=f2e941]:
+          - generic [ref=f2e942]:
+            - generic [ref=f2e943]: Collar
+            - generic [ref=f2e944] [cursor=pointer]: 
+          - generic:
+            - generic [ref=f2e946]:
+              - generic [ref=f2e948] [cursor=pointer]:
+                - link "Button Down":
+                  - /url: https://www.snapdeal.com/products//filters/Collar_s~Button%20Down#bcrumbSearch:mens%20shirt
+                - generic [ref=f2e949]: "1"
+              - generic [ref=f2e951] [cursor=pointer]:
+                - link "Button-Down":
+                  - /url: https://www.snapdeal.com/products//filters/Collar_s~Button-Down#bcrumbSearch:mens%20shirt
+                - generic [ref=f2e952]: "2"
+              - generic [ref=f2e954] [cursor=pointer]:
+                - link "Cuban Collar":
+                  - /url: https://www.snapdeal.com/products//filters/Collar_s~Cuban%20Collar#bcrumbSearch:mens%20shirt
+                - generic [ref=f2e955]: "388"
+              - generic [ref=f2e957] [cursor=pointer]:
+                - link "Hooded":
+                  - /url: https://www.snapdeal.com/products//filters/Collar_s~Hooded#bcrumbSearch:mens%20shirt
+                - generic [ref=f2e958]: "185"
+              - generic [ref=f2e960] [cursor=pointer]:
+                - link "Mandarin Collar":
+                  - /url: https://www.snapdeal.com/products//filters/Collar_s~Mandarin%20Collar#bcrumbSearch:mens%20shirt
+                - generic [ref=f2e961]: "7097"
+              - generic [ref=f2e963] [cursor=pointer]:
+                - link "Regular":
+                  - /url: https://www.snapdeal.com/products//filters/Collar_s~Regular#bcrumbSearch:mens%20shirt
+                - generic [ref=f2e964]: "17"
+              - generic [ref=f2e966] [cursor=pointer]:
+                - link "Regular Collar":
+                  - /url: https://www.snapdeal.com/products//filters/Collar_s~Regular%20Collar#bcrumbSearch:mens%20shirt
+                - generic [ref=f2e967]: "41496"
+              - generic [ref=f2e969] [cursor=pointer]:
+                - link "Round Collar":
+                  - /url: https://www.snapdeal.com/products//filters/Collar_s~Round%20Collar#bcrumbSearch:mens%20shirt
+                - generic [ref=f2e970]: "8"
+              - generic [ref=f2e972] [cursor=pointer]:
+                - link "Round Neck":
+                  - /url: https://www.snapdeal.com/products//filters/Collar_s~Round%20Neck#bcrumbSearch:mens%20shirt
+                - generic [ref=f2e973]: "250"
+            - button "View More" [ref=f2e974] [cursor=pointer]
+        - generic [ref=f2e975]:
+          - generic [ref=f2e976]:
+            - generic [ref=f2e977]: Pack
+            - generic [ref=f2e978] [cursor=pointer]: 
+          - generic:
+            - generic [ref=f2e980]:
+              - generic [ref=f2e982] [cursor=pointer]:
+                - link "Pack of 1":
+                  - /url: https://www.snapdeal.com/products//filters/Pack_s~Pack%20of%201#bcrumbSearch:mens%20shirt
+                - generic [ref=f2e983]: "174198"
+              - generic [ref=f2e985] [cursor=pointer]:
+                - link "Pack of 10":
+                  - /url: https://www.snapdeal.com/products//filters/Pack_s~Pack%20of%2010#bcrumbSearch:mens%20shirt
+                - generic [ref=f2e986]: "3"
+              - generic [ref=f2e988] [cursor=pointer]:
+                - link "Pack of 2":
+                  - /url: https://www.snapdeal.com/products//filters/Pack_s~Pack%20of%202#bcrumbSearch:mens%20shirt
+                - generic [ref=f2e989]: "26322"
+              - generic [ref=f2e991] [cursor=pointer]:
+                - link "Pack of 3":
+                  - /url: https://www.snapdeal.com/products//filters/Pack_s~Pack%20of%203#bcrumbSearch:mens%20shirt
+                - generic [ref=f2e992]: "3135"
+              - generic [ref=f2e994] [cursor=pointer]:
+                - link "Pack of 4":
+                  - /url: https://www.snapdeal.com/products//filters/Pack_s~Pack%20of%204#bcrumbSearch:mens%20shirt
+                - generic [ref=f2e995]: "371"
+              - generic [ref=f2e997] [cursor=pointer]:
+                - link "Pack of 5":
+                  - /url: https://www.snapdeal.com/products//filters/Pack_s~Pack%20of%205#bcrumbSearch:mens%20shirt
+                - generic [ref=f2e998]: "430"
+              - generic [ref=f2e1000] [cursor=pointer]:
+                - link "Pack of 6":
+                  - /url: https://www.snapdeal.com/products//filters/Pack_s~Pack%20of%206#bcrumbSearch:mens%20shirt
+                - generic [ref=f2e1001]: "33"
+              - generic [ref=f2e1003] [cursor=pointer]:
+                - link "Pack of 7":
+                  - /url: https://www.snapdeal.com/products//filters/Pack_s~Pack%20of%207#bcrumbSearch:mens%20shirt
+                - generic [ref=f2e1004]: "13"
+              - generic [ref=f2e1006] [cursor=pointer]:
+                - link "Pack of 8":
+                  - /url: https://www.snapdeal.com/products//filters/Pack_s~Pack%20of%208#bcrumbSearch:mens%20shirt
+                - generic [ref=f2e1007]: "3"
+              - generic [ref=f2e1009] [cursor=pointer]:
+                - link "Pack of 9":
+                  - /url: https://www.snapdeal.com/products//filters/Pack_s~Pack%20of%209#bcrumbSearch:mens%20shirt
+                - generic [ref=f2e1010]: "1"
+            - button "View More" [ref=f2e1011] [cursor=pointer]
+        - generic [ref=f2e1012]:
+          - generic [ref=f2e1013]:
+            - generic [ref=f2e1014]: Pattern or Print Type
+            - generic [ref=f2e1015] [cursor=pointer]: 
+          - generic:
+            - generic [ref=f2e1017]:
+              - generic [ref=f2e1019] [cursor=pointer]:
+                - link "Abstract":
+                  - /url: https://www.snapdeal.com/products//filters/PatternorPrintType_s~Abstract#bcrumbSearch:mens%20shirt
+                - generic [ref=f2e1020]: "7226"
+              - generic [ref=f2e1022] [cursor=pointer]:
+                - link "Animal":
+                  - /url: https://www.snapdeal.com/products//filters/PatternorPrintType_s~Animal#bcrumbSearch:mens%20shirt
+                - generic [ref=f2e1023]: "561"
+              - generic [ref=f2e1025] [cursor=pointer]:
+                - link "Anime":
+                  - /url: https://www.snapdeal.com/products//filters/PatternorPrintType_s~Anime#bcrumbSearch:mens%20shirt
+                - generic [ref=f2e1026]: "8"
+              - generic [ref=f2e1028] [cursor=pointer]:
+                - link "Big Checks":
+                  - /url: https://www.snapdeal.com/products//filters/PatternorPrintType_s~Big%20Checks#bcrumbSearch:mens%20shirt
+                - generic [ref=f2e1029]: "2732"
+              - generic [ref=f2e1031] [cursor=pointer]:
+                - link "Birds":
+                  - /url: https://www.snapdeal.com/products//filters/PatternorPrintType_s~Birds#bcrumbSearch:mens%20shirt
+                - generic [ref=f2e1032]: "106"
+              - generic [ref=f2e1034] [cursor=pointer]:
+                - link "Block Print":
+                  - /url: https://www.snapdeal.com/products//filters/PatternorPrintType_s~Block%20Print#bcrumbSearch:mens%20shirt
+                - generic [ref=f2e1035]: "41"
+              - generic [ref=f2e1037] [cursor=pointer]:
+                - link "Brand Logo":
+                  - /url: https://www.snapdeal.com/products//filters/PatternorPrintType_s~Brand%20Logo#bcrumbSearch:mens%20shirt
+                - generic [ref=f2e1038]: "280"
+              - generic [ref=f2e1040] [cursor=pointer]:
+                - link "Camouflage":
+                  - /url: https://www.snapdeal.com/products//filters/PatternorPrintType_s~Camouflage#bcrumbSearch:mens%20shirt
+                - generic [ref=f2e1041]: "160"
+              - generic [ref=f2e1043] [cursor=pointer]:
+                - link "Colorblock":
+                  - /url: https://www.snapdeal.com/products//filters/PatternorPrintType_s~Colorblock#bcrumbSearch:mens%20shirt
+                - generic [ref=f2e1044]: "10448"
+              - generic [ref=f2e1046] [cursor=pointer]:
+                - link "Diagonal Striped":
+                  - /url: https://www.snapdeal.com/products//filters/PatternorPrintType_s~Diagonal%20Striped#bcrumbSearch:mens%20shirt
+                - generic [ref=f2e1047]: "21"
+              - generic [ref=f2e1049] [cursor=pointer]:
+                - link "Ethnic":
+                  - /url: https://www.snapdeal.com/products//filters/PatternorPrintType_s~Ethnic#bcrumbSearch:mens%20shirt
+                - generic [ref=f2e1050]: "3871"
+              - generic [ref=f2e1052] [cursor=pointer]:
+                - link "Floral":
+                  - /url: https://www.snapdeal.com/products//filters/PatternorPrintType_s~Floral#bcrumbSearch:mens%20shirt
+                - generic [ref=f2e1053]: "1562"
+              - generic [ref=f2e1055] [cursor=pointer]:
+                - link "Geometric":
+                  - /url: https://www.snapdeal.com/products//filters/PatternorPrintType_s~Geometric#bcrumbSearch:mens%20shirt
+                - generic [ref=f2e1056]: "917"
+              - generic [ref=f2e1058] [cursor=pointer]:
+                - link "Graphic":
+                  - /url: https://www.snapdeal.com/products//filters/PatternorPrintType_s~Graphic#bcrumbSearch:mens%20shirt
+                - generic [ref=f2e1059]: "29449"
+              - generic [ref=f2e1061] [cursor=pointer]:
+                - link "Horizontal Striped":
+                  - /url: https://www.snapdeal.com/products//filters/PatternorPrintType_s~Horizontal%20Striped#bcrumbSearch:mens%20shirt
+                - generic [ref=f2e1062]: "582"
+              - generic [ref=f2e1064] [cursor=pointer]:
+                - link "Humor & Comic":
+                  - /url: https://www.snapdeal.com/products//filters/PatternorPrintType_s~Humor%20&%20Comic#bcrumbSearch:mens%20shirt
+                - generic [ref=f2e1065]: "81"
+              - generic [ref=f2e1067] [cursor=pointer]:
+                - link "Music":
+                  - /url: https://www.snapdeal.com/products//filters/PatternorPrintType_s~Music#bcrumbSearch:mens%20shirt
+                - generic [ref=f2e1068]: "10"
+              - generic [ref=f2e1070] [cursor=pointer]:
+                - link "Nature":
+                  - /url: https://www.snapdeal.com/products//filters/PatternorPrintType_s~Nature#bcrumbSearch:mens%20shirt
+                - generic [ref=f2e1071]: "265"
+              - generic [ref=f2e1073] [cursor=pointer]:
+                - link "Ombre":
+                  - /url: https://www.snapdeal.com/products//filters/PatternorPrintType_s~Ombre#bcrumbSearch:mens%20shirt
+                - generic [ref=f2e1074]: "156"
+              - generic [ref=f2e1076] [cursor=pointer]:
+                - link "People":
+                  - /url: https://www.snapdeal.com/products//filters/PatternorPrintType_s~People#bcrumbSearch:mens%20shirt
+                - generic [ref=f2e1077]: "17"
+              - generic [ref=f2e1079] [cursor=pointer]:
+                - link "Polka Dots":
+                  - /url: https://www.snapdeal.com/products//filters/PatternorPrintType_s~Polka%20Dots#bcrumbSearch:mens%20shirt
+                - generic [ref=f2e1080]: "88"
+              - generic [ref=f2e1082] [cursor=pointer]:
+                - link "Small Checks":
+                  - /url: https://www.snapdeal.com/products//filters/PatternorPrintType_s~Small%20Checks#bcrumbSearch:mens%20shirt
+                - generic [ref=f2e1083]: "956"
+              - generic [ref=f2e1085] [cursor=pointer]:
+                - link "Solid":
+                  - /url: https://www.snapdeal.com/products//filters/PatternorPrintType_s~Solid#bcrumbSearch:mens%20shirt
+                - generic [ref=f2e1086]: "67916"
+              - generic [ref=f2e1088] [cursor=pointer]:
+                - link "Striped":
+                  - /url: https://www.snapdeal.com/products//filters/PatternorPrintType_s~Striped#bcrumbSearch:mens%20shirt
+                - generic [ref=f2e1089]: "431"
+              - generic [ref=f2e1091] [cursor=pointer]:
+                - link "Superhero":
+                  - /url: https://www.snapdeal.com/products//filters/PatternorPrintType_s~Superhero#bcrumbSearch:mens%20shirt
+                - generic [ref=f2e1092]: "48"
+              - generic [ref=f2e1094] [cursor=pointer]:
+                - link "Textured":
+                  - /url: https://www.snapdeal.com/products//filters/PatternorPrintType_s~Textured#bcrumbSearch:mens%20shirt
+                - generic [ref=f2e1095]: "7293"
+              - generic [ref=f2e1097] [cursor=pointer]:
+                - link "Tie & Dye":
+                  - /url: https://www.snapdeal.com/products//filters/PatternorPrintType_s~Tie%20&%20Dye#bcrumbSearch:mens%20shirt
+                - generic [ref=f2e1098]: "157"
+              - generic [ref=f2e1100] [cursor=pointer]:
+                - link "Tribal":
+                  - /url: https://www.snapdeal.com/products//filters/PatternorPrintType_s~Tribal#bcrumbSearch:mens%20shirt
+                - generic [ref=f2e1101]: "138"
+              - generic [ref=f2e1103] [cursor=pointer]:
+                - link "Typography":
+                  - /url: https://www.snapdeal.com/products//filters/PatternorPrintType_s~Typography#bcrumbSearch:mens%20shirt
+                - generic [ref=f2e1104]: "11112"
+              - generic [ref=f2e1106] [cursor=pointer]:
+                - link "Vertical Striped":
+                  - /url: https://www.snapdeal.com/products//filters/PatternorPrintType_s~Vertical%20Striped#bcrumbSearch:mens%20shirt
+                - generic [ref=f2e1107]: "488"
+              - generic [ref=f2e1109] [cursor=pointer]:
+                - link "Washed":
+                  - /url: https://www.snapdeal.com/products//filters/PatternorPrintType_s~Washed#bcrumbSearch:mens%20shirt
+                - generic [ref=f2e1110]: "22"
+            - button "View More" [ref=f2e1111] [cursor=pointer]
+        - generic [ref=f2e1112]:
+          - generic [ref=f2e1113]:
+            - generic [ref=f2e1114]: Stretch
+            - generic [ref=f2e1115] [cursor=pointer]: 
+          - generic [ref=f2e1117]:
+            - generic [ref=f2e1119] [cursor=pointer]:
+              - link "Non-Stretchable":
+                - /url: https://www.snapdeal.com/products//filters/Stretch_s~Non-Stretchable#bcrumbSearch:mens%20shirt
+              - generic [ref=f2e1120]: "2758"
+            - generic [ref=f2e1122] [cursor=pointer]:
+              - link "Stretchable":
+                - /url: https://www.snapdeal.com/products//filters/Stretch_s~Stretchable#bcrumbSearch:mens%20shirt
+              - generic [ref=f2e1123]: "574"
+    - generic [ref=f2e1126]:
+      - generic [ref=f2e1128]:
+        - generic: Showing 10000+ items for mens shirt
+        - generic [ref=f2e1131] [cursor=pointer]:
+          - generic [ref=f2e1132]: "Sort by:"
+          - generic [ref=f2e1133]: Relevance
+          - generic [ref=f2e1134]: 
+      - generic [ref=f2e1137]:
+        - textbox "Enter your pincode" [ref=f2e1138]
+        - button "Check" [ref=f2e1139] [cursor=pointer]
+      - text: 
+      - generic [ref=f2e1141]:
+        - generic [ref=f2e1142]:
+          - generic [ref=f2e1143]:
+            - link [ref=f2e1145] [cursor=pointer]:
+              - /url: https://www.snapdeal.com/product/anshu-creation-lycra-regular-fit/662178582626#bcrumbSearch:mens%20shirt
+              - generic [ref=f2e1146]:
+                - generic "Anshu Creation Lycra Regular Fit Printed Half Sleeves Men's Casual Shirt - Multicolor ( Pack of 1 )"
+                - img "Anshu Creation Lycra Regular Fit Printed Half Sleeves Men's Casual Shirt - Multicolor ( Pack of 1 )" [ref=f2e1147]
+            - link "Anshu Creation Lycra Regular Fit Printed Half Sleeves Men's Casual Shirt - Multicolor ( Pack of 1 ) Rs. 999 Rs. 308 69% Off ★★★★★ ★★★★★ (17)" [ref=f2e1151] [cursor=pointer]:
+              - /url: https://www.snapdeal.com/product/anshu-creation-lycra-regular-fit/662178582626#bcrumbSearch:mens%20shirt
+              - paragraph [ref=f2e1152]: Anshu Creation Lycra Regular Fit Printed Half Sleeves Men's Casual Shirt - Multicolor ( Pack of 1 )
+              - generic [ref=f2e1153]:
+                - generic [ref=f2e1154]:
+                  - generic [ref=f2e1155]: Rs. 999
+                  - generic [ref=f2e1156]: Rs. 308
+                - generic [ref=f2e1157]: 69% Off
+              - generic [ref=f2e1158]:
+                - generic [ref=f2e1159]:
+                  - generic [ref=f2e1160]: ★★★★★
+                  - generic [ref=f2e1161]: ★★★★★
+                - paragraph [ref=f2e1162]: (17)
+          - generic [ref=f2e1164]:
+            - generic [ref=f2e1165]:
+              - link [ref=f2e1166] [cursor=pointer]:
+                - /url: https://www.snapdeal.com/product/vdlooks-cotton-blend-regular-fit/8070451210415092815#bcrumbSearch:mens%20shirt
+                - generic [ref=f2e1167]:
+                  - generic "VDLooks Cotton Blend Regular Fit Striped Full Sleeves Men's Casual Shirt - Pink ( Pack of 1 )"
+                  - img "VDLooks Cotton Blend Regular Fit Striped Full Sleeves Men's Casual Shirt - Pink ( Pack of 1 )" [ref=f2e1168]
+              - generic [ref=f2e1169]: Quick View
+            - generic [ref=f2e1171]:
+              - link "VDLooks Cotton Blend Regular Fit Striped Full Sleeves Men's Casual Shirt - Pink ( Pack of 1 ) Rs. 1,499 Rs. 355 76% Off ★★★★★ ★★★★★ (2048)" [active] [ref=f2e1173] [cursor=pointer]:
+                - /url: https://www.snapdeal.com/product/vdlooks-cotton-blend-regular-fit/8070451210415092815#bcrumbSearch:mens%20shirt
+                - paragraph [ref=f2e1174]: VDLooks Cotton Blend Regular Fit Striped Full Sleeves Men's Casual Shirt - Pink ( Pack of 1 )
+                - generic [ref=f2e1175]:
+                  - generic [ref=f2e1176]:
+                    - generic [ref=f2e1177]: Rs. 1,499
+                    - generic [ref=f2e1178]: Rs. 355
+                  - generic [ref=f2e1179]: 76% Off
+                - generic [ref=f2e1180]:
+                  - generic [ref=f2e1181]:
+                    - generic [ref=f2e1182]: ★★★★★
+                    - generic [ref=f2e1183]: ★★★★★
+                  - paragraph [ref=f2e1184]: (2048)
+              - link "Color Size 38 40 42 44 46" [ref=f2e1186] [cursor=pointer]:
+                - /url: https://www.snapdeal.com/product/vdlooks-cotton-blend-regular-fit/8070451210415092815#bcrumbSearch:mens%20shirt
+                - separator [ref=f2e1187]
+                - generic [ref=f2e1188]:
+                  - generic [ref=f2e1189]: Color
+                  - generic [ref=f2e1197]: Size 38 40 42 44 46
+          - generic [ref=f2e1199]:
+            - link [ref=f2e1201] [cursor=pointer]:
+              - /url: https://www.snapdeal.com/product/clyver-poly-cotton-regular-fit/634421021674#bcrumbSearch:mens%20shirt
+              - generic [ref=f2e1202]:
+                - generic "Clyver Poly Cotton Regular Fit Solids Full Sleeves Men's Casual Shirt - Black ( Pack of 1 )"
+                - img "Clyver Poly Cotton Regular Fit Solids Full Sleeves Men's Casual Shirt - Black ( Pack of 1 )" [ref=f2e1203]
+            - link "Clyver Poly Cotton Regular Fit Solids Full Sleeves Men's Casual Shirt - Black ( Pack of 1 ) Rs. 1,499 Rs. 375 75% Off ★★★★★ ★★★★★ (11)" [ref=f2e1207] [cursor=pointer]:
+              - /url: https://www.snapdeal.com/product/clyver-poly-cotton-regular-fit/634421021674#bcrumbSearch:mens%20shirt
+              - paragraph [ref=f2e1208]: Clyver Poly Cotton Regular Fit Solids Full Sleeves Men's Casual Shirt - Black ( Pack of 1 )
+              - generic [ref=f2e1209]:
+                - generic [ref=f2e1210]:
+                  - generic [ref=f2e1211]: Rs. 1,499
+                  - generic [ref=f2e1212]: Rs. 375
+                - generic [ref=f2e1213]: 75% Off
+              - generic [ref=f2e1214]:
+                - generic [ref=f2e1215]:
+                  - generic [ref=f2e1216]: ★★★★★
+                  - generic [ref=f2e1217]: ★★★★★
+                - paragraph [ref=f2e1218]: (11)
+          - generic [ref=f2e1220]:
+            - link [ref=f2e1222] [cursor=pointer]:
+              - /url: https://www.snapdeal.com/product/ruhishvafashion-100-cotton-regular-fit/5764608156901373444#bcrumbSearch:mens%20shirt
+              - generic [ref=f2e1223]:
+                - generic "RUHISHVAFASHION 100% Cotton Regular Fit Printed Full Sleeves Men's Casual Shirt - Blue ( Pack of 1 )"
+                - img "RUHISHVAFASHION 100% Cotton Regular Fit Printed Full Sleeves Men's Casual Shirt - Blue ( Pack of 1 )" [ref=f2e1224]
+            - link "RUHISHVAFASHION 100% Cotton Regular Fit Printed Full Sleeves Men's Casual Shirt - Blue ( Pack of 1 ) Rs. 999 Rs. 375 62% Off ★★★★★ ★★★★★ (73)" [ref=f2e1228] [cursor=pointer]:
+              - /url: https://www.snapdeal.com/product/ruhishvafashion-100-cotton-regular-fit/5764608156901373444#bcrumbSearch:mens%20shirt
+              - paragraph [ref=f2e1229]: RUHISHVAFASHION 100% Cotton Regular Fit Printed Full Sleeves Men's Casual Shirt - Blue ( Pack of 1 )
+              - generic [ref=f2e1230]:
+                - generic [ref=f2e1231]:
+                  - generic [ref=f2e1232]: Rs. 999
+                  - generic [ref=f2e1233]: Rs. 375
+                - generic [ref=f2e1234]: 62% Off
+              - generic [ref=f2e1235]:
+                - generic [ref=f2e1236]:
+                  - generic [ref=f2e1237]: ★★★★★
+                  - generic [ref=f2e1238]: ★★★★★
+                - paragraph [ref=f2e1239]: (73)
+        - generic [ref=f2e1241]:
+          - generic [ref=f2e1242]:
+            - link [ref=f2e1244] [cursor=pointer]:
+              - /url: https://www.snapdeal.com/product/ethnic-trendz-cotton-blend-regular/5764608167045643240#bcrumbSearch:mens%20shirt
+              - generic [ref=f2e1245]:
+                - generic "Ethnic Trendz Cotton Blend Regular Fit Checks Full Sleeves Men's Casual Shirt - White ( Pack of 1 )"
+                - img "Ethnic Trendz Cotton Blend Regular Fit Checks Full Sleeves Men's Casual Shirt - White ( Pack of 1 )" [ref=f2e1246]
+            - link "Ethnic Trendz Cotton Blend Regular Fit Checks Full Sleeves Men's Casual Shirt - White ( Pack of 1 ) Rs. 1,299 Rs. 253 81% Off ★★★★★ ★★★★★ (14)" [ref=f2e1250] [cursor=pointer]:
+              - /url: https://www.snapdeal.com/product/ethnic-trendz-cotton-blend-regular/5764608167045643240#bcrumbSearch:mens%20shirt
+              - paragraph [ref=f2e1251]: Ethnic Trendz Cotton Blend Regular Fit Checks Full Sleeves Men's Casual Shirt - White ( Pack of 1 )
+              - generic [ref=f2e1252]:
+                - generic [ref=f2e1253]:
+                  - generic [ref=f2e1254]: Rs. 1,299
+                  - generic [ref=f2e1255]: Rs. 253
+                - generic [ref=f2e1256]: 81% Off
+              - generic [ref=f2e1257]:
+                - generic [ref=f2e1258]:
+                  - generic [ref=f2e1259]: ★★★★★
+                  - generic [ref=f2e1260]: ★★★★★
+                - paragraph [ref=f2e1261]: (14)
+          - generic [ref=f2e1263]:
+            - link [ref=f2e1265] [cursor=pointer]:
+              - /url: https://www.snapdeal.com/product/bluecorp-enterprise-cotton-blend-regular/5188147400753403432#bcrumbSearch:mens%20shirt
+              - generic [ref=f2e1266]:
+                - generic "bluecorp enterprise Cotton Blend Regular Fit Solids Full Sleeves Men's Casual Shirt - Brown ( Pack of 1 )"
+                - img "bluecorp enterprise Cotton Blend Regular Fit Solids Full Sleeves Men's Casual Shirt - Brown ( Pack of 1 )" [ref=f2e1267]
+            - link "bluecorp enterprise Cotton Blend Regular Fit Solids Full Sleeves Men's Casual Shirt - Brown ( Pack of 1 ) Rs. 999 Rs. 355 64% Off ★★★★★ ★★★★★ (485)" [ref=f2e1271] [cursor=pointer]:
+              - /url: https://www.snapdeal.com/product/bluecorp-enterprise-cotton-blend-regular/5188147400753403432#bcrumbSearch:mens%20shirt
+              - paragraph [ref=f2e1272]: bluecorp enterprise Cotton Blend Regular Fit Solids Full Sleeves Men's Casual Shirt - Brown ( Pack of 1 )
+              - generic [ref=f2e1273]:
+                - generic [ref=f2e1274]:
+                  - generic [ref=f2e1275]: Rs. 999
+                  - generic [ref=f2e1276]: Rs. 355
+                - generic [ref=f2e1277]: 64% Off
+              - generic [ref=f2e1278]:
+                - generic [ref=f2e1279]:
+                  - generic [ref=f2e1280]: ★★★★★
+                  - generic [ref=f2e1281]: ★★★★★
+                - paragraph [ref=f2e1282]: (485)
+          - generic [ref=f2e1284]:
+            - link [ref=f2e1286] [cursor=pointer]:
+              - /url: https://www.snapdeal.com/product/zoitgiest-cotton-blend-regular-fit/8070451175323751000#bcrumbSearch:mens%20shirt
+              - generic [ref=f2e1287]:
+                - generic "Zoitgiest Cotton Blend Regular Fit Checks Full Sleeves Men's Casual Shirt - Grey ( Pack of 1 )"
+                - img "Zoitgiest Cotton Blend Regular Fit Checks Full Sleeves Men's Casual Shirt - Grey ( Pack of 1 )" [ref=f2e1288]
+            - link "Zoitgiest Cotton Blend Regular Fit Checks Full Sleeves Men's Casual Shirt - Grey ( Pack of 1 ) Rs. 999 Rs. 308 69% Off ★★★★★ ★★★★★ (147)" [ref=f2e1292] [cursor=pointer]:
+              - /url: https://www.snapdeal.com/product/zoitgiest-cotton-blend-regular-fit/8070451175323751000#bcrumbSearch:mens%20shirt
+              - paragraph [ref=f2e1293]: Zoitgiest Cotton Blend Regular Fit Checks Full Sleeves Men's Casual Shirt - Grey ( Pack of 1 )
+              - generic [ref=f2e1294]:
+                - generic [ref=f2e1295]:
+                  - generic [ref=f2e1296]: Rs. 999
+                  - generic [ref=f2e1297]: Rs. 308
+                - generic [ref=f2e1298]: 69% Off
+              - generic [ref=f2e1299]:
+                - generic [ref=f2e1300]:
+                  - generic [ref=f2e1301]: ★★★★★
+                  - generic [ref=f2e1302]: ★★★★★
+                - paragraph [ref=f2e1303]: (147)
+          - generic [ref=f2e1305]:
+            - link [ref=f2e1307] [cursor=pointer]:
+              - /url: https://www.snapdeal.com/product/rekag-100-cotton-regular-fit/8070451216019236448#bcrumbSearch:mens%20shirt
+              - generic [ref=f2e1308]:
+                - generic "REKAG 100% Cotton Regular Fit Solids Full Sleeves Men's Casual Shirt - Maroon ( Pack of 1 )"
+                - img "REKAG 100% Cotton Regular Fit Solids Full Sleeves Men's Casual Shirt - Maroon ( Pack of 1 )" [ref=f2e1309]
+            - link "REKAG 100% Cotton Regular Fit Solids Full Sleeves Men's Casual Shirt - Maroon ( Pack of 1 ) Rs. 1,299 Rs. 302 77% Off ★★★★★ ★★★★★ (11)" [ref=f2e1313] [cursor=pointer]:
+              - /url: https://www.snapdeal.com/product/rekag-100-cotton-regular-fit/8070451216019236448#bcrumbSearch:mens%20shirt
+              - paragraph [ref=f2e1314]: REKAG 100% Cotton Regular Fit Solids Full Sleeves Men's Casual Shirt - Maroon ( Pack of 1 )
+              - generic [ref=f2e1315]:
+                - generic [ref=f2e1316]:
+                  - generic [ref=f2e1317]: Rs. 1,299
+                  - generic [ref=f2e1318]: Rs. 302
+                - generic [ref=f2e1319]: 77% Off
+              - generic [ref=f2e1320]:
+                - generic [ref=f2e1321]:
+                  - generic [ref=f2e1322]: ★★★★★
+                  - generic [ref=f2e1323]: ★★★★★
+                - paragraph [ref=f2e1324]: (11)
+          - generic [ref=f2e1328]:
+            - text: "Related searches:"
+            - link "pink shirt" [ref=f2e1329] [cursor=pointer]:
+              - /url: https://www.snapdeal.com/search?keyword=pink shirt&catId=&categoryId=0&suggested=false&vertical=&noOfResults=20&clickSrc=go_similar_search_keyword&SRPID=relatedsearch#bcrumbSearch:mens%20shirt
+            - link "denim shirt men" [ref=f2e1330] [cursor=pointer]:
+              - /url: https://www.snapdeal.com/search?keyword=denim shirt men&catId=&categoryId=0&suggested=false&vertical=&noOfResults=20&clickSrc=go_similar_search_keyword&SRPID=relatedsearch#bcrumbSearch:mens%20shirt
+            - link "party wear shirt men" [ref=f2e1331] [cursor=pointer]:
+              - /url: https://www.snapdeal.com/search?keyword=party wear shirt men&catId=&categoryId=0&suggested=false&vertical=&noOfResults=20&clickSrc=go_similar_search_keyword&SRPID=relatedsearch#bcrumbSearch:mens%20shirt
+            - link "peter england shirt men" [ref=f2e1332] [cursor=pointer]:
+              - /url: https://www.snapdeal.com/search?keyword=peter england shirt men&catId=&categoryId=0&suggested=false&vertical=&noOfResults=20&clickSrc=go_similar_search_keyword&SRPID=relatedsearch#bcrumbSearch:mens%20shirt
+            - link "raymond shirt" [ref=f2e1333] [cursor=pointer]:
+              - /url: https://www.snapdeal.com/search?keyword=raymond shirt&catId=&categoryId=0&suggested=false&vertical=&noOfResults=20&clickSrc=go_similar_search_keyword&SRPID=relatedsearch#bcrumbSearch:mens%20shirt
+        - generic [ref=f2e1334]:
+          - generic [ref=f2e1335]:
+            - link [ref=f2e1337] [cursor=pointer]:
+              - /url: https://www.snapdeal.com/product/vn-creation-cotton-blend-regular/6341068896752814423#bcrumbSearch:mens%20shirt
+              - generic [ref=f2e1338]:
+                - generic "VN creation Cotton Blend Regular Fit Solids Full Sleeves Men's Casual Shirt - Black ( Pack of 1 )"
+                - img "VN creation Cotton Blend Regular Fit Solids Full Sleeves Men's Casual Shirt - Black ( Pack of 1 )" [ref=f2e1339]
+            - link "VN creation Cotton Blend Regular Fit Solids Full Sleeves Men's Casual Shirt - Black ( Pack of 1 ) Rs. 1,999 Rs. 340 83% Off ★★★★★ ★★★★★ (73)" [ref=f2e1343] [cursor=pointer]:
+              - /url: https://www.snapdeal.com/product/vn-creation-cotton-blend-regular/6341068896752814423#bcrumbSearch:mens%20shirt
+              - paragraph [ref=f2e1344]: VN creation Cotton Blend Regular Fit Solids Full Sleeves Men's Casual Shirt - Black ( Pack of 1 )
+              - generic [ref=f2e1345]:
+                - generic [ref=f2e1346]:
+                  - generic [ref=f2e1347]: Rs. 1,999
+                  - generic [ref=f2e1348]: Rs. 340
+                - generic [ref=f2e1349]: 83% Off
+              - generic [ref=f2e1350]:
+                - generic [ref=f2e1351]:
+                  - generic [ref=f2e1352]: ★★★★★
+                  - generic [ref=f2e1353]: ★★★★★
+                - paragraph [ref=f2e1354]: (73)
+          - generic [ref=f2e1356]:
+            - link [ref=f2e1358] [cursor=pointer]:
+              - /url: https://www.snapdeal.com/product/boninos-100-cotton-regular-fit/632504592097#bcrumbSearch:mens%20shirt
+              - generic [ref=f2e1359]:
+                - generic "BONINOS 100% Cotton Regular Fit Solids Full Sleeves Men's Casual Shirt - Brown ( Pack of 1 )"
+                - img "BONINOS 100% Cotton Regular Fit Solids Full Sleeves Men's Casual Shirt - Brown ( Pack of 1 )" [ref=f2e1360]
+            - link "BONINOS 100% Cotton Regular Fit Solids Full Sleeves Men's Casual Shirt - Brown ( Pack of 1 ) Rs. 999 Rs. 338 66% Off ★★★★★ ★★★★★ (22)" [ref=f2e1364] [cursor=pointer]:
+              - /url: https://www.snapdeal.com/product/boninos-100-cotton-regular-fit/632504592097#bcrumbSearch:mens%20shirt
+              - paragraph [ref=f2e1365]: BONINOS 100% Cotton Regular Fit Solids Full Sleeves Men's Casual Shirt - Brown ( Pack of 1 )
+              - generic [ref=f2e1366]:
+                - generic [ref=f2e1367]:
+                  - generic [ref=f2e1368]: Rs. 999
+                  - generic [ref=f2e1369]: Rs. 338
+                - generic [ref=f2e1370]: 66% Off
+              - generic [ref=f2e1371]:
+                - generic [ref=f2e1372]:
+                  - generic [ref=f2e1373]: ★★★★★
+                  - generic [ref=f2e1374]: ★★★★★
+                - paragraph [ref=f2e1375]: (22)
+          - generic [ref=f2e1377]:
+            - link [ref=f2e1379] [cursor=pointer]:
+              - /url: https://www.snapdeal.com/product/the-indian-garage-co-poly/659100527245#bcrumbSearch:mens%20shirt
+              - generic [ref=f2e1380]:
+                - generic "The Indian Garage Co. Poly Cotton Slim Fit Checks Full Sleeves Men's Casual Shirt - Black ( Pack of 1 )"
+                - img "The Indian Garage Co. Poly Cotton Slim Fit Checks Full Sleeves Men's Casual Shirt - Black ( Pack of 1 )" [ref=f2e1381]
+            - link "The Indian Garage Co. Poly Cotton Slim Fit Checks Full Sleeves Men's Casual Shirt - Black ( Pack of 1 ) Rs. 1,749 Rs. 612 65% Off ★★★★★ ★★★★★ (102)" [ref=f2e1385] [cursor=pointer]:
+              - /url: https://www.snapdeal.com/product/the-indian-garage-co-poly/659100527245#bcrumbSearch:mens%20shirt
+              - paragraph [ref=f2e1386]: The Indian Garage Co. Poly Cotton Slim Fit Checks Full Sleeves Men's Casual Shirt - Black ( Pack of 1 )
+              - generic [ref=f2e1387]:
+                - generic [ref=f2e1388]:
+                  - generic [ref=f2e1389]: Rs. 1,749
+                  - generic [ref=f2e1390]: Rs. 612
+                - generic [ref=f2e1391]: 65% Off
+              - generic [ref=f2e1392]:
+                - generic [ref=f2e1393]:
+                  - generic [ref=f2e1394]: ★★★★★
+                  - generic [ref=f2e1395]: ★★★★★
+                - paragraph [ref=f2e1396]: (102)
+          - generic [ref=f2e1398]:
+            - link [ref=f2e1400] [cursor=pointer]:
+              - /url: https://www.snapdeal.com/product/jeny-fashion-cotton-blend-regular/7493990406340095404#bcrumbSearch:mens%20shirt
+              - generic [ref=f2e1401]:
+                - generic "JENY FASHION Poly Cotton Regular Fit Solids Full Sleeves Men's Casual Shirt - Aqua Blue ( Pack of 1 )"
+                - img "JENY FASHION Poly Cotton Regular Fit Solids Full Sleeves Men's Casual Shirt - Aqua Blue ( Pack of 1 )" [ref=f2e1402]
+            - link "JENY FASHION Poly Cotton Regular Fit Solids Full Sleeves Men's Casual Shirt - Aqua Blue ( Pack of 1 ) Rs. 1,199 Rs. 359 70% Off ★★★★★ ★★★★★ (1092)" [ref=f2e1406] [cursor=pointer]:
+              - /url: https://www.snapdeal.com/product/jeny-fashion-cotton-blend-regular/7493990406340095404#bcrumbSearch:mens%20shirt
+              - paragraph [ref=f2e1407]: JENY FASHION Poly Cotton Regular Fit Solids Full Sleeves Men's Casual Shirt - Aqua Blue ( Pack of 1 )
+              - generic [ref=f2e1408]:
+                - generic [ref=f2e1409]:
+                  - generic [ref=f2e1410]: Rs. 1,199
+                  - generic [ref=f2e1411]: Rs. 359
+                - generic [ref=f2e1412]: 70% Off
+              - generic [ref=f2e1413]:
+                - generic [ref=f2e1414]:
+                  - generic [ref=f2e1415]: ★★★★★
+                  - generic [ref=f2e1416]: ★★★★★
+                - paragraph [ref=f2e1417]: (1092)
+        - generic [ref=f2e1419]:
+          - generic [ref=f2e1420]:
+            - link [ref=f2e1422] [cursor=pointer]:
+              - /url: https://www.snapdeal.com/product/vdlooks-cotton-blend-regular-fit/7493990458111669327#bcrumbSearch:mens%20shirt
+              - generic [ref=f2e1423]:
+                - generic "VDLooks Cotton Blend Regular Fit Striped Full Sleeves Men's Casual Shirt - Blue ( Pack of 1 )"
+                - img "VDLooks Cotton Blend Regular Fit Striped Full Sleeves Men's Casual Shirt - Blue ( Pack of 1 )" [ref=f2e1424]
+            - link "VDLooks Cotton Blend Regular Fit Striped Full Sleeves Men's Casual Shirt - Blue ( Pack of 1 ) Rs. 1,499 Rs. 355 76% Off ★★★★★ ★★★★★ (2048)" [ref=f2e1428] [cursor=pointer]:
+              - /url: https://www.snapdeal.com/product/vdlooks-cotton-blend-regular-fit/7493990458111669327#bcrumbSearch:mens%20shirt
+              - paragraph [ref=f2e1429]: VDLooks Cotton Blend Regular Fit Striped Full Sleeves Men's Casual Shirt - Blue ( Pack of 1 )
+              - generic [ref=f2e1430]:
+                - generic [ref=f2e1431]:
+                  - generic [ref=f2e1432]: Rs. 1,499
+                  - generic [ref=f2e1433]: Rs. 355
+                - generic [ref=f2e1434]: 76% Off
+              - generic [ref=f2e1435]:
+                - generic [ref=f2e1436]:
+                  - generic [ref=f2e1437]: ★★★★★
+                  - generic [ref=f2e1438]: ★★★★★
+                - paragraph [ref=f2e1439]: (2048)
+          - generic [ref=f2e1441]:
+            - link [ref=f2e1443] [cursor=pointer]:
+              - /url: https://www.snapdeal.com/product/fabplanet-100-cotton-regular-fit/6917529698933914692#bcrumbSearch:mens%20shirt
+              - generic [ref=f2e1444]:
+                - generic "FABPLANET Cotton Regular Fit Printed Full Sleeves Men's Casual Shirt - White ( Pack of 1 )"
+                - img "FABPLANET Cotton Regular Fit Printed Full Sleeves Men's Casual Shirt - White ( Pack of 1 )" [ref=f2e1445]
+            - link "FABPLANET Cotton Regular Fit Printed Full Sleeves Men's Casual Shirt - White ( Pack of 1 ) Rs. 2,999 Rs. 299 90% Off ★★★★★ ★★★★★ (423)" [ref=f2e1449] [cursor=pointer]:
+              - /url: https://www.snapdeal.com/product/fabplanet-100-cotton-regular-fit/6917529698933914692#bcrumbSearch:mens%20shirt
+              - paragraph [ref=f2e1450]: FABPLANET Cotton Regular Fit Printed Full Sleeves Men's Casual Shirt - White ( Pack of 1 )
+              - generic [ref=f2e1451]:
+                - generic [ref=f2e1452]:
+                  - generic [ref=f2e1453]: Rs. 2,999
+                  - generic [ref=f2e1454]: Rs. 299
+                - generic [ref=f2e1455]: 90% Off
+              - generic [ref=f2e1456]:
+                - generic [ref=f2e1457]:
+                  - generic [ref=f2e1458]: ★★★★★
+                  - generic [ref=f2e1459]: ★★★★★
+                - paragraph [ref=f2e1460]: (423)
+          - generic [ref=f2e1462]:
+            - link [ref=f2e1464] [cursor=pointer]:
+              - /url: https://www.snapdeal.com/product/mans-suitup-cotton-blend-regular/659465012496#bcrumbSearch:mens%20shirt
+              - generic [ref=f2e1465]:
+                - generic "MAN'S SUITUP Cotton Blend Regular Fit Solids Full Sleeves Men's Casual Shirt - Maroon ( Pack of 1 )"
+                - img "MAN'S SUITUP Cotton Blend Regular Fit Solids Full Sleeves Men's Casual Shirt - Maroon ( Pack of 1 )" [ref=f2e1466]
+            - link "MAN'S SUITUP Cotton Blend Regular Fit Solids Full Sleeves Men's Casual Shirt - Maroon ( Pack of 1 ) Rs. 999 Rs. 383 62% Off ★★★★★ ★★★★★ (92)" [ref=f2e1470] [cursor=pointer]:
+              - /url: https://www.snapdeal.com/product/mans-suitup-cotton-blend-regular/659465012496#bcrumbSearch:mens%20shirt
+              - paragraph [ref=f2e1471]: MAN'S SUITUP Cotton Blend Regular Fit Solids Full Sleeves Men's Casual Shirt - Maroon ( Pack of 1 )
+              - generic [ref=f2e1472]:
+                - generic [ref=f2e1473]:
+                  - generic [ref=f2e1474]: Rs. 999
+                  - generic [ref=f2e1475]: Rs. 383
+                - generic [ref=f2e1476]: 62% Off
+              - generic [ref=f2e1477]:
+                - generic [ref=f2e1478]:
+                  - generic [ref=f2e1479]: ★★★★★
+                  - generic [ref=f2e1480]: ★★★★★
+                - paragraph [ref=f2e1481]: (92)
+          - generic [ref=f2e1483]:
+            - link [ref=f2e1485] [cursor=pointer]:
+              - /url: https://www.snapdeal.com/product/kitwell-cotton-blend-regular-fit/5188147445353648603#bcrumbSearch:mens%20shirt
+              - generic [ref=f2e1486]:
+                - generic "KITWELL Cotton Blend Regular Fit Solids Full Sleeves Men's Casual Shirt - Black ( Pack of 1 )"
+                - img "KITWELL Cotton Blend Regular Fit Solids Full Sleeves Men's Casual Shirt - Black ( Pack of 1 )" [ref=f2e1487]
+            - link "KITWELL Cotton Blend Regular Fit Solids Full Sleeves Men's Casual Shirt - Black ( Pack of 1 ) Rs. 999 Rs. 355 64% Off ★★★★★ ★★★★★ (201)" [ref=f2e1491] [cursor=pointer]:
+              - /url: https://www.snapdeal.com/product/kitwell-cotton-blend-regular-fit/5188147445353648603#bcrumbSearch:mens%20shirt
+              - paragraph [ref=f2e1492]: KITWELL Cotton Blend Regular Fit Solids Full Sleeves Men's Casual Shirt - Black ( Pack of 1 )
+              - generic [ref=f2e1493]:
+                - generic [ref=f2e1494]:
+                  - generic [ref=f2e1495]: Rs. 999
+                  - generic [ref=f2e1496]: Rs. 355
+                - generic [ref=f2e1497]: 64% Off
+              - generic [ref=f2e1498]:
+                - generic [ref=f2e1499]:
+                  - generic [ref=f2e1500]: ★★★★★
+                  - generic [ref=f2e1501]: ★★★★★
+                - paragraph [ref=f2e1502]: (201)
+        - generic [ref=f2e1504]:
+          - generic [ref=f2e1505]:
+            - link [ref=f2e1507] [cursor=pointer]:
+              - /url: https://www.snapdeal.com/product/vdlooks-cotton-blend-regular-fit/8646911962718516303#bcrumbSearch:mens%20shirt
+              - generic [ref=f2e1508]:
+                - generic "VDLooks Cotton Blend Regular Fit Striped Full Sleeves Men's Casual Shirt - Grey ( Pack of 1 )"
+                - img "VDLooks Cotton Blend Regular Fit Striped Full Sleeves Men's Casual Shirt - Grey ( Pack of 1 )" [ref=f2e1509]
+            - link "VDLooks Cotton Blend Regular Fit Striped Full Sleeves Men's Casual Shirt - Grey ( Pack of 1 ) Rs. 1,499 Rs. 355 76% Off ★★★★★ ★★★★★ (2048)" [ref=f2e1513] [cursor=pointer]:
+              - /url: https://www.snapdeal.com/product/vdlooks-cotton-blend-regular-fit/8646911962718516303#bcrumbSearch:mens%20shirt
+              - paragraph [ref=f2e1514]: VDLooks Cotton Blend Regular Fit Striped Full Sleeves Men's Casual Shirt - Grey ( Pack of 1 )
+              - generic [ref=f2e1515]:
+                - generic [ref=f2e1516]:
+                  - generic [ref=f2e1517]: Rs. 1,499
+                  - generic [ref=f2e1518]: Rs. 355
+                - generic [ref=f2e1519]: 76% Off
+              - generic [ref=f2e1520]:
+                - generic [ref=f2e1521]:
+                  - generic [ref=f2e1522]: ★★★★★
+                  - generic [ref=f2e1523]: ★★★★★
+                - paragraph [ref=f2e1524]: (2048)
+          - generic [ref=f2e1526]:
+            - link [ref=f2e1528] [cursor=pointer]:
+              - /url: https://www.snapdeal.com/product/nexra-creation-100-cotton-regular/5764608197728662250#bcrumbSearch:mens%20shirt
+              - generic [ref=f2e1529]:
+                - generic "Nexra Creation 100% Cotton Regular Fit Self Design Full Sleeves Men's Casual Shirt - Pink ( Pack of 1 )"
+                - img "Nexra Creation 100% Cotton Regular Fit Self Design Full Sleeves Men's Casual Shirt - Pink ( Pack of 1 )" [ref=f2e1530]
+            - link "Nexra Creation 100% Cotton Regular Fit Self Design Full Sleeves Men's Casual Shirt - Pink ( Pack of 1 ) Rs. 999 Rs. 322 68% Off ★★★★★ ★★★★★ (82)" [ref=f2e1534] [cursor=pointer]:
+              - /url: https://www.snapdeal.com/product/nexra-creation-100-cotton-regular/5764608197728662250#bcrumbSearch:mens%20shirt
+              - paragraph [ref=f2e1535]: Nexra Creation 100% Cotton Regular Fit Self Design Full Sleeves Men's Casual Shirt - Pink ( Pack of 1 )
+              - generic [ref=f2e1536]:
+                - generic [ref=f2e1537]:
+                  - generic [ref=f2e1538]: Rs. 999
+                  - generic [ref=f2e1539]: Rs. 322
+                - generic [ref=f2e1540]: 68% Off
+              - generic [ref=f2e1541]:
+                - generic [ref=f2e1542]:
+                  - generic [ref=f2e1543]: ★★★★★
+                  - generic [ref=f2e1544]: ★★★★★
+                - paragraph [ref=f2e1545]: (82)
+          - generic [ref=f2e1547]:
+            - link [ref=f2e1549] [cursor=pointer]:
+              - /url: https://www.snapdeal.com/product/lmxwear-satin-slim-fit-embellished/5764608186756462237#bcrumbSearch:mens%20shirt
+              - generic [ref=f2e1550]:
+                - generic "LMXWEAR Satin Slim Fit Embellished Rollup Sleeves Men's Casual Shirt - Maroon ( Pack of 1 )"
+                - img "LMXWEAR Satin Slim Fit Embellished Rollup Sleeves Men's Casual Shirt - Maroon ( Pack of 1 )" [ref=f2e1551]
+            - link "LMXWEAR Satin Slim Fit Embellished Rollup Sleeves Men's Casual Shirt - Maroon ( Pack of 1 ) Rs. 999 Rs. 430 57% Off ★★★★★ ★★★★★ (376)" [ref=f2e1555] [cursor=pointer]:
+              - /url: https://www.snapdeal.com/product/lmxwear-satin-slim-fit-embellished/5764608186756462237#bcrumbSearch:mens%20shirt
+              - paragraph [ref=f2e1556]: LMXWEAR Satin Slim Fit Embellished Rollup Sleeves Men's Casual Shirt - Maroon ( Pack of 1 )
+              - generic [ref=f2e1557]:
+                - generic [ref=f2e1558]:
+                  - generic [ref=f2e1559]: Rs. 999
+                  - generic [ref=f2e1560]: Rs. 430
+                - generic [ref=f2e1561]: 57% Off
+              - generic [ref=f2e1562]:
+                - generic [ref=f2e1563]:
+                  - generic [ref=f2e1564]: ★★★★★
+                  - generic [ref=f2e1565]: ★★★★★
+                - paragraph [ref=f2e1566]: (376)
+          - generic [ref=f2e1568]:
+            - link [ref=f2e1570] [cursor=pointer]:
+              - /url: https://www.snapdeal.com/product/vtexx-navy-cotton-blend-mens/5476377826260784274#bcrumbSearch:mens%20shirt
+              - generic [ref=f2e1571]:
+                - generic "VTEXX Cotton Blend Plain Mandarin Collar Shirt Style Kurta For Men ( Black )"
+                - img "VTEXX Cotton Blend Plain Mandarin Collar Shirt Style Kurta For Men ( Black )" [ref=f2e1572]
+            - link "VTEXX Cotton Blend Plain Mandarin Collar Shirt Style Kurta For Men ( Black ) Rs. 1,999 Rs. 328 84% Off ★★★★★ ★★★★★ (8887)" [ref=f2e1576] [cursor=pointer]:
+              - /url: https://www.snapdeal.com/product/vtexx-navy-cotton-blend-mens/5476377826260784274#bcrumbSearch:mens%20shirt
+              - paragraph [ref=f2e1577]: VTEXX Cotton Blend Plain Mandarin Collar Shirt Style Kurta For Men ( Black )
+              - generic [ref=f2e1578]:
+                - generic [ref=f2e1579]:
+                  - generic [ref=f2e1580]: Rs. 1,999
+                  - generic [ref=f2e1581]: Rs. 328
+                - generic [ref=f2e1582]: 84% Off
+              - generic [ref=f2e1583]:
+                - generic [ref=f2e1584]:
+                  - generic [ref=f2e1585]: ★★★★★
+                  - generic [ref=f2e1586]: ★★★★★
+                - paragraph [ref=f2e1587]: (8887)
+      - generic [ref=f2e1589]: Show 21 - 40 Items
+      - generic [ref=f2e1594]:
+        - text: Did you find what you are looking for?
+        - generic [ref=f2e1595] [cursor=pointer]: "Yes"
+        - generic [ref=f2e1596] [cursor=pointer]: "No"
+  - generic [ref=f2e1598]:
+    - generic [ref=f2e1600]:
+      - link "100% Secure Payments Moving your card details to a much more secured place":
+        - /url: https://www.snapdeal.com/page/terms#bcrumbSearch:mens%20shirt
+        - generic [ref=f2e1604] [cursor=pointer]:
+          - paragraph [ref=f2e1605]: 100% Secure Payments
+          - paragraph [ref=f2e1606]: Moving your card details to a much more
+          - paragraph [ref=f2e1607]: secured place
+      - link "TrustPay 100% Payment Protection. Easy Return Policy":
+        - /url: https://www.snapdeal.com/page/TrustPay#bcrumbSearch:mens%20shirt
+        - generic [ref=f2e1611] [cursor=pointer]:
+          - paragraph [ref=f2e1612]: TrustPay
+          - paragraph [ref=f2e1613]: 100% Payment Protection. Easy
+          - paragraph [ref=f2e1614]: Return Policy
+      - link "Help Center Got a question? Look no further. Browse our FAQs or submit your query here.":
+        - /url: https://www.snapdeal.com/help?redirectFrom=footerstrip#bcrumbSearch:mens%20shirt
+        - generic [ref=f2e1618] [cursor=pointer]:
+          - paragraph [ref=f2e1619]: Help Center
+          - paragraph [ref=f2e1620]: Got a question? Look no further.
+          - paragraph [ref=f2e1621]: Browse our FAQs or submit your query here.
+      - link "Shop on the Go Download the app and get exciting app only offers at your fingertips":
+        - /url: https://play.google.com/store/apps/details?id=com.snapdeal.main&utm_source=web_footer&utm_campaign=android
+        - generic [ref=f2e1625] [cursor=pointer]:
+          - paragraph [ref=f2e1626]: Shop on the Go
+          - paragraph [ref=f2e1627]: Download the app and get exciting
+          - paragraph [ref=f2e1628]: app only offers at your fingertips
+    - generic [ref=f2e1629]:
+      - generic [ref=f2e1630]:
+        - generic:
+          - generic [ref=f2e1631]:
+            - generic [ref=f2e1632]: Policy Info
+            - list [ref=f2e1633]:
+              - listitem [ref=f2e1634]:
+                - link "Privacy Policy" [ref=f2e1635] [cursor=pointer]:
+                  - /url: https://www.snapdeal.com/page/privacy-policy#bcrumbSearch:mens%20shirt
+              - listitem [ref=f2e1636]:
+                - link "Terms of Sale" [ref=f2e1637] [cursor=pointer]:
+                  - /url: https://www.snapdeal.com/page/terms-of-sale#bcrumbSearch:mens%20shirt
+              - listitem [ref=f2e1638]:
+                - link "Terms of Use" [ref=f2e1639] [cursor=pointer]:
+                  - /url: https://www.snapdeal.com/offers/terms-of-use#bcrumbSearch:mens%20shirt
+              - listitem [ref=f2e1640]:
+                - link "Report Abuse & Takedown Policy" [ref=f2e1641] [cursor=pointer]:
+                  - /url: https://www.snapdeal.com/page/abusePolicy#bcrumbSearch:mens%20shirt
+              - listitem [ref=f2e1642]:
+                - link "Know Your BIS Standard" [ref=f2e1643] [cursor=pointer]:
+                  - /url: https://www.services.bis.gov.in/php/BIS_2.0/bisconnect/knowyourstandards/indian_standards/isdetails/
+              - listitem [ref=f2e1644]:
+                - link "Products Under Cumpulsory BIS Certification" [ref=f2e1645] [cursor=pointer]:
+                  - /url: https://www.bis.gov.in/products-under-compulsory-certification/
+              - listitem [ref=f2e1646]:
+                - link "FAQ" [ref=f2e1647] [cursor=pointer]:
+                  - /url: https://www.snapdeal.com/faq/faqhome#bcrumbSearch:mens%20shirt
+          - generic [ref=f2e1648]:
+            - generic [ref=f2e1649]: Company
+            - list [ref=f2e1650]:
+              - listitem [ref=f2e1651]:
+                - link "About Us" [ref=f2e1652] [cursor=pointer]:
+                  - /url: http://www.snapdeal.com/page/about-us#bcrumbSearch:mens%20shirt
+              - listitem [ref=f2e1653]:
+                - link "Careers" [ref=f2e1654] [cursor=pointer]:
+                  - /url: https://www.linkedin.com/company/snapdeal/
+              - listitem [ref=f2e1655]:
+                - link "Blog" [ref=f2e1656] [cursor=pointer]:
+                  - /url: http://blog.snapdeal.com/
+              - listitem [ref=f2e1657]:
+                - link "Sitemap" [ref=f2e1658] [cursor=pointer]:
+                  - /url: https://www.snapdeal.com/info/sitemap#bcrumbSearch:mens%20shirt
+              - listitem [ref=f2e1659]:
+                - link "Contact Us" [ref=f2e1660] [cursor=pointer]:
+                  - /url: https://www.snapdeal.com/faq/faqCustomerCare#bcrumbSearch:mens%20shirt
+          - generic [ref=f2e1661]:
+            - generic [ref=f2e1662]: Snapdeal Business
+            - list [ref=f2e1663]:
+              - listitem [ref=f2e1664]:
+                - link "Shopping App" [ref=f2e1665] [cursor=pointer]:
+                  - /url: https://play.google.com/store/apps/details?id=com.snapdeal.main&hl=en_IN
+              - listitem [ref=f2e1666]:
+                - link "Sell on Snapdeal" [ref=f2e1667] [cursor=pointer]:
+                  - /url: http://sellers.snapdeal.com/
+              - listitem [ref=f2e1668]:
+                - link "Media Enquiries" [ref=f2e1669] [cursor=pointer]:
+                  - /url: mailto:mediarelations@snapdeal.com
+          - generic [ref=f2e1670]:
+            - generic [ref=f2e1671]: Popular Links
+            - list [ref=f2e1672]:
+              - listitem [ref=f2e1673]:
+                - link "Lehenga" [ref=f2e1674] [cursor=pointer]:
+                  - /url: https://www.snapdeal.com/products/women-apparel-lehenga#bcrumbSearch:mens%20shirt
+              - listitem [ref=f2e1675]:
+                - link "Kid's Clothing" [ref=f2e1676] [cursor=pointer]:
+                  - /url: https://www.snapdeal.com/products/kids-clothing#bcrumbSearch:mens%20shirt
+              - listitem [ref=f2e1677]:
+                - link "Sarees" [ref=f2e1678] [cursor=pointer]:
+                  - /url: https://www.snapdeal.com/products/women-apparel-sarees#bcrumbSearch:mens%20shirt
+              - listitem [ref=f2e1679]:
+                - link "Winter Wear" [ref=f2e1680] [cursor=pointer]:
+                  - /url: https://www.snapdeal.com/products/mens-winter-wear-store#bcrumbSearch:mens%20shirt
+              - listitem [ref=f2e1681]:
+                - link "Sweatshirts" [ref=f2e1682] [cursor=pointer]:
+                  - /url: https://www.snapdeal.com/products/men-apparel-sweatshirts#bcrumbSearch:mens%20shirt
+          - generic [ref=f2e1683]:
+            - generic [ref=f2e1684]: Subscribe
+            - textbox "Your email address" [ref=f2e1685]
+            - button "Subscribe" [ref=f2e1686] [cursor=pointer]
+            - paragraph [ref=f2e1687]: Register now to get updates on promotions and
+            - paragraph [ref=f2e1688]:
+              - text: coupons.
+              - link "Or Download App" [ref=f2e1690] [cursor=pointer]:
+                - /url: https://play.google.com/store/apps/details?id=com.snapdeal.main
+      - generic [ref=f2e1691]:
+        - generic:
+          - paragraph [ref=f2e1693]: Payment
+          - generic [ref=f2e1701]:
+            - paragraph [ref=f2e1702]: Connect
+            - generic [ref=f2e1703]:
+              - link [ref=f2e1704] [cursor=pointer]:
+                - /url: https://www.facebook.com/Snapdeal
+                - img "Snapdeal Facebook Page" [ref=f2e1705]
+              - link [ref=f2e1706] [cursor=pointer]:
+                - /url: https://twitter.com/snapdeal
+                - img "Snapdeal Twitter Page" [ref=f2e1707]
+              - link [ref=f2e1708] [cursor=pointer]:
+                - /url: https://instagram.com/snapdeal/
+                - img "Snapdeal Instagram Page" [ref=f2e1709]
+              - link [ref=f2e1710] [cursor=pointer]:
+                - /url: https://www.linkedin.com/company/snapdeal/
+                - img "Snapdeal Linkedin Page" [ref=f2e1711]
+              - link [ref=f2e1712] [cursor=pointer]:
+                - /url: https://www.youtube.com/user/snapdeal
+                - img "Snapdeal Youtube Page" [ref=f2e1713]
+              - link [ref=f2e1714] [cursor=pointer]:
+                - /url: https://t.me/sdwapp
+                - img "Telegram" [ref=f2e1715]
+              - link [ref=f2e1716] [cursor=pointer]:
+                - /url: https://wa.me/918130222868?text=Hello%20Snapdeal,%20I%20need%20help
+                - img "Whats App" [ref=f2e1717]
+      - generic [ref=f2e1718]:
+        - generic:
+          - generic [ref=f2e1719]: Copyright © 2021, Acevector Limited. All Rights Reserved
+          - generic [ref=f2e1720]:
+            - text: Made for Bharat
+            - generic [ref=f2e1721]: 
+```
