@@ -1,19 +1,63 @@
+
 pipeline {
-    agent any    // where the pipeline runs
+    agent any
 
     tools {
         nodejs 'NodeJS'
     }
 
-    stages {
-        stage('Build') {
-            steps {
-                // bat 'npm install'
-                // bat 'npx playwright test'
+    environment {
+        CI = 'true'
+    }
 
-                sh 'npm install'
-                sh 'npx playwright test'
+    stages {
+
+        stage('Checkout Code') {
+            steps {
+                checkout scm
             }
+        }
+
+        stage('NodeJS Verification') {
+            steps {
+                bat 'node -v'
+                bat 'npm -v'
+            }
+        }
+
+        stage('Install Dependencies') {
+            steps {
+                bat 'npm ci'
+            }
+        }
+
+        stage('Install Playwright Browser') {
+            steps {
+                bat 'npx playwright install chromium'
+            }
+        }
+
+        stage('Execute Playwright Tests') {
+            steps {
+                bat 'npx playwright test'
+            }
+        }
+    }
+
+    post {
+        always {
+            archiveArtifacts(
+                artifacts: 'allure-results/**,test-results/**',
+                allowEmptyArchive: true
+            )
+        }
+
+        success {
+            echo 'Playwright tests passed!'
+        }
+
+        failure {
+            echo 'Playwright tests failed. Check console output.'
         }
     }
 }
